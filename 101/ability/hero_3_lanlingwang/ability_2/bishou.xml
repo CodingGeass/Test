@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject objectName="self" id="0" isTemp="false" />
+    <TemplateObject objectName="target" id="1" isTemp="false" />
+    <TemplateObject objectName="bullet" id="2" isTemp="true" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="targetdir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_BulletPos" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="2.400" loop="false">
+    <Track trackName="SpawnBulletTick0" eventType="SpawnBulletTick" guid="f486272e-0540-40e5-84a0-343118ed419f" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SpawnBulletTick" time="0.000" isDuration="false" guid="a9f52e61-414b-46f3-87cf-9017e41b8577">
+        <TemplateObject name="targetId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false" />
+        <bool name="bUseRandomActionName" value="false" refParamName="" useRefParam="false" />
+        <bool name="bStrengthenBullet" value="false" refParamName="" useRefParam="false" />
+        <String name="ActionName" value="ability/hero_3_lanlingwang/ability_2/s2b1.xml" refParamName="" useRefParam="false" />
+        <String name="StrengthenActionName" value="" refParamName="" useRefParam="false" />
+        <Array name="randomActionNameArray" refParamName="" useRefParam="false" type="String" />
+        <Array name="randomActionProbabilityArray" refParamName="" useRefParam="false" type="int" />
+        <bool name="bUseRandomSpecialActionName" value="false" refParamName="" useRefParam="false" />
+        <String name="SpecialActionName" value="" refParamName="" useRefParam="false" />
+        <String name="StrengthenSpecialActionName" value="" refParamName="" useRefParam="false" />
+        <Array name="randomSpecialActionNameArray" refParamName="" useRefParam="false" type="String" />
+        <Array name="randomSpecialActionProbabilityArray" refParamName="" useRefParam="false" type="int" />
+        <int name="bulletCount" value="1" refParamName="" useRefParam="false" />
+        <Enum name="bulletTag" value="0" refParamName="" useRefParam="false">
+          <uint name="无tag" />
+          <uint name="占位" />
+          <uint name="普通火种" />
+          <uint name="一段火种" />
+          <uint name="二段火种" />
+          <uint name="风" />
+          <uint name="子弹移动路径" />
+          <uint name="飞机" />
+          <uint name="通用标记位置" />
+        </Enum>
+        <bool name="bControlRemove" value="false" refParamName="" useRefParam="false" />
+        <bool name="bDeadRemove" value="false" refParamName="" useRefParam="false" />
+        <Enum name="exchangeHeroRmvType" value="0" refParamName="" useRefParam="false">
+          <uint name="同死亡清除方式" />
+          <uint name="交换后清除" />
+          <uint name="交换后保留" />
+        </Enum>
+        <bool name="bExitBattleRemove" value="false" refParamName="" useRefParam="false" />
+        <bool name="bAgeImmeExcute" value="false" refParamName="" useRefParam="false" />
+        <bool name="bAgeEternal" value="false" refParamName="" useRefParam="false" />
+        <Enum name="AgeLengthGrownByAttackerAtt" value="0" refParamName="" useRefParam="false">
+          <uint name="无" />
+          <uint name="物理攻击力" />
+          <uint name="法术攻击力" />
+          <uint name="物理防御力" />
+          <uint name="法术防御力" />
+          <uint name="最大生命" />
+          <uint name="暴击率" />
+          <uint name="物理护甲穿透" />
+          <uint name="法术护甲穿透" />
+          <uint name="物理吸血" />
+          <uint name="法术吸血" />
+          <uint name="抗暴率" />
+          <uint name="暴击效果" />
+          <uint name="真实伤害(装备)" />
+          <uint name="真实减伤(装备)" />
+          <uint name="移速" />
+          <uint name="生命回复" />
+          <uint name="韧性" />
+          <uint name="攻速加成" />
+          <uint name="冷却缩减" />
+          <uint name="视野" />
+          <uint name="命中率" />
+          <uint name="闪避率" />
+          <uint name="暴击等级" />
+          <uint name="抗暴等级" />
+          <uint name="物理吸血等级" />
+          <uint name="法术吸血等级" />
+          <uint name="攻速等级" />
+          <uint name="韧性等级" />
+          <uint name="伤害免疫率" />
+          <uint name="伤害输出率" />
+          <uint name="最大能量" />
+          <uint name="能量回复" />
+          <uint name="护甲穿透率" />
+          <uint name="法术穿透率" />
+          <uint name="额外增益恢复" />
+          <uint name="普攻强度" />
+        </Enum>
+        <int name="growRatio" value="0" refParamName="" useRefParam="false" />
+        <int name="bulletTypeId" value="0" refParamName="" useRefParam="false" />
+        <int name="bulletUpperLimit" value="0" refParamName="" useRefParam="false" />
+        <bool name="bReplaceBullet" value="true" refParamName="" useRefParam="false" />
+        <bool name="bSpawnBounceBullet" value="false" refParamName="" useRefParam="false" />
+        <bool name="bDestroyedBySpecialBullet" value="true" refParamName="" useRefParam="false" />
+        <TemplateObject name="referenceObjectId" objectName="None" id="-1" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="bulletUpperLimitActionName" value="" refParamName="" useRefParam="false" />
+        <int name="maxMoveDistance" value="0" refParamName="" useRefParam="false" />
+        <int name="reachMaxMoveDistanceSkillCombineId" value="0" refParamName="" useRefParam="false" />
+        <bool name="bRemoveWhenControlled" value="false" refParamName="" useRefParam="false" />
+        <bool name="bRemoveWhenRepressed" value="false" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+  </Action>
+</Project>

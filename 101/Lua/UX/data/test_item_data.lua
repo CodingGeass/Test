@@ -1,0 +1,103 @@
+
+qi_item_equip_0001={
+    m_itemTitle="萌新武器",--物品名
+    m_equipID=6001,
+    m_equipIconPath="UGUI/Sprite/System/BattleEquip/1112",
+    m_equipOriBuyPrice="290",--物品原价格
+    m_itemtype=BAG_ITEM_TYPE_EQUIP,
+    m_equipDesc="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_equipDesc2="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_quality="white"
+}
+qi_item_equip_0002={
+    m_itemTitle="高级-萌新武器",--物品名
+    m_equipID=6002,
+    m_equipIconPath="UGUI/Sprite/System/BattleEquip/1112",
+    m_equipOriBuyPrice="290",--物品原价格
+    m_itemtype=BAG_ITEM_TYPE_EQUIP,
+    m_equipDesc="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_equipDesc2="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_quality="green"
+}
+qi_item_equip_0003={
+    m_itemTitle="超级-萌新武器",--物品名
+    m_equipID=6003,
+    m_equipIconPath="UGUI/Sprite/System/BattleEquip/1112",
+    m_equipOriBuyPrice="290",--物品原价格
+    m_itemtype=BAG_ITEM_TYPE_EQUIP,
+    m_equipDesc="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_equipDesc2="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_quality="blue"
+}
+qi_item_equip_0004={
+    m_itemTitle="无敌-萌新武器",--物品名
+    m_equipID=6004,
+    m_equipIconPath="UGUI/Sprite/System/BattleEquip/1112",
+    m_equipOriBuyPrice="290",--物品原价格
+    m_itemtype=BAG_ITEM_TYPE_EQUIP,
+    m_equipDesc="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_equipDesc2="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_quality="purple"
+}
+qi_item_equip_0005={
+    m_itemTitle="大佬武器",--物品名
+    m_equipID=6005,
+    m_equipIconPath="UGUI/Sprite/System/BattleEquip/1112",
+    m_equipOriBuyPrice="290",--物品原价格
+    m_itemtype=BAG_ITEM_TYPE_EQUIP,
+    m_equipDesc="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_equipDesc2="虽然是萌新使用的武器,但在初期仍然十分好用",
+    m_quality="orange"
+}
+qi_item_materials_0001={
+    m_itemTitle="合成水晶",--物品名
+    -- m_equipID=6001,
+    m_equipIconPath="UGUI/Sprite/System/BattleEquip/1314",
+    m_equipOriBuyPrice="100",--物品原价格
+    m_itemtype=BAG_ITEM_TYPE_MATERIALS,
+    m_equipDesc="初期合成用材料，用于升级萌新武器",
+    m_equipDesc2="初期合成用材料，用于升级萌新武器",
+    m_quality="green"
+}
+qi_item_consumables_1239={
+    m_itemTitle="经验书",--物品名
+    -- m_equipID=6001,
+    m_equipIconPath="UGUI/Sprite/System/BattleEquip/1315",
+    m_equipOriBuyPrice="200",--物品原价格
+    m_itemtype=BAG_ITEM_TYPE_MATERIALS,
+    m_equipDesc="使用就能升级哦",
+    m_equipDesc2="使用就能升级哦",
+    m_quality="blue"
+}
+qi_item_consumables_1240={
+    m_itemTitle="经验书Lv2",--物品名
+    -- m_equipID=6001,
+    m_equipIconPath="UGUI/Sprite/System/BattleEquip/1315",
+    m_equipOriBuyPrice="400",--物品原价格
+    m_itemtype=BAG_ITEM_TYPE_MATERIALS,
+    m_equipDesc="使用就能升级哦",
+    m_equipDesc2="使用就能升级哦",
+    m_quality="purple"
+}
+qi_item_consumables_1241={
+    m_itemTitle="经验书Lv2",--物品名
+    -- m_equipID=6001,
+    m_equipIconPath="UGUI/Sprite/System/BattleEquip/1315",
+    m_equipOriBuyPrice="800",--物品原价格
+    m_itemtype=BAG_ITEM_TYPE_MATERIALS,
+    m_equipDesc="使用就能升级哦",
+    m_equipDesc2="使用就能升级哦",
+    m_quality="orange"
+}
+--定义一些基础装备
+item_list={
+    qi_item_equip_0001=qi_item_equip_0001,
+    qi_item_equip_0002=qi_item_equip_0002,
+    qi_item_equip_0003=qi_item_equip_0003,
+    qi_item_equip_0004=qi_item_equip_0004,
+    qi_item_equip_0005=qi_item_equip_0005,
+    qi_item_materials_0001=qi_item_materials_0001,
+    qi_item_consumables_1239=qi_item_consumables_1239,
+    qi_item_consumables_1240=qi_item_consumables_1240,
+    qi_item_consumables_1241=qi_item_consumables_1241,
+}

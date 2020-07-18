@@ -1,0 +1,1090 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root Schema="21.技能基础表">
+  <Sheet Name="技能基础" FontColor="FFFFFFFF" FillColor="FF44546A">
+    <Columns>
+      <Column Name="技能ID" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="技能名称" Type="System.String" WidthInCharacters="21" />
+      <Column Name="技能槽位" Type="System.String" WidthInCharacters="7" />
+      <Column Name="技能标签" Type="System.String" WidthInCharacters="11" />
+      <Column Name="技能描述" Type="System.String" WidthInCharacters="58" />
+      <Column Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)" Type="System.String" WidthInCharacters="99" />
+      <Column Name="技能描述（公式计算）" Type="System.String" WidthInCharacters="60" />
+      <Column Name="管理界面技能描述" Type="System.String" WidthInCharacters="51" />
+      <Column Name="简化版技能描述" Type="System.String" WidthInCharacters="41" />
+      <Column Name="图标路径" Type="System.String" WidthInCharacters="12" />
+      <Column Name="模型路径" Type="System.String" WidthInCharacters="12" />
+      <Column Name="描述属性1类型" Type="System.String" WidthInCharacters="8" />
+      <Column Name="描述属性1数值类型" Type="System.UInt32" WidthInCharacters="8" />
+      <Column Name="描述属性1基础值" Type="System.String" WidthInCharacters="13" />
+      <Column Name="描述属性1成长值" Type="System.String" WidthInCharacters="13" />
+      <Column Name="描述属性2类型" Type="System.String" WidthInCharacters="8" />
+      <Column Name="描述属性2数值类型" Type="System.UInt32" WidthInCharacters="8" />
+      <Column Name="描述属性2基础值" Type="System.String" WidthInCharacters="12" />
+      <Column Name="描述属性2成长值" Type="System.String" WidthInCharacters="12" />
+      <Column Name="描述属性3类型" Type="System.String" WidthInCharacters="8" />
+      <Column Name="描述属性3数值类型" Type="System.UInt32" WidthInCharacters="8" />
+      <Column Name="描述属性3基础值" Type="System.String" WidthInCharacters="12" />
+      <Column Name="描述属性3成长值" Type="System.String" WidthInCharacters="12" />
+      <Column Name="描述属性4类型" Type="System.String" WidthInCharacters="8" />
+      <Column Name="描述属性4数值类型" Type="System.UInt32" WidthInCharacters="8" />
+      <Column Name="描述属性4基础值" Type="System.String" WidthInCharacters="8" />
+      <Column Name="描述属性4成长值" Type="System.String" WidthInCharacters="8" />
+      <Column Name="描述属性5类型" Type="System.String" WidthInCharacters="8" />
+      <Column Name="描述属性5数值类型" Type="System.UInt32" WidthInCharacters="8" />
+      <Column Name="描述属性5基础值" Type="System.String" WidthInCharacters="8" />
+      <Column Name="描述属性5成长值" Type="System.String" WidthInCharacters="8" />
+      <Column Name="轮盘模式" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="指示器已召唤兽为中心" Type="System.Byte" WidthInCharacters="33" />
+      <Column Name="二阶指示器资源类型" Type="System.Byte" WidthInCharacters="20" />
+      <Column Name="二阶指示器半径" Type="System.Int32" WidthInCharacters="24" />
+      <Column Name="二阶指示器参数1" Type="System.Int32" WidthInCharacters="30" />
+      <Column Name="新配置指示器资源类型" Type="System.String" WidthInCharacters="28" />
+      <Column Name="新配置指示器尺寸" Type="System.Int32" WidthInCharacters="20" />
+      <Column Name="新配置指示器对象类型" Type="System.Byte" WidthInCharacters="14" />
+      <Column Name="固有技能指示器路径" Type="System.String" WidthInCharacters="24" />
+      <Column Name="固有技能警示指示器路径" Type="System.String" WidthInCharacters="28" />
+      <Column Name="技能指示器样式选择" Type="System.Byte" WidthInCharacters="26" />
+      <Column Name="技能指示器路径" Type="System.String" WidthInCharacters="71" />
+      <Column Name="技能警示指示器路径" Type="System.String" WidthInCharacters="75" />
+      <Column Name="技能作用路径" Type="System.String" WidthInCharacters="65" />
+      <Column Name="技能警示作用路径" Type="System.String" WidthInCharacters="76" />
+      <Column Name="小地图指示器显示图" Type="System.String" WidthInCharacters="20" />
+      <Column Name="小地图指示器警示图" Type="System.String" WidthInCharacters="20" />
+      <Column Name="小地图指示器高度" Type="System.Int32" WidthInCharacters="20" />
+      <Column Name="大地图指示器高度" Type="System.Int32" WidthInCharacters="20" />
+      <Column Name="是否共存释放" Type="System.Byte" WidthInCharacters="13" />
+      <Column Name="是否可被共存技能打断" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="忽略技能禁用" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="忽略失控" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="冷却时间" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="age立即执行" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="是否自动扣除能量" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="冷却时间成长" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="消耗类型" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="消耗数值类型" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="消耗" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="消耗成长" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="技能目标过滤" Type="System.UInt32" WidthInCharacters="18" />
+      <Column Name="技能目标过滤屏蔽怪物子类型" Type="System.UInt32" WidthInCharacters="9" />
+      <Column Name="技能目标过滤屏蔽塔子类型" Type="System.UInt32" WidthInCharacters="9" />
+      <Column Name="技能类型" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="技能释放规则" Type="System.String" WidthInCharacters="18" />
+      <Column Name="技能筛选规则" Type="System.String" WidthInCharacters="18" />
+      <Column Name="技能筛选关联BUFF" Type="System.UInt32" WidthInCharacters="18" />
+      <Column Name="动作路径" Type="System.String" WidthInCharacters="77" TypeInfo="BluePrint.Common.ComponentModel.ResourceSelectableAttribute(Extension:.xml,TypeDescription:AGE文件)" />
+      <Column Name="自身技能效果组合" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="目标技能效果组合" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="范围自指定类型" Type="System.String" WidthInCharacters="9" />
+      <Column Name="范围自指定类型参数1" Type="System.Int32" WidthInCharacters="17" />
+      <Column Name="范围自指定类型参数2" Type="System.Int32" WidthInCharacters="17" />
+      <Column Name="指示器类型" Type="System.Byte" WidthInCharacters="24" />
+      <Column Name="范围半径" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="目标包含自身" Type="System.String" WidthInCharacters="13" />
+      <Column Name="目标包含敌方" Type="System.String" WidthInCharacters="9" />
+      <Column Name="基础伤害" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="固有指示器范围" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="指示器范围" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="最大攻击距离" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="二级攻击距离" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="最大寻敌距离" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="最大寻敌距离成长系数" Type="System.Int32" WidthInCharacters="30" />
+      <Column Name="最大追击距离" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="是否子弹技" Type="System.String" WidthInCharacters="12" />
+      <Column Name="子弹技ID" Type="System.String" WidthInCharacters="9" />
+      <Column Name="技能数值效果描述" Type="System.String" WidthInCharacters="25" />
+      <Column Name="技能升级提示" Type="System.String" WidthInCharacters="25" />
+      <Column Name="技能战力类型" Type="System.String" WidthInCharacters="15" />
+      <Column Name="是否检测反作弊" Type="System.String" WidthInCharacters="9" />
+      <Column Name="技能效果标签1" Type="System.String" WidthInCharacters="12" />
+      <Column Name="技能效果标签2" Type="System.String" WidthInCharacters="12" />
+      <Column Name="是否晕眩技能" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="攻速不影响动画" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="技能不暴露视野" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="伤害数字显示" Type="System.String" WidthInCharacters="9" />
+      <Column Name="本阵营共享技能组ID" Type="System.UInt32" WidthInCharacters="21" />
+      <Column Name="玩家英雄共享技能组ID" Type="System.UInt32" WidthInCharacters="21" />
+      <Column Name="蓄力效果ID" Type="System.UInt32" WidthInCharacters="21" />
+      <Column Name="蓄力结束效果ID" Type="System.UInt32" WidthInCharacters="21" />
+      <Column Name="蓄力时间上限" Type="System.UInt32" WidthInCharacters="14" />
+      <Column Name="蓄力解除时间" Type="System.UInt32" WidthInCharacters="16" />
+      <Column Name="蓄力解除时依然施放" Type="System.Byte" WidthInCharacters="16" />
+      <Column Name="技能释放角度偏差" Type="System.UInt32" WidthInCharacters="15" />
+      <Column Name="技能指示器方向控制移动" Type="System.Byte" WidthInCharacters="24" />
+      <Column Name="蓄力取消CD万分比" Type="System.UInt32" WidthInCharacters="21" />
+      <Column Name="蓄力增长冷却时间最小万分比" Type="System.UInt32" WidthInCharacters="21" />
+      <Column Name="蓄力时同步技能指示器位置" Type="System.Byte" WidthInCharacters="21" />
+      <Column Name="是否消耗技能豆" Type="System.Byte" WidthInCharacters="15" />
+      <Column Name="同槽位打断" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="开始移动镜头距离" Type="System.Int32" WidthInCharacters="9" />
+      <Column Name="技能镜头移动速度" Type="System.UInt32" WidthInCharacters="15" />
+      <Column Name="用途类型" Type="System.Byte" WidthInCharacters="9" />
+      <Column Name="是否忽略使用技能被动条件" Type="System.Byte" WidthInCharacters="19" />
+    </Columns>
+    <Row>
+      <Cell Name="技能ID">16303</Cell>
+      <Cell Name="技能名称">秘剑胧刀</Cell>
+      <Cell Name="技能槽位">0</Cell>
+      <Cell Name="技能描述">橘右京将下一次普通攻击变更为拔刀斩，对前方敌人造成&lt;color=#f18d00&gt;[163030p1q3*k1/10000+163031p1q3*k1/10000]&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减少50%移动速度，持续2秒；拔刀斩每5秒可准备1次；对处于攻击边缘的敌人将造成额外&lt;color=#f18d00&gt;[163032p1q3*k1/10000]&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">每间隔5秒，橘右京下一次普攻将进行一次强力拔刀斩，对前方敌人造成&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减速,处于攻击边缘的敌人将承受50%的额外伤害。</Cell>
+      <Cell Name="管理界面技能描述">橘右京将下一次普通攻击变更为拔刀斩，对前方敌人造成&lt;color=#f18d00&gt;[163030p1q3/100+163031p1q3/100]%物理加成&lt;/color&gt;&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减少50%移动速度，持续2秒；拔刀斩每5秒可准备1次；对处于攻击边缘的敌人将造成额外50%的&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="简化版技能描述">每5秒可获得一次拔刀斩，拔刀斩对目标造成高额伤害并减速50%，持续2秒，边缘敌人受到额外50%伤害。</Cell>
+      <Cell Name="图标路径">16300</Cell>
+      <Cell Name="固有技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="固有技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_b</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90_red</Cell>
+      <Cell Name="冷却时间">800</Cell>
+      <Cell Name="技能释放规则">周围有敌人时施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_yidajianyi/ability_passive_1/badaobeidong/A4.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">6000</Cell>
+      <Cell Name="指示器范围">6000</Cell>
+      <Cell Name="最大攻击距离">6000</Cell>
+      <Cell Name="二级攻击距离">6000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="最大追击距离">12500</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">16301</Cell>
+      <Cell Name="技能名称">秘剑胧刀</Cell>
+      <Cell Name="技能槽位">0</Cell>
+      <Cell Name="技能描述">橘右京将下一次普通攻击变更为拔刀斩，对前方敌人造成&lt;color=#f18d00&gt;[163030p1q3*k1/10000+163031p1q3*k1/10000]&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减少50%移动速度，持续2秒；拔刀斩每5秒可准备1次；对处于攻击边缘的敌人将造成额外&lt;color=#f18d00&gt;[163032p1q3*k1/10000]&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">每间隔5秒，橘右京下一次普攻将进行一次强力拔刀斩，对前方敌人造成&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减速,处于攻击边缘的敌人将承受50%的额外伤害。</Cell>
+      <Cell Name="管理界面技能描述">橘右京将下一次普通攻击变更为拔刀斩，对前方敌人造成&lt;color=#f18d00&gt;[163030p1q3/100+163031p1q3/100]%物理加成&lt;/color&gt;&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减少50%移动速度，持续2秒；拔刀斩每5秒可准备1次；对处于攻击边缘的敌人将造成额外50%的&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="简化版技能描述">每5秒可获得一次拔刀斩，拔刀斩对目标造成高额伤害并减速50%，持续2秒，边缘敌人受到额外50%伤害。</Cell>
+      <Cell Name="图标路径">16300</Cell>
+      <Cell Name="固有技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="固有技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_b</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90_red</Cell>
+      <Cell Name="冷却时间">800</Cell>
+      <Cell Name="技能释放规则">周围有敌人时施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_yidajianyi/ability_passive_1/badaobeidong/A2.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">2500</Cell>
+      <Cell Name="指示器范围">10000</Cell>
+      <Cell Name="最大攻击距离">3000</Cell>
+      <Cell Name="二级攻击距离">5000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="最大追击距离">12500</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">16302</Cell>
+      <Cell Name="技能名称">秘剑胧刀</Cell>
+      <Cell Name="技能槽位">0</Cell>
+      <Cell Name="技能描述">橘右京将下一次普通攻击变更为拔刀斩，对前方敌人造成&lt;color=#f18d00&gt;[163030p1q3*k1/10000+163031p1q3*k1/10000]&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减少50%移动速度，持续2秒；拔刀斩每5秒可准备1次；对处于攻击边缘的敌人将造成额外&lt;color=#f18d00&gt;[163032p1q3*k1/10000]&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">每间隔5秒，橘右京下一次普攻将进行一次强力拔刀斩，对前方敌人造成&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减速,处于攻击边缘的敌人将承受50%的额外伤害。</Cell>
+      <Cell Name="管理界面技能描述">橘右京将下一次普通攻击变更为拔刀斩，对前方敌人造成&lt;color=#f18d00&gt;[163030p1q3/100+163031p1q3/100]%物理加成&lt;/color&gt;&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减少50%移动速度，持续2秒；拔刀斩每5秒可准备1次；对处于攻击边缘的敌人将造成额外50%的&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="简化版技能描述">每5秒可获得一次拔刀斩，拔刀斩对目标造成高额伤害并减速50%，持续2秒，边缘敌人受到额外50%伤害。</Cell>
+      <Cell Name="图标路径">16300</Cell>
+      <Cell Name="固有技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="固有技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_b</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90_red</Cell>
+      <Cell Name="冷却时间">800</Cell>
+      <Cell Name="技能释放规则">周围有敌人时施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_yidajianyi/ability_passive_1/badaobeidong/a3.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">2500</Cell>
+      <Cell Name="指示器范围">10000</Cell>
+      <Cell Name="最大攻击距离">3200</Cell>
+      <Cell Name="二级攻击距离">5000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="最大追击距离">12500</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">13110</Cell>
+      <Cell Name="技能名称">踏歌剑行</Cell>
+      <Cell Name="技能槽位">1</Cell>
+      <Cell Name="技能标签">位移</Cell>
+      <Cell Name="技能描述">向目标方向突进，对周围敌人造成多段单次打击[1311001p1q2+1311001p1g2*sl-1311001p1g2]&lt;color=#f18d00&gt;(+[13110011q9*k1e/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">李白以醉剑势向指定方向突进，对经过的目标造成&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，并造成晕眩，释放技能后5秒内再次启用发起冲锋，并在5秒内第三次启用回到原地，命中目标积累1道剑气</Cell>
+      <Cell Name="技能描述（公式计算）">李白以醉剑势向指定方向突进，对经过的目标造成[131100p1q2+131100p1g2*sl-131100p1g2]&lt;color=#f18d00&gt;(+[131100p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，并造成晕眩，释放技能后5秒内再次启用发起冲锋，并在5秒内第三次启用回到原地，命中目标积累1道剑气</Cell>
+      <Cell Name="管理界面技能描述">李白可用醉剑式向指定方向连续突进2次，对路径上敌人造成[131100p1q2+131100p1g2*sl-131100p1g2]&lt;color=#f18d00&gt;(+[131100p1q9/100]%额外物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并将其晕眩0.5秒，同时会叠加1道剑气；第三次释放会回到原地；每次释放间隔不能超过5秒</Cell>
+      <Cell Name="简化版技能描述">向指定方向突进两次，对路径上敌人造成伤害并晕眩0.5秒叠加一道剑气，第三次释放回到原地；</Cell>
+      <Cell Name="图标路径">13110</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">131100p1q2</Cell>
+      <Cell Name="描述属性1成长值">131100p1g2</Cell>
+      <Cell Name="描述属性2类型">冷却时间</Cell>
+      <Cell Name="描述属性2基础值">1200</Cell>
+      <Cell Name="描述属性2成长值">-140</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_2</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_2red</Cell>
+      <Cell Name="冷却时间">12000</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="冷却时间成长">-1000</Cell>
+      <Cell Name="消耗">80</Cell>
+      <Cell Name="消耗成长">10</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability1/S1.xml</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">4000</Cell>
+      <Cell Name="指示器范围">4000</Cell>
+      <Cell Name="最大攻击距离">6000</Cell>
+      <Cell Name="二级攻击距离">6000</Cell>
+      <Cell Name="最大寻敌距离">6000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="是否晕眩技能">1</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">16310</Cell>
+      <Cell Name="技能名称">燕返</Cell>
+      <Cell Name="技能槽位">1</Cell>
+      <Cell Name="技能标签">伤害</Cell>
+      <Cell Name="技能描述">橘右京跃向后方，同时向前方挥刀，造成[163100p1q2+163100p1g2*sl-163100p1g2]&lt;color=#f18d00&gt;(+[163100p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；若成功命中一名敌方单位，可激活二段使用。</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">橘右京向后方进行跳跃，同时出剑，对附近的敌人造成&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，如果成功命中一名敌方英雄，该技能冷却时间缩短50%。</Cell>
+      <Cell Name="技能描述（公式计算）">橘右京向后方进行跳跃，同时出剑，对附近的敌人造成[163100p1q2+163100p1g2*sl-163100p1g2]&lt;color=#f18d00&gt;(+[163100p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，如果成功命中一名敌方英雄，该技能冷却时间缩短50%。</Cell>
+      <Cell Name="管理界面技能描述">橘右京跃向后方，同时向前方挥刀，造成[163100p1q2+163100p1g2*sl-163100p1g2]&lt;color=#f18d00&gt;(+[163100p1q3/100]%物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；若成功命中一名敌方单位，可激活二段使用。</Cell>
+      <Cell Name="简化版技能描述">向指定方向挥刀，造成物理伤害，自身向后位移小段距离。技能命中敌方单位可激活二段使用</Cell>
+      <Cell Name="图标路径">16310</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">163100p1q2</Cell>
+      <Cell Name="描述属性1成长值">163100p1g2</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_2</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_2red</Cell>
+      <Cell Name="冷却时间">7000</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_yidajianyi/ability_1_move/S1.xml</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">4000</Cell>
+      <Cell Name="指示器范围">4000</Cell>
+      <Cell Name="最大攻击距离">4000</Cell>
+      <Cell Name="二级攻击距离">4000</Cell>
+      <Cell Name="最大寻敌距离">4000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">19320</Cell>
+      <Cell Name="技能名称">极刃风暴</Cell>
+      <Cell Name="技能槽位">2</Cell>
+      <Cell Name="技能标签">控制</Cell>
+      <Cell Name="技能描述">铠向指定方向发动两次挥砍，每次造成[193200p1q2*2/3+193200p1g2*sl*2/3-193200p1g2*2/3]&lt;color=#f18d00&gt;(+[193200p1q3*2/3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；并且第二次挥砍会将敌人击飞1秒；同时下一次普通攻击变更为冲砍，冲砍会冲锋至目标身旁并发动普通攻击，冲砍会额外造成[193210p1q2*2/3+193210p1g2*sl*2/3-193210p1g2*2/3]点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；
+&lt;color=#f3b74a&gt;被动：脱离战斗后铠每秒回复1%最大生命值及最大法力值，并且会增加[8+2*sl]点移动速度&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">铠向前方连续挥砍，造成&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，第二刀会造成额外的击飞效果，同时使得下一次普通攻击获得额外的伤害和冲锋效果；</Cell>
+      <Cell Name="技能描述（公式计算）">铠向前方连续挥砍，造成[193200p1q2*2/3+193200p1g2*sl*2/3-193200p1g2*2/3]&lt;color=#f18d00&gt;(+[193200p1q3*2/3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，第二刀会造成额外的击飞效果，同时使得下一次普通攻击获得额外[193210p1q2*2/3+193210p1g2*sl*2/3-193210p1g2*2/3+193220p1q2*2/3+193220p1g2*sl*2/3-193220p1g2*2/3]&lt;color=#f18d00&gt;(+[193210p1q3*2/3*k1/10000+193220p1q3*2/3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;和冲锋效果；
+&lt;color=#f3b74a&gt;被动：脱离战斗后铠的生命、能量恢复每秒回复1%，移动速度提升[6+4*sl]点&lt;/color&gt;</Cell>
+      <Cell Name="管理界面技能描述">铠向指定方向发动两次挥砍，每次造成[193200p1q2*2/3+193200p1g2*sl*2/3-193200p1g2*2/3]&lt;color=#f18d00&gt;(+[193200p1q3*2/3/100]%物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；并且第二次挥砍会将敌人击飞1秒；同时下一次普通攻击变更为冲砍，冲砍会冲锋至目标身旁并发动普通攻击，冲砍会额外造成[193210p1q2*2/3+193210p1g2*sl*2/3-193210p1g2*2/3]点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；
+&lt;color=#f3b74a&gt;被动：脱离战斗后铠每秒回复1%最大生命值及最大法力值，并且会增加[8+2*sl]点移动速度&lt;/color&gt;</Cell>
+      <Cell Name="简化版技能描述">向指定方向挥砍两次，第二次可击飞目标1秒，同时强化下一次普攻，可冲锋至目标身边造成额外伤害。
+被动：脱离战斗后凯每秒回复1%最大生命值及最大法力值并增加10点移速。</Cell>
+      <Cell Name="图标路径">19320</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">193200p1q2*2/3</Cell>
+      <Cell Name="描述属性1成长值">193200p1g2*2/3</Cell>
+      <Cell Name="描述属性2类型">冲砍伤害</Cell>
+      <Cell Name="描述属性2基础值">193210p1q2*2/3</Cell>
+      <Cell Name="描述属性2成长值">193210p1g2*2/3</Cell>
+      <Cell Name="描述属性3类型">被动移速</Cell>
+      <Cell Name="描述属性3基础值">193950p1q2/10</Cell>
+      <Cell Name="描述属性3成长值">193950p1g2/10</Cell>
+      <Cell Name="新配置指示器资源类型">箭头</Cell>
+      <Cell Name="新配置指示器尺寸">4000</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_4</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_4red</Cell>
+      <Cell Name="冷却时间">6000</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="消耗">50</Cell>
+      <Cell Name="消耗成长">5</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_yidajianyi/ability_2_duocizhanji/S2.xml</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">5000</Cell>
+      <Cell Name="指示器范围">5000</Cell>
+      <Cell Name="最大攻击距离">7000</Cell>
+      <Cell Name="二级攻击距离">7000</Cell>
+      <Cell Name="最大寻敌距离">7000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">19010</Cell>
+      <Cell Name="技能名称">东风破袭</Cell>
+      <Cell Name="技能槽位">1</Cell>
+      <Cell Name="技能标签">伤害</Cell>
+      <Cell Name="技能描述">诸葛亮指定方向发射三颗法球，对路径上的敌人造成[190100p1q2+190100p1g2*sl-190100p1g2]&lt;color=#7FFFD4&gt;(+[190100p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;，如果多颗法球命中同一目标时，从第二颗法球开始将只造成20%伤害；每颗法球能触发1次谋略刻印</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">诸葛亮朝面前发射三颗法球，对一条路径上的敌人造成&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;。如果敌人被多颗法球同时命中，额外的法球只会造成20%的伤害。每颗法球只能触发1次谋略刻印。</Cell>
+      <Cell Name="技能描述（公式计算）">诸葛亮朝面前发射三颗法球，对一条路径上的敌人造成[190100p1q2+190100p1g2*sl-190100p1g2]&lt;color=#7FFFD4&gt;(+[190100p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;。如果敌人被多颗法球同时命中，额外的法球只会造成20%的伤害。每颗法球只能触发1次谋略刻印。</Cell>
+      <Cell Name="管理界面技能描述">诸葛亮指定方向发射三颗法球，对路径上的敌人造成[190100p1q2+190100p1g2*sl-190100p1g2]&lt;color=#7FFFD4&gt;(+[190100p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;，如果多颗法球命中同一目标时，从第二颗法球开始将只造成20%伤害；每颗法球能触发1次谋略刻印</Cell>
+      <Cell Name="简化版技能描述">向指定方向发射三颗法球，对目标造成法术伤害，每颗法球可以叠加一层印记。</Cell>
+      <Cell Name="图标路径">19010</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">190100p1q2</Cell>
+      <Cell Name="描述属性1成长值">190100p1g2</Cell>
+      <Cell Name="描述属性2类型">冷却时间</Cell>
+      <Cell Name="描述属性2基础值">800</Cell>
+      <Cell Name="描述属性2成长值">-60</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_1_zhugeliang</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_1_zhugeliang_red</Cell>
+      <Cell Name="冷却时间">8000</Cell>
+      <Cell Name="冷却时间成长">-600</Cell>
+      <Cell Name="消耗">60</Cell>
+      <Cell Name="消耗成长">5</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_yidajianyi/ability_3_jianzhen/S1.xml</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">9500</Cell>
+      <Cell Name="指示器范围">9500</Cell>
+      <Cell Name="最大攻击距离">9500</Cell>
+      <Cell Name="二级攻击距离">9500</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">魔法伤害效果</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">69930</Cell>
+      <Cell Name="技能名称">回春术</Cell>
+      <Cell Name="技能描述">回复自己与附近队友生命值，提高附近友军移动速度15%持续2秒</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">回复自己与附近队友15%生命值，提高附近友军移动速度15%持续2秒</Cell>
+      <Cell Name="管理界面技能描述">回复自己与附近队友生命值，提高附近友军移动速度15%持续2秒</Cell>
+      <Cell Name="图标路径">80102</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="是否共存释放">1</Cell>
+      <Cell Name="冷却时间">12000</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">自身释放</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_huihcun/SZ3.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">Y</Cell>
+      <Cell Name="目标包含敌方">N</Cell>
+      <Cell Name="基础伤害">0</Cell>
+      <Cell Name="固有指示器范围">8000</Cell>
+      <Cell Name="指示器范围">8000</Cell>
+      <Cell Name="最大攻击距离">8000</Cell>
+      <Cell Name="二级攻击距离">8000</Cell>
+      <Cell Name="最大寻敌距离">8000</Cell>
+      <Cell Name="是否子弹技">N</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">15200</Cell>
+      <Cell Name="技能名称">冰封之心</Cell>
+      <Cell Name="技能槽位">0</Cell>
+      <Cell Name="技能描述">被动：王昭君脱离战斗后会获得可抵免[152950p1q2+152950p1g2*hl-152950p1g2]&lt;color=#7FFFD4&gt;(+[152950p1q4*k2/10000])&lt;/color&gt;点伤害的寒冰护盾，护盾对物理攻击者施加冰冷效果。护盾破裂时对附近敌人造成一次冰霜冲击造成[152900p1q2+152900p1g2*hl-152900p1g2]&lt;color=#7FFFD4&gt;(+[152900p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;并减少其50%移动速度，持续1秒；王昭君第三次普攻触发3枚尖刺总共造成[3*152040p1q2+3*152040p1g2*hl-3*152040p1g2]&lt;color=#7FFFD4&gt;(+[3*152040p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;
+&lt;color=#f3b74a&gt;冰冷效果：减少目标50%移动速度与[28+2*hl]%攻击速度，持续1秒&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">被动：王昭君脱离战斗后获得护盾对物理攻击者施加冰冷效果，护盾消失时产生爆炸；王昭君第三次普攻触发3枚尖刺，分别造成法术伤害</Cell>
+      <Cell Name="技能描述（公式计算）">被动：王昭君脱离战斗后会获得可抵免[152950p1q2+152950p1g2*hl-152950p1g2]&lt;color=#7FFFD4&gt;(+[152950p1q4*k2/10000])&lt;/color&gt;点伤害的寒冰护盾，护盾破裂时对附近敌人造成一次冰霜冲击，造成[152900p1q2+152900p1g2*hl-152900p1g2]&lt;color=#7FFFD4&gt;(+[152900p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;与减速效果；寒冰护盾有3秒的回复冷却时间</Cell>
+      <Cell Name="管理界面技能描述">被动：王昭君脱离战斗后会获得可抵免[152950p1q2+152950p1g2*hl-152950p1g2]&lt;color=#7FFFD4&gt;(+[152950p1q4/100]%法术加成)&lt;/color&gt;点伤害的寒冰护盾，护盾对物理攻击者施加冰冷效果。护盾破裂时对附近敌人造成一次冰霜冲击造成[152900p1q2+152900p1g2*hl-152900p1g2]&lt;color=#7FFFD4&gt;(+[152900p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;并减少其50%移动速度，持续1秒；王昭君第三次普攻触发3枚尖刺总共造成[3*152040p1q2+3*152040p1g2*hl-3*152040p1g2]&lt;color=#7FFFD4&gt;(+[3*152040p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;
+&lt;color=#f3b74a&gt;冰冷效果：减少目标50%移动速度与[28+2*hl]%攻击速度，持续1秒&lt;/color&gt;</Cell>
+      <Cell Name="简化版技能描述">被动：王昭君脱离战斗后获得护盾对物理攻击者施加冰冷效果，护盾消失时产生爆炸；王昭君第三次普攻触发3枚尖刺造成法术伤害
+&lt;color=#f3b74a&gt;冰冷效果：减少目标50%移动速度与30%攻击速度，持续1秒&lt;/color&gt;</Cell>
+      <Cell Name="图标路径">15200</Cell>
+      <Cell Name="固有技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="固有技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_b</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_R</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90_red</Cell>
+      <Cell Name="冷却时间">800</Cell>
+      <Cell Name="技能释放规则">周围有敌人时施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_2_wangzhaojun/ability0/A1.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">6000</Cell>
+      <Cell Name="指示器范围">10000</Cell>
+      <Cell Name="最大攻击距离">6000</Cell>
+      <Cell Name="二级攻击距离">8000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="最大追击距离">12500</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">魔法伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">15202</Cell>
+      <Cell Name="技能名称">寒霜利刃</Cell>
+      <Cell Name="技能槽位">0</Cell>
+      <Cell Name="技能描述">被动：普通攻击发出三把寒霜利刃，每把命中后对目标造成[3*15220000p1q2+3*15220000p1g2*hl-3*15220000p1g2]&lt;color=#7FFFD4&gt;(+[3*15220000p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;
+&lt;color=#f3b74a&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">被动：王昭君脱离战斗后获得护盾对物理攻击者施加冰冷效果，护盾消失时产生爆炸；王昭君第三次普攻触发3枚尖刺，分别造成法术伤害</Cell>
+      <Cell Name="技能描述（公式计算）">被动：王昭君脱离战斗后会获得可抵免[152950p1q2+152950p1g2*hl-152950p1g2]&lt;color=#7FFFD4&gt;(+[152950p1q4*k2/10000])&lt;/color&gt;点伤害的寒冰护盾，护盾破裂时对附近敌人造成一次冰霜冲击，造成[152900p1q2+152900p1g2*hl-152900p1g2]&lt;color=#7FFFD4&gt;(+[152900p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;与减速效果；寒冰护盾有3秒的回复冷却时间</Cell>
+      <Cell Name="管理界面技能描述">被动：王昭君脱离战斗后会获得可抵免[152950p1q2+152950p1g2*hl-152950p1g2]&lt;color=#7FFFD4&gt;(+[152950p1q4/100]%法术加成)&lt;/color&gt;点伤害的寒冰护盾，护盾对物理攻击者施加冰冷效果。护盾破裂时对附近敌人造成一次冰霜冲击造成[152900p1q2+152900p1g2*hl-152900p1g2]&lt;color=#7FFFD4&gt;(+[152900p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;并减少其50%移动速度，持续1秒；王昭君第三次普攻触发3枚尖刺总共造成[3*152040p1q2+3*152040p1g2*hl-3*152040p1g2]&lt;color=#7FFFD4&gt;(+[3*152040p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;
+&lt;color=#f3b74a&gt;冰冷效果：减少目标50%移动速度与[28+2*hl]%攻击速度，持续1秒&lt;/color&gt;</Cell>
+      <Cell Name="简化版技能描述">被动：王昭君脱离战斗后获得护盾对物理攻击者施加冰冷效果，护盾消失时产生爆炸；王昭君第三次普攻触发3枚尖刺造成法术伤害
+&lt;color=#f3b74a&gt;冰冷效果：减少目标50%移动速度与30%攻击速度，持续1秒&lt;/color&gt;</Cell>
+      <Cell Name="图标路径">15200</Cell>
+      <Cell Name="固有技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="固有技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_b</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_R</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90_red</Cell>
+      <Cell Name="冷却时间">1000</Cell>
+      <Cell Name="技能释放规则">周围有敌人时施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_2_wangzhaojun/ability0/A3.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">7500</Cell>
+      <Cell Name="指示器范围">10000</Cell>
+      <Cell Name="最大攻击距离">7500</Cell>
+      <Cell Name="二级攻击距离">8000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="最大追击距离">12500</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">魔法伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">15210</Cell>
+      <Cell Name="技能名称">雷钧毁阵</Cell>
+      <Cell Name="技能槽位">1</Cell>
+      <Cell Name="技能标签">伤害</Cell>
+      <Cell Name="技能描述">狂躁的法术能量撕毁施术者周围空间，灾难将随机降临到法阵中随机地点，造成[15220003p1q2+15220003p1g2*sl-15220003p1g2]&lt;color=#7FFFD4&gt;(+[15220003p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">王昭君操控碎裂冰晶绽开，对范围内的敌军造成&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;与冰冷效果，并获得他们的视野持续2秒；冰冷效果：减少目标的移动速度与攻击速度；</Cell>
+      <Cell Name="技能描述（公式计算）">王昭君操控碎裂冰晶绽开，对范围内的敌军造成[152100p1q2+152100p1g2*sl-152100p1g2]&lt;color=#7FFFD4&gt;(+[152100p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;与减速，并获得他们的视野持续2秒</Cell>
+      <Cell Name="管理界面技能描述">王昭君在指定位置操控碎裂冰晶绽开，对范围内的敌人造成[152100p1q2+152100p1g2*sl-152100p1g2]&lt;color=#7FFFD4&gt;(+[152100p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;并对其造成冰冷效果，持续1秒；同时还会获得敌人视野</Cell>
+      <Cell Name="简化版技能描述">王昭君操控碎裂冰晶绽开，对范围内的敌军造成&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;与冰冷效果，并获得他们的视野</Cell>
+      <Cell Name="图标路径">15210</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">152100p1q2</Cell>
+      <Cell Name="描述属性1成长值">152100p1g2</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="冷却时间">50000</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="消耗">50</Cell>
+      <Cell Name="消耗成长">5</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">自身释放</Cell>
+      <Cell Name="动作路径">ability/hero_2_wangzhaojun/ability1/S1.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">是</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">15000</Cell>
+      <Cell Name="指示器范围">15000</Cell>
+      <Cell Name="最大攻击距离">15000</Cell>
+      <Cell Name="二级攻击距离">15000</Cell>
+      <Cell Name="最大寻敌距离">15000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">魔法伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">15230</Cell>
+      <Cell Name="技能名称">元素赦令</Cell>
+      <Cell Name="技能槽位">3</Cell>
+      <Cell Name="技能标签">伤害</Cell>
+      <Cell Name="技能描述">召唤元素的力量快速打击自身周围单个敌人，&lt;color=#8e91fd&gt;每次打击&lt;/color&gt;造成[1521001p1q2+1521001p1g2*sl-1521001p1g2]&lt;color=#7FFFD4&gt;(+[1521001p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">王昭君召唤寒冬之力刷新寒冰护盾，在指定位置降下暴风雪对范围内敌人每次打击造成&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;与冰冷效果；冰冷效果：减少目标的移动速度与攻击速度；</Cell>
+      <Cell Name="技能描述（公式计算）">王昭君召唤寒冬之力刷新寒冰护盾，在指定位置降下暴风雪对范围内敌人每次打击造成[152300p1q2+152300p1g2*sl-152300p1g2]&lt;color=#7FFFD4&gt;(+[152300p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;与减速，期间获得600点护甲加成</Cell>
+      <Cell Name="管理界面技能描述">王昭君召唤寒冬之力刷新寒冰护盾，在指定位置降下暴风雪对范围内敌人每次打击造成[152300p1q2+152300p1g2*sl-152300p1g2]&lt;color=#7FFFD4&gt;(+[152300p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;与冰冷效果，持续5秒</Cell>
+      <Cell Name="简化版技能描述">王昭君召唤寒冬之力刷新寒冰护盾，在指定位置降下暴风雪对范围内敌人每次打击造成&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;与冰冷效果</Cell>
+      <Cell Name="图标路径">15230</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">152300p1q2</Cell>
+      <Cell Name="描述属性1成长值">152300p1g2</Cell>
+      <Cell Name="描述属性2类型">冷却时间</Cell>
+      <Cell Name="描述属性2基础值">3500</Cell>
+      <Cell Name="描述属性2成长值">-500</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="冷却时间">18000</Cell>
+      <Cell Name="冷却时间成长">-1000</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="消耗">0</Cell>
+      <Cell Name="消耗成长">0</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">自身释放</Cell>
+      <Cell Name="动作路径">ability/hero_2_wangzhaojun/ability3/U1.xml</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">是</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">8500</Cell>
+      <Cell Name="指示器范围">8500</Cell>
+      <Cell Name="最大攻击距离">8500</Cell>
+      <Cell Name="二级攻击距离">8500</Cell>
+      <Cell Name="最大寻敌距离">8500</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">魔法伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">15220</Cell>
+      <Cell Name="技能名称">霜雷传送</Cell>
+      <Cell Name="技能槽位">2</Cell>
+      <Cell Name="技能标签">控制</Cell>
+      <Cell Name="技能描述">积蓄混乱元素之力将自身&lt;color=#0099ff&gt;传送&lt;/color&gt;至目标地点，短暂延迟后引爆积蓄的力量，对敌人造成[152200p1q2+152200p1g2*sl-152200p1g2]&lt;color=#7FFFD4&gt;(+[152200p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">王昭君在指定区域位置引领寒霜之力，短暂延迟后对范围内敌人造成[152200p1q2+152200p1g2*sl-152200p1g2]&lt;color=#7FFFD4&gt;(+[152200p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;并将其冰冻2.5秒；
+被动：王昭君对冰冻的敌人会额外造成[152280p1q2+152280p1g2*sl-152280p1g2]&lt;color=#7FFFD4&gt;(+[152280p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;&lt;/color&gt;</Cell>
+      <Cell Name="技能描述（公式计算）">王昭君引领寒霜之力，一定时间后将范围内敌人冰冻并造成[152200p1q2+152200p1g2*sl-152200p1g2]&lt;color=#7FFFD4&gt;(+[152200p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;；
+&lt;color=#f3b74a&gt;被动：对冰冻的敌人造成额外[152280p1q2+152280p1g2*sl-152280p1g2]&lt;color=#7FFFD4&gt;(+[152280p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;&lt;/color&gt;</Cell>
+      <Cell Name="管理界面技能描述">王昭君在指定区域位置引领寒霜之力，短暂延迟后对范围内敌人造成[152200p1q2+152200p1g2*sl-152200p1g2]&lt;color=#7FFFD4&gt;(+[152200p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;并将其冰冻2.5秒；
+&lt;color=#f3b74a&gt;被动：王昭君对冰冻的敌人会额外造成[152280p1q2+152280p1g2*sl-152280p1g2]&lt;color=#7FFFD4&gt;(+[152280p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;&lt;/color&gt;</Cell>
+      <Cell Name="简化版技能描述">在指定区域释放寒霜之力，短暂延迟后对指定区域造成伤害和2.5秒冰冻效果。
+被动：王昭君对被冰冻敌人可造成额外伤害</Cell>
+      <Cell Name="图标路径">15220</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">152200p1q2</Cell>
+      <Cell Name="描述属性1成长值">152200p1g2</Cell>
+      <Cell Name="描述属性2类型">额外伤害</Cell>
+      <Cell Name="描述属性2基础值">152280p1q2</Cell>
+      <Cell Name="描述属性2成长值">152280p1g2</Cell>
+      <Cell Name="新配置指示器资源类型">实心圆</Cell>
+      <Cell Name="新配置指示器尺寸">2500</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Circle_25</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Circle_r_25</Cell>
+      <Cell Name="冷却时间">15000</Cell>
+      <Cell Name="冷却时间成长">-1000</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="消耗">0</Cell>
+      <Cell Name="消耗成长">0</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_2_wangzhaojun/ability2/S2.xml</Cell>
+      <Cell Name="范围自指定类型">指定位置</Cell>
+      <Cell Name="目标包含自身">是</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">8500</Cell>
+      <Cell Name="指示器范围">8500</Cell>
+      <Cell Name="最大攻击距离">8500</Cell>
+      <Cell Name="二级攻击距离">8500</Cell>
+      <Cell Name="最大寻敌距离">8500</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">魔法伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="是否晕眩技能">1</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">115300</Cell>
+      <Cell Name="技能名称">秘技·极意</Cell>
+      <Cell Name="技能槽位">0</Cell>
+      <Cell Name="技能描述">被动：兰陵王朝敌方英雄移动时会增加20%移动速度</Cell>
+      <Cell Name="技能描述（公式计算）">被动：兰陵王向附近敌方英雄移动时提升移动速度</Cell>
+      <Cell Name="管理界面技能描述">被动：兰陵王朝敌方英雄移动时会增加20%移动速度</Cell>
+      <Cell Name="简化版技能描述">朝距离自身一定距离的敌方英雄移动可获得20%移速加成。</Cell>
+      <Cell Name="图标路径">15300</Cell>
+      <Cell Name="固有技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="固有技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_b</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_R</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90_red</Cell>
+      <Cell Name="冷却时间">1000</Cell>
+      <Cell Name="技能释放规则">周围有敌人时施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_3_lanlingwang/ability_1/A1.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">2500</Cell>
+      <Cell Name="指示器范围">10000</Cell>
+      <Cell Name="最大攻击距离">2800</Cell>
+      <Cell Name="二级攻击距离">5000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="最大追击距离">12500</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">115310</Cell>
+      <Cell Name="技能名称">秘技·分身</Cell>
+      <Cell Name="技能槽位">1</Cell>
+      <Cell Name="技能标签">伤害</Cell>
+      <Cell Name="技能描述">兰陵王以拳刃挥砍身边的敌人，造成[153100p1q2+153100p1g2*sl-153100p1g2]&lt;color=#f18d00&gt;(+[153100p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，同时召唤出影分身随机攻击附近一名敌人，影分身会造成等量的伤害</Cell>
+      <Cell Name="技能描述（公式计算）">兰陵王以拳刃挥砍身边敌人造成[153100p1q2+153100p1g2*sl-153100p1g2]&lt;color=#f18d00&gt;(+[153100p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，同时召唤出影分身随机攻击周围单个敌人造成同样伤害</Cell>
+      <Cell Name="管理界面技能描述">兰陵王以拳刃挥砍身边的敌人，造成[153100p1q2+153100p1g2*sl-153100p1g2]&lt;color=#f18d00&gt;(+[153100p1q3/100]%物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，同时召唤出影分身随机攻击附近一名敌人，影分身会造成等量的伤害</Cell>
+      <Cell Name="简化版技能描述">拳刃挥砍周围目标造成高额伤害，同时召唤分身随机攻击周围目标造成等额伤害。</Cell>
+      <Cell Name="图标路径">15310</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">153100p1q2</Cell>
+      <Cell Name="描述属性1成长值">153100p1g2</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="冷却时间">2000</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="消耗">50</Cell>
+      <Cell Name="消耗成长">5</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">自身释放</Cell>
+      <Cell Name="动作路径">ability/hero_3_lanlingwang/ability_1/S1.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">3500</Cell>
+      <Cell Name="指示器范围">3500</Cell>
+      <Cell Name="最大攻击距离">3000</Cell>
+      <Cell Name="二级攻击距离">3000</Cell>
+      <Cell Name="最大寻敌距离">3000</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">115320</Cell>
+      <Cell Name="技能名称">秘技·影蚀</Cell>
+      <Cell Name="技能槽位">2</Cell>
+      <Cell Name="技能标签">控制</Cell>
+      <Cell Name="技能描述">兰陵王向指定方向投射暗影匕首，对路径上的敌人造成[153230p1q2+153230p1g2*sl-153230p1g2]&lt;color=#f18d00&gt;(+[153230p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减少其90%移动速度，持续2秒，该效果会持续衰减；被匕首命中的敌人会被标记，持续3秒；期间再次受到兰陵王攻击将晕眩1秒并使其回复[153292p1q2+153292p1g2*sl-153292p1g2]&lt;color=#f18d00&gt;(+[153292p1q3*k1/10000])&lt;/color&gt;点生命值；标记消失时该目标还会受到已损失生命值&lt;color=#f18d00&gt;[153220p1q2+153220p1g2*sl-153220p1g2]%&lt;/color&gt;&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；当匕首命中敌方英雄时会停止移动并销毁</Cell>
+      <Cell Name="技能描述（公式计算）">投射暗影匕首，受击者将降低移速，3秒后受到已损失生命值&lt;color=#f18d00&gt;[153220p1q2+153220p1g2*sl-153220p1g2]%&lt;/color&gt;&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;。期间受击者若再次受到兰陵王伤害将晕眩，并使兰陵王回复&lt;color=#f18d00&gt;[153292p1q2+153292p1g2*sl-153292p1g2]%&lt;/color&gt;已损失生命值</Cell>
+      <Cell Name="管理界面技能描述">兰陵王向指定方向投射暗影匕首，对路径上的敌人造成[153230p1q2+153230p1g2*sl-153230p1g2]&lt;color=#f18d00&gt;(+[153230p1q3/100]%物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并减少其90%移动速度，持续2秒，该效果会持续衰减；被匕首命中的敌人会被标记，持续3秒；期间再次受到兰陵王攻击将晕眩1秒并使其回复[153292p1q2+153292p1g2*sl-153292p1g2]&lt;color=#f18d00&gt;(+[153292p1q3/100]%物理加成)&lt;/color&gt;点生命值；标记消失时该目标还会受到已损失生命值&lt;color=#f18d00&gt;[153220p1q2+153220p1g2*sl-153220p1g2]%&lt;/color&gt;&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；当匕首命中敌方英雄时会停止移动并销毁</Cell>
+      <Cell Name="简化版技能描述">投射暗影匕首对路径上敌人造成伤害和2秒90%减速的效果，并施加标记，持续3秒。标记期间对目标造成伤害可眩晕目标1秒并回复自身生命。标记消失会再次造成目标已损失生命值24%的伤害；当匕首命中敌方英雄时会停止移动并销毁</Cell>
+      <Cell Name="图标路径">15320</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">153230p1q2</Cell>
+      <Cell Name="描述属性1成长值">153230p1g2</Cell>
+      <Cell Name="描述属性2类型">冷却时间</Cell>
+      <Cell Name="描述属性2基础值">960</Cell>
+      <Cell Name="描述属性2成长值">-80</Cell>
+      <Cell Name="描述属性3类型">回复生命</Cell>
+      <Cell Name="描述属性3基础值">153292p1q2</Cell>
+      <Cell Name="描述属性3成长值">153292p1g2</Cell>
+      <Cell Name="新配置指示器资源类型">箭头</Cell>
+      <Cell Name="新配置指示器尺寸">3000</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_1</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_1red</Cell>
+      <Cell Name="冷却时间">2000</Cell>
+      <Cell Name="冷却时间成长">-800</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="消耗">60</Cell>
+      <Cell Name="消耗成长">5</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_3_lanlingwang/ability_2/S2.xml</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">9000</Cell>
+      <Cell Name="指示器范围">9000</Cell>
+      <Cell Name="最大攻击距离">9000</Cell>
+      <Cell Name="二级攻击距离">9000</Cell>
+      <Cell Name="最大寻敌距离">9000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">115330</Cell>
+      <Cell Name="技能名称">秘技·隐匿</Cell>
+      <Cell Name="技能槽位">4</Cell>
+      <Cell Name="技能标签">隐身</Cell>
+      <Cell Name="技能描述">兰陵王开始准备并于1.5秒后进入隐身状态，持续30秒；解除隐身状态后兰陵王会增加50%攻击速度，持续5秒；隐身时若处于敌人附近超过3秒，隐身状态将会自动解除</Cell>
+      <Cell Name="技能描述（公式计算）">兰陵王在1.5秒准备后进入隐身状态，持续30秒，隐身时若持续处于敌人6米范围内，超过3秒，隐身状态解除。破隐后提升自身攻速50%，持续5秒。</Cell>
+      <Cell Name="管理界面技能描述">兰陵王开始准备并于1.5秒后进入隐身状态，持续30秒；解除隐身状态后兰陵王会增加50%攻击速度，持续5秒；隐身时若处于敌人附近超过3秒，隐身状态将会自动解除</Cell>
+      <Cell Name="简化版技能描述">1.5秒准备后进入30秒的隐身状态。破隐获得5秒50%攻速提升。隐身时若处于敌人附近超过3秒将解除隐身状态。</Cell>
+      <Cell Name="图标路径">15330</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="冷却时间">2000</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">自身释放</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/153_LanLingWang/skill/U1</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">7000</Cell>
+      <Cell Name="指示器范围">7000</Cell>
+      <Cell Name="最大攻击距离">7000</Cell>
+      <Cell Name="二级攻击距离">7000</Cell>
+      <Cell Name="最大寻敌距离">7000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">115331</Cell>
+      <Cell Name="技能名称">秘技·暗袭</Cell>
+      <Cell Name="技能槽位">3</Cell>
+      <Cell Name="技能标签">伤害</Cell>
+      <Cell Name="技能描述">向指定方向冲锋并对路径上敌人造成[153300p1q2+153300p1g2*sl-153300p1g2]&lt;color=#f18d00&gt;(+[153300p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述（公式计算）">朝指定方向冲锋并对路径上敌人造成[153300p1q2+153300p1g2*sl-153300p1g2]&lt;color=#f18d00&gt;(+[153300p1q3/100]%物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="管理界面技能描述">向指定方向冲锋并对路径上敌人造成[153300p1q2+153300p1g2*sl-153300p1g2]&lt;color=#f18d00&gt;(+[153300p1q3/100]%物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="简化版技能描述">向指定方向冲锋造成伤害</Cell>
+      <Cell Name="图标路径">15331</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">153300p1q2</Cell>
+      <Cell Name="描述属性1成长值">153300p1g2</Cell>
+      <Cell Name="描述属性2类型">冷却时间</Cell>
+      <Cell Name="描述属性2基础值">2400</Cell>
+      <Cell Name="描述属性2成长值">-200</Cell>
+      <Cell Name="新配置指示器资源类型">箭头</Cell>
+      <Cell Name="新配置指示器尺寸">5000</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_2</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_2red</Cell>
+      <Cell Name="冷却时间">2000</Cell>
+      <Cell Name="冷却时间成长">-2000</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="消耗">100</Cell>
+      <Cell Name="消耗成长">10</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/153_LanLingWang/skill/U12</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">5000</Cell>
+      <Cell Name="指示器范围">5000</Cell>
+      <Cell Name="最大攻击距离">5000</Cell>
+      <Cell Name="二级攻击距离">5500</Cell>
+      <Cell Name="最大寻敌距离">8000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">13100</Cell>
+      <Cell Name="技能名称">侠客行</Cell>
+      <Cell Name="技能槽位">0</Cell>
+      <Cell Name="技能描述">被动：李白使用普通攻击攻击敌人时，会积累1道剑气，持续3秒；积累4道剑气后会进入侠客行状态，增加[28+2*hl]点物理攻击力并解除青莲剑歌的封印，持续5秒；攻击建筑不会积累剑气</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">被动：李白施展侠客行，连续（3秒内）的第四次普通攻击会触发侠客行，提升自身攻击力，并解除青莲剑歌的封印持续5秒</Cell>
+      <Cell Name="管理界面技能描述">被动：李白使用普通攻击攻击敌人时，会积累1道剑气，持续3秒；积累4道剑气后会进入侠客行状态，增加[28+2*hl]点物理攻击力并解除青莲剑歌的封印，持续5秒；攻击建筑不会积累剑气</Cell>
+      <Cell Name="简化版技能描述">普攻命中非建筑单位时获得短时间剑气，累计四道剑气后获得5秒攻击力加成并解封青莲剑歌。</Cell>
+      <Cell Name="图标路径">13100</Cell>
+      <Cell Name="固有技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="固有技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_b</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_R</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90_red</Cell>
+      <Cell Name="冷却时间">800</Cell>
+      <Cell Name="技能释放规则">周围有敌人时施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability0/A1.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">2500</Cell>
+      <Cell Name="指示器范围">10000</Cell>
+      <Cell Name="最大攻击距离">2800</Cell>
+      <Cell Name="二级攻击距离">5000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="最大追击距离">12500</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">13120</Cell>
+      <Cell Name="技能名称">剑雷鬼荡</Cell>
+      <Cell Name="技能槽位">2</Cell>
+      <Cell Name="技能标签">减速</Cell>
+      <Cell Name="技能描述">召唤雷电剑阵对附近敌人[131015p1q2+131015p1g2*sl-131015p1g2]&lt;color=#f18d00&gt;(+[131015p1q9*k1e/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">-</Cell>
+      <Cell Name="技能描述（公式计算）">李白以自身为中心化剑为青莲剑阵，对范围内敌人造成[131200p1q2+131200p1g2*sl-131200p1g2]&lt;color=#f18d00&gt;(+[131200p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，并对撞到剑圈的敌人造成[131210p1q2+131210p1g2*sl-131210p1g2]&lt;color=#f18d00&gt;(+[131210p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;及减速，并降低目标的护甲[131220p1q2+131220p1g2*sl-131220p1g2]点，释放期间不可被选中</Cell>
+      <Cell Name="管理界面技能描述">李白以自身为中心化剑为青莲剑阵，对范围内敌人造成[131200p1q2+131200p1g2*sl-131200p1g2]&lt;color=#f18d00&gt;(+[131200p1q9/100]%额外物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；对触碰到剑圈的敌人造成[131210p1q2+131210p1g2*sl-131210p1g2]&lt;color=#f18d00&gt;(+[131210p1q9/100]%额外物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并且会减少[131290p1q2/100+131290p1g2/100*sl-131290p1g2/100]%移动速度，持续1秒；同时敌人会减少[131220p1q2+131220p1g2*sl-131220p1g2]点物理防御，持续3秒；李白释放技能期间不可被选中</Cell>
+      <Cell Name="简化版技能描述">原地释放剑阵，期间不可被选中。对范围内敌人造成伤害，对触碰到剑阵边缘的敌人造成伤害和1秒90%减速并在3秒内减少目标护甲。</Cell>
+      <Cell Name="图标路径">13120</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">131200p1q2</Cell>
+      <Cell Name="描述属性1成长值">131200p1g2</Cell>
+      <Cell Name="描述属性2类型">冷却时间</Cell>
+      <Cell Name="描述属性2基础值">1200</Cell>
+      <Cell Name="描述属性2成长值">-40</Cell>
+      <Cell Name="描述属性3类型">降低护甲</Cell>
+      <Cell Name="描述属性3基础值">131220p1q2</Cell>
+      <Cell Name="描述属性3成长值">131220p1g2</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="冷却时间">12000</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="冷却时间成长">-400</Cell>
+      <Cell Name="消耗">60</Cell>
+      <Cell Name="消耗成长">10</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">自身释放</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability2/S2.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">4000</Cell>
+      <Cell Name="指示器范围">4000</Cell>
+      <Cell Name="最大攻击距离">4000</Cell>
+      <Cell Name="二级攻击距离">4000</Cell>
+      <Cell Name="最大寻敌距离">4000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">13130</Cell>
+      <Cell Name="技能名称">青莲剑歌</Cell>
+      <Cell Name="技能槽位">3</Cell>
+      <Cell Name="技能标签">伤害</Cell>
+      <Cell Name="技能描述">李白化身为剑气，对指定方向范围内的所有敌人飞速穿梭斩击5次，每次斩击造成[131370p1q2+131370p1g2*sl-131370p1g2]&lt;color=#f18d00&gt;(+[131370p1q9*k1e/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；当同时攻击多个敌方英雄时，每增加一位敌方英雄将衰减15%的伤害，最低衰减至初始伤害的70%；青莲剑歌需要由侠客行解除限制后方可释放，使用后立即进入限制状态；李白释放技能期间不可被选中和攻击</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">-</Cell>
+      <Cell Name="技能描述（公式计算）">李白化身为剑气，对敌人飞速穿梭斩击5次剑气，每次剑气造成[131370p1q2+131370p1g2*sl-131370p1g2]&lt;color=#f18d00&gt;(+[131370p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;(若对多个英雄单位生效，每增加一个目标伤害衰减15%，最多衰减至原伤害70%)。释放技能时李白不可被选中和攻击。青莲剑歌需要由侠客行解除限制后方可释放，使用后立即进入限制状态。</Cell>
+      <Cell Name="管理界面技能描述">李白化身为剑气，对指定方向范围内的所有敌人飞速穿梭斩击5次，每次斩击造成[131370p1q2+131370p1g2*sl-131370p1g2]&lt;color=#f18d00&gt;(+[131370p1q9/100]%额外物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；当同时攻击多个敌方英雄时，每增加一位敌方英雄将衰减15%的伤害，最低衰减至初始伤害的70%；青莲剑歌需要由侠客行解除限制后方可释放，使用后立即进入限制状态；李白释放技能期间不可被选中和攻击</Cell>
+      <Cell Name="简化版技能描述">化身剑气，对指定范围造成五次飞剑伤害，期间不可选中，命中多个英雄时伤害递减。</Cell>
+      <Cell Name="图标路径">13130</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">131370p1q2</Cell>
+      <Cell Name="描述属性1成长值">131370p1g2</Cell>
+      <Cell Name="描述属性2基础值">1000</Cell>
+      <Cell Name="描述属性2成长值">-150</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="冷却时间">12000</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="消耗">120</Cell>
+      <Cell Name="消耗成长">15</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability3/U1.xml</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">8500</Cell>
+      <Cell Name="指示器范围">8500</Cell>
+      <Cell Name="最大攻击距离">8500</Cell>
+      <Cell Name="二级攻击距离">8500</Cell>
+      <Cell Name="最大寻敌距离">8500</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">13101</Cell>
+      <Cell Name="技能名称">侠客行</Cell>
+      <Cell Name="技能槽位">0</Cell>
+      <Cell Name="技能描述">被动：李白使用普通攻击攻击敌人时，会积累1道剑气，持续3秒；积累4道剑气后会进入侠客行状态，增加[28+2*hl]点物理攻击力并解除青莲剑歌的封印，持续5秒；攻击建筑不会积累剑气</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">被动：李白施展侠客行，连续（3秒内）的第四次普通攻击会触发侠客行，提升自身攻击力，并解除青莲剑歌的封印持续5秒</Cell>
+      <Cell Name="管理界面技能描述">被动：李白使用普通攻击攻击敌人时，会积累1道剑气，持续3秒；积累4道剑气后会进入侠客行状态，增加[28+2*hl]点物理攻击力并解除青莲剑歌的封印，持续5秒；攻击建筑不会积累剑气</Cell>
+      <Cell Name="简化版技能描述">普攻命中非建筑单位时获得短时间剑气，累计四道剑气后获得5秒攻击力加成并解封青莲剑歌。</Cell>
+      <Cell Name="图标路径">13100</Cell>
+      <Cell Name="固有技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="固有技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_b</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_R</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90_red</Cell>
+      <Cell Name="冷却时间">800</Cell>
+      <Cell Name="技能释放规则">周围有敌人时施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability0/A1.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">2500</Cell>
+      <Cell Name="指示器范围">10000</Cell>
+      <Cell Name="最大攻击距离">2800</Cell>
+      <Cell Name="二级攻击距离">5000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="最大追击距离">12500</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">13111</Cell>
+      <Cell Name="技能名称">神鬼辟易</Cell>
+      <Cell Name="技能槽位">3</Cell>
+      <Cell Name="技能标签">位移</Cell>
+      <Cell Name="技能描述">突破境界界限，让自身剑气汇聚达到之力，神鬼状态持续12秒</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">李白以醉剑势向指定方向突进，对经过的目标造成&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，并造成晕眩，释放技能后5秒内再次启用发起冲锋，并在5秒内第三次启用回到原地，命中目标积累1道剑气</Cell>
+      <Cell Name="技能描述（公式计算）">李白以醉剑势向指定方向突进，对经过的目标造成[131100p1q2+131100p1g2*sl-131100p1g2]&lt;color=#f18d00&gt;(+[131100p1q3*k1/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;，并造成晕眩，释放技能后5秒内再次启用发起冲锋，并在5秒内第三次启用回到原地</Cell>
+      <Cell Name="管理界面技能描述">李白可用醉剑式向指定方向连续突进2次，对路径上敌人造成[131100p1q2+131100p1g2*sl-131100p1g2]&lt;color=#f18d00&gt;(+[131100p1q9/100]%额外物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;并将其晕眩0.5秒，同时会叠加1道剑气；第三次释放会回到原地；每次释放间隔不能超过5秒</Cell>
+      <Cell Name="简化版技能描述">向指定方向突进两次，对路径上敌人造成伤害并晕眩0.5秒叠加一道剑气，第三次释放回到原地；</Cell>
+      <Cell Name="图标路径">13111</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">131100p1q2</Cell>
+      <Cell Name="描述属性1成长值">131100p1g2</Cell>
+      <Cell Name="描述属性2类型">冷却时间</Cell>
+      <Cell Name="描述属性2基础值">1200</Cell>
+      <Cell Name="描述属性2成长值">-140</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="冷却时间">60000</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="冷却时间成长">-4000</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability3/S11.xml</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">是</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">4000</Cell>
+      <Cell Name="指示器范围">4000</Cell>
+      <Cell Name="最大攻击距离">6000</Cell>
+      <Cell Name="二级攻击距离">6000</Cell>
+      <Cell Name="最大寻敌距离">6000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="是否晕眩技能">1</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">14801</Cell>
+      <Cell Name="技能名称">心魔</Cell>
+      <Cell Name="技能槽位">0</Cell>
+      <Cell Name="技能描述">被动：姜子牙每120秒为友军增加168点经验值</Cell>
+      <Cell Name="管理界面技能描述">被动：姜子牙每120秒为友军增加168点经验值</Cell>
+      <Cell Name="简化版技能描述">被动：姜子牙每120秒为友军增加168点经验值</Cell>
+      <Cell Name="图标路径">14800</Cell>
+      <Cell Name="固有技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="固有技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_b</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_R</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Sector_90_red</Cell>
+      <Cell Name="冷却时间">1000</Cell>
+      <Cell Name="技能释放规则">周围有敌人时施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/148_JiangZiYa/skill/A2</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">6000</Cell>
+      <Cell Name="指示器范围">10000</Cell>
+      <Cell Name="最大攻击距离">6000</Cell>
+      <Cell Name="二级攻击距离">8000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="最大追击距离">12500</Cell>
+      <Cell Name="技能战力类型">1</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="是否晕眩技能">0</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">10910</Cell>
+      <Cell Name="技能名称">灵魂冲击</Cell>
+      <Cell Name="技能槽位">1</Cell>
+      <Cell Name="技能标签">伤害</Cell>
+      <Cell Name="技能描述">妲己向指定方向挥出灵魂冲击波，对命中的敌人造成[109100p1q2+109100p1g2*sl-109100p1g2]&lt;color=#7FFFD4&gt;(+[109100p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">妲己挥出灵魂冲击波，对命中的敌人造成&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;</Cell>
+      <Cell Name="技能描述（公式计算）">妲己挥出灵魂冲击波，对命中的敌人造成[109100p1q2+109100p1g2*sl-109100p1g2]&lt;color=#7FFFD4&gt;(+[109100p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;</Cell>
+      <Cell Name="管理界面技能描述">妲己向指定方向挥出灵魂冲击波，对命中的敌人造成[109100p1q2+109100p1g2*sl-109100p1g2]&lt;color=#7FFFD4&gt;(+[109100p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;</Cell>
+      <Cell Name="简化版技能描述">向指定方向挥出灵魂冲击波，对指定方向所有敌人造成伤害。</Cell>
+      <Cell Name="图标路径">10910</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">109100p1q2</Cell>
+      <Cell Name="描述属性1成长值">109100p1g2</Cell>
+      <Cell Name="新配置指示器资源类型">箭头</Cell>
+      <Cell Name="新配置指示器尺寸">4500</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_4</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_4red</Cell>
+      <Cell Name="冷却时间">2000</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="消耗">60</Cell>
+      <Cell Name="消耗成长">5</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/ability_attackunit/hero_daji/ability1/S1.xml</Cell>
+      <Cell Name="目标技能效果组合">109100</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">10000</Cell>
+      <Cell Name="指示器范围">10000</Cell>
+      <Cell Name="最大攻击距离">10000</Cell>
+      <Cell Name="二级攻击距离">10000</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">魔法伤害效果</Cell>
+    </Row>
+  </Sheet>
+  <Sheet Name="技能解锁" FontColor="FFFFFFFF" FillColor="FF44546A">
+    <Columns>
+      <Column Name="玩家等级" Type="System.UInt16" WidthInCharacters="18" />
+      <Column Name="解锁技能ID" Type="System.UInt32" WidthInCharacters="20" />
+      <Column Name="被动技能ID1" Type="System.UInt32" WidthInCharacters="13" />
+      <Column Name="被动技能ID2" Type="System.UInt32" WidthInCharacters="9" />
+      <Column Name="被动技能ID3" Type="System.UInt32" WidthInCharacters="16" />
+      <Column Name="介绍视频链接" Type="System.String" WidthInCharacters="122" />
+    </Columns>
+  </Sheet>
+</Root>

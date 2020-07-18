@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root Type="Assets.Scripts.GameLogic.CActorInfo">
+  <ActorName>明世隐</ActorName>
+  <useMecanim>0</useMecanim>
+  <ArtPrefabLOD Type="System.String[]">
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5011_MingShiYin_LOD1</Item>
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5011_MingShiYin_LOD1</Item>
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5011_MingShiYin_LOD2</Item>
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5011_MingShiYin_LOD3</Item>
+  </ArtPrefabLOD>
+  <enemyCampUseDifferentArtPrefab>0</enemyCampUseDifferentArtPrefab>
+  <ArtLobbyShowLOD Type="System.String[]">
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5011_MingShiYin_Show1</Item>
+    <Item Type="System.String"></Item>
+  </ArtLobbyShowLOD>
+  <SoundBanks Type="System.String[]">
+    <Item Type="System.String">Hero_MingShiYin_SFX</Item>
+    <Item Type="System.String">Hero_MingShiYin_VO</Item>
+  </SoundBanks>
+  <SkinPrefab Type="Assets.Scripts.GameLogic.SkinElement[]">
+    <Item Type="Assets.Scripts.GameLogic.SkinElement">
+      <ArtSkinPrefabLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5012_MingShiYin_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5012_MingShiYin_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5012_MingShiYin_LOD2</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5012_MingShiYin_LOD3</Item>
+      </ArtSkinPrefabLOD>
+      <enemyCampUseDifferentArtSkinPrefab>0</enemyCampUseDifferentArtSkinPrefab>
+      <ArtSkinLobbyShowLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5012_MingShiYin_Show1</Item>
+        <Item Type="System.String"></Item>
+      </ArtSkinLobbyShowLOD>
+      <AdvanceSkin Type="Assets.Scripts.GameLogic.AdvanceSkinElement[]" />
+    </Item>
+    <Item Type="Assets.Scripts.GameLogic.SkinElement">
+      <ArtSkinPrefabLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5013_MingShiYin_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5013_MingShiYin_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5013_MingShiYin_LOD2</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5013_MingShiYin_LOD3</Item>
+      </ArtSkinPrefabLOD>
+      <enemyCampUseDifferentArtSkinPrefab>0</enemyCampUseDifferentArtSkinPrefab>
+      <ArtSkinLobbyShowLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5013_MingShiYin_Show1</Item>
+        <Item Type="System.String"></Item>
+      </ArtSkinLobbyShowLOD>
+      <AdvanceSkin Type="Assets.Scripts.GameLogic.AdvanceSkinElement[]" />
+    </Item>
+    <Item Type="Assets.Scripts.GameLogic.SkinElement">
+      <ArtSkinPrefabLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5014_MingShiYin_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5014_MingShiYin_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5014_MingShiYin_LOD2</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/501_MingShiYin/5014_MingShiYin_LOD3</Item>
+      </ArtSkinPrefabLOD>
+      <enemyCampUseDifferentArtSkinPrefab>0</enemyCampUseDifferentArtSkinPrefab>
+      <ArtSkinLobbyShowLOD Type="System.String[]">
+        <Item Type="System.String"></Item>
+        <Item Type="System.String"></Item>
+      </ArtSkinLobbyShowLOD>
+      <AdvanceSkin Type="Assets.Scripts.GameLogic.AdvanceSkinElement[]" />
+    </Item>
+  </SkinPrefab>
+  <UseNewAnimaSoundType>0</UseNewAnimaSoundType>
+  <shadowHeight>2.56</shadowHeight>
+  <AnimaSound Type="Assets.Scripts.GameLogic.AnimaSoundElement[]">
+    <Item Type="Assets.Scripts.GameLogic.AnimaSoundElement">
+      <AnimaName>Come_Random_1</AnimaName>
+      <SoundName>Play_MingShiYin_VO_Come_huakai</SoundName>
+      <RepeatRate>0</RepeatRate>
+      <MaxRepeatCount>0</MaxRepeatCount>
+      <NextElementIndex>0</NextElementIndex>
+    </Item>
+    <Item Type="Assets.Scripts.GameLogic.AnimaSoundElement">
+      <AnimaName>Come_Random_2</AnimaName>
+      <SoundName>Play_MingShiYin_VO_Come_hualuo</SoundName>
+      <RepeatRate>0</RepeatRate>
+      <MaxRepeatCount>0</MaxRepeatCount>
+      <NextElementIndex>0</NextElementIndex>
+    </Item>
+  </AnimaSound>
+  <TransConfigs Type="Assets.Scripts.GameLogic.TransformConfig[]">
+    <Item Type="Assets.Scripts.GameLogic.TransformConfig">
+      <Offset Type="UnityEngine.Vector3">
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Offset>
+      <Scale>1</Scale>
+    </Item>
+    <Item Type="Assets.Scripts.GameLogic.TransformConfig">
+      <Offset Type="UnityEngine.Vector3">
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Offset>
+      <Scale>0.95</Scale>
+    </Item>
+  </TransConfigs>
+  <InteractiveAnimaVfx Type="Assets.Scripts.GameLogic.InteractiveAnimaVfxElement[]" />
+  <LobbySoundBanks Type="System.String[]">
+    <Item Type="System.String">Hero_MingShiYin_Show</Item>
+  </LobbySoundBanks>
+  <LobbyScale>1.14</LobbyScale>
+  <collisionType>2</collisionType>
+  <iCollisionCenter Type="VInt3">
+    <x>0</x>
+    <y>200</y>
+    <z>0</z>
+  </iCollisionCenter>
+  <iCollisionSize Type="VInt3">
+    <x>400</x>
+    <y>400</y>
+    <z>400</z>
+  </iCollisionSize>
+  <iBulletHeight>1200</iBulletHeight>
+  <iAttackLineHeight>4500</iAttackLineHeight>
+  <BtResourcePath>WrapperAI/Hero/HeroCommonAutoAI</BtResourcePath>
+  <deadAgePath>Prefab_Characters/Prefab_Hero/501_MingShiYin/skill/Death</deadAgePath>
+  <ActSounds Type="Assets.Scripts.GameLogic.ActSound[]">
+    <Item Type="Assets.Scripts.GameLogic.ActSound">
+      <SoundActType>0</SoundActType>
+      <ActSoundName>Play_MingShiYin_VO_Move</ActSoundName>
+    </Item>
+  </ActSounds>
+  <callMonsterConfigID>3</callMonsterConfigID>
+  <hudHeight>3000</hudHeight>
+  <HudType>3</HudType>
+</Root>

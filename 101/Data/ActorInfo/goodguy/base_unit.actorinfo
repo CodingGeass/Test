@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root Type="Assets.Scripts.GameLogic.CActorInfo">
+  <ActorName>红拂</ActorName>
+  <useMecanim>0</useMecanim>
+  <ArtPrefabLOD Type="System.String[]">
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1463_HongFu_LOD1</Item>
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1463_HongFu_LOD1</Item>
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1463_HongFu_LOD2</Item>
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1463_HongFu_LOD3</Item>
+  </ArtPrefabLOD>
+  <enemyCampUseDifferentArtPrefab>0</enemyCampUseDifferentArtPrefab>
+  <ArtLobbyShowLOD Type="System.String[]">
+    <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1463_HongFu_Show1</Item>
+    <Item Type="System.String"></Item>
+  </ArtLobbyShowLOD>
+  <SoundBanks Type="System.String[]">
+    <Item Type="System.String">Hero_HongFu_SFX</Item>
+    <Item Type="System.String">Hero_HongFu_VO</Item>
+  </SoundBanks>
+  <SkinPrefab Type="Assets.Scripts.GameLogic.SkinElement[]">
+    <Item Type="Assets.Scripts.GameLogic.SkinElement">
+      <ArtSkinPrefabLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1462_HongFu_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1462_HongFu_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1462_HongFu_LOD2</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1462_HongFu_LOD3</Item>
+      </ArtSkinPrefabLOD>
+      <enemyCampUseDifferentArtSkinPrefab>0</enemyCampUseDifferentArtSkinPrefab>
+      <ArtSkinLobbyShowLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1462_HongFu_Show1</Item>
+        <Item Type="System.String"></Item>
+      </ArtSkinLobbyShowLOD>
+      <AdvanceSkin Type="Assets.Scripts.GameLogic.AdvanceSkinElement[]" />
+    </Item>
+    <Item Type="Assets.Scripts.GameLogic.SkinElement">
+      <ArtSkinPrefabLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1461_HongFu_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1461_HongFu_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1461_HongFu_LOD2</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1461_HongFu_LOD3</Item>
+      </ArtSkinPrefabLOD>
+      <enemyCampUseDifferentArtSkinPrefab>0</enemyCampUseDifferentArtSkinPrefab>
+      <ArtSkinLobbyShowLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1461_HongFu_Show1</Item>
+        <Item Type="System.String"></Item>
+      </ArtSkinLobbyShowLOD>
+      <AdvanceSkin Type="Assets.Scripts.GameLogic.AdvanceSkinElement[]" />
+    </Item>
+    <Item Type="Assets.Scripts.GameLogic.SkinElement">
+      <ArtSkinPrefabLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1464_HongFu_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1464_HongFu_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1464_HongFu_LOD2</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1464_HongFu_LOD3</Item>
+      </ArtSkinPrefabLOD>
+      <enemyCampUseDifferentArtSkinPrefab>0</enemyCampUseDifferentArtSkinPrefab>
+      <ArtSkinLobbyShowLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1464_HongFu_Show1</Item>
+        <Item Type="System.String"></Item>
+      </ArtSkinLobbyShowLOD>
+      <AdvanceSkin Type="Assets.Scripts.GameLogic.AdvanceSkinElement[]" />
+    </Item>
+    <Item Type="Assets.Scripts.GameLogic.SkinElement">
+      <ArtSkinPrefabLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1465_HongFu_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1465_HongFu_LOD1</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1465_HongFu_LOD2</Item>
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1465_HongFu_LOD3</Item>
+      </ArtSkinPrefabLOD>
+      <enemyCampUseDifferentArtSkinPrefab>0</enemyCampUseDifferentArtSkinPrefab>
+      <ArtSkinLobbyShowLOD Type="System.String[]">
+        <Item Type="System.String">Prefab_Characters/Prefab_Hero/146_HongFu/1465_HongFu_Show1</Item>
+        <Item Type="System.String"></Item>
+      </ArtSkinLobbyShowLOD>
+      <AdvanceSkin Type="Assets.Scripts.GameLogic.AdvanceSkinElement[]" />
+    </Item>
+  </SkinPrefab>
+  <UseNewAnimaSoundType>0</UseNewAnimaSoundType>
+  <shadowHeight>2.308693</shadowHeight>
+  <AnimaSound Type="Assets.Scripts.GameLogic.AnimaSoundElement[]">
+    <Item Type="Assets.Scripts.GameLogic.AnimaSoundElement">
+      <AnimaName>Come</AnimaName>
+      <SoundName>Play_HongFu_VO_Come</SoundName>
+      <RepeatRate>0</RepeatRate>
+      <MaxRepeatCount>0</MaxRepeatCount>
+      <NextElementIndex>0</NextElementIndex>
+    </Item>
+  </AnimaSound>
+  <TransConfigs Type="Assets.Scripts.GameLogic.TransformConfig[]">
+    <Item Type="Assets.Scripts.GameLogic.TransformConfig">
+      <Offset Type="UnityEngine.Vector3">
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Offset>
+      <Scale>1</Scale>
+    </Item>
+    <Item Type="Assets.Scripts.GameLogic.TransformConfig">
+      <Offset Type="UnityEngine.Vector3">
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Offset>
+      <Scale>0.9</Scale>
+    </Item>
+  </TransConfigs>
+  <InteractiveAnimaVfx Type="Assets.Scripts.GameLogic.InteractiveAnimaVfxElement[]" />
+  <LobbySoundBanks Type="System.String[]">
+    <Item Type="System.String">Hero_ChengYaoJin_Show</Item>
+  </LobbySoundBanks>
+  <LobbyScale>1.12</LobbyScale>
+  <collisionType>2</collisionType>
+  <iCollisionCenter Type="VInt3">
+    <x>0</x>
+    <y>200</y>
+    <z>0</z>
+  </iCollisionCenter>
+  <iCollisionSize Type="VInt3">
+    <x>400</x>
+    <y>400</y>
+    <z>400</z>
+  </iCollisionSize>
+  <iBulletHeight>1200</iBulletHeight>
+  <iAttackLineHeight>4500</iAttackLineHeight>
+  <BtResourcePath></BtResourcePath>
+  <deadAgePath>Prefab_Characters/Prefab_Hero/146_HongFu/skill/Death</deadAgePath>
+  <ActSounds Type="Assets.Scripts.GameLogic.ActSound[]">
+    <Item Type="Assets.Scripts.GameLogic.ActSound">
+      <SoundActType>0</SoundActType>
+      <ActSoundName>Play_HongFu_VO_Move</ActSoundName>
+    </Item>
+  </ActSounds>
+  <callMonsterConfigID>0</callMonsterConfigID>
+  <hudHeight>3000</hudHeight>
+  <HudType>6</HudType>
+</Root>

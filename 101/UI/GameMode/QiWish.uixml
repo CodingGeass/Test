@@ -1,0 +1,1657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root Type="BluePrint.UGC.UI.Core.CForm">
+  <m_name>Form</m_name>
+  <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+    <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+      <m_minX>0.5</m_minX>
+      <m_minY>0.5</m_minY>
+      <m_maxX>0.5</m_maxX>
+      <m_maxY>0.5</m_maxY>
+    </m_anchor>
+    <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+      <x>0</x>
+      <y>0</y>
+    </m_pivot>
+    <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+      <x>1</x>
+      <y>1</y>
+    </m_localScale>
+    <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+      <x>0</x>
+      <y>0</y>
+    </m_anchoredPosition>
+    <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+      <m_minX>0</m_minX>
+      <m_minY>0</m_minY>
+      <m_maxX>0</m_maxX>
+      <m_maxY>0</m_maxY>
+    </m_anchoredOffset>
+    <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+      <x>1280</x>
+      <y>720</y>
+    </m_size>
+  </m_rectTransform>
+  <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+    <Item Type="BluePrint.UGC.UI.Core.CPanel">
+      <m_name>wish_main_panel</m_name>
+      <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+        <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+          <m_minX>0.5</m_minX>
+          <m_minY>0.5</m_minY>
+          <m_maxX>0.5</m_maxX>
+          <m_maxY>0.5</m_maxY>
+        </m_anchor>
+        <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+          <x>0.5</x>
+          <y>0.5</y>
+        </m_pivot>
+        <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+          <x>1</x>
+          <y>1</y>
+        </m_localScale>
+        <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+          <x>0</x>
+          <y>0</y>
+        </m_anchoredPosition>
+        <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+          <m_minX>-466.25</m_minX>
+          <m_minY>-266.5</m_minY>
+          <m_maxX>466.25</m_maxX>
+          <m_maxY>266.5</m_maxY>
+        </m_anchoredOffset>
+        <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+          <x>932.5</x>
+          <y>533</y>
+        </m_size>
+      </m_rectTransform>
+      <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+        <Item Type="BluePrint.UGC.UI.Core.CPanel">
+          <m_name>wish_title_panel</m_name>
+          <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+            <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+              <m_minX>0.5</m_minX>
+              <m_minY>1</m_minY>
+              <m_maxX>0.5</m_maxX>
+              <m_maxY>1</m_maxY>
+            </m_anchor>
+            <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>0.5</x>
+              <y>1</y>
+            </m_pivot>
+            <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>1</x>
+              <y>1</y>
+            </m_localScale>
+            <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>0</x>
+              <y>0</y>
+            </m_anchoredPosition>
+            <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+              <m_minX>-381.5</m_minX>
+              <m_minY>-53</m_minY>
+              <m_maxX>381.5</m_maxX>
+              <m_maxY>0</m_maxY>
+            </m_anchoredOffset>
+            <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>763</x>
+              <y>53</y>
+            </m_size>
+          </m_rectTransform>
+          <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+            <Item Type="BluePrint.UGC.UI.Core.CTextLabel">
+              <m_name>wish_title_label</m_name>
+              <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                  <m_minX>0.5</m_minX>
+                  <m_minY>0</m_minY>
+                  <m_maxX>0.5</m_maxX>
+                  <m_maxY>1</m_maxY>
+                </m_anchor>
+                <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0.5</x>
+                  <y>0.5</y>
+                </m_pivot>
+                <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>1</x>
+                  <y>1</y>
+                </m_localScale>
+                <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0</x>
+                  <y>0</y>
+                </m_anchoredPosition>
+                <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                  <m_minX>-381.5</m_minX>
+                  <m_minY>-11</m_minY>
+                  <m_maxX>381.5</m_maxX>
+                  <m_maxY>0</m_maxY>
+                </m_anchoredOffset>
+                <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>763</x>
+                  <y>64</y>
+                </m_size>
+              </m_rectTransform>
+              <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+              <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                <m_enable>1</m_enable>
+                <m_textContent>许愿人</m_textContent>
+                <m_fontType>1</m_fontType>
+                <m_fontStyle>0</m_fontStyle>
+                <m_fontSize>26</m_fontSize>
+                <m_lineSpace>1</m_lineSpace>
+                <m_flags>1</m_flags>
+                <m_color Type="BluePrint.UGC.UI.Core.Color">
+                  <r>1</r>
+                  <g>1</g>
+                  <b>1</b>
+                  <a>1</a>
+                </m_color>
+                <m_alignment>4</m_alignment>
+              </m_textData>
+              <m_ID>1004</m_ID>
+              <m_active>1</m_active>
+              <m_alpha>1</m_alpha>
+            </Item>
+            <Item Type="BluePrint.UGC.UI.Core.CButton">
+              <m_name>wish_view_close</m_name>
+              <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                  <m_minX>1</m_minX>
+                  <m_minY>1</m_minY>
+                  <m_maxX>1</m_maxX>
+                  <m_maxY>1</m_maxY>
+                </m_anchor>
+                <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>1</x>
+                  <y>1</y>
+                </m_pivot>
+                <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>1</x>
+                  <y>1</y>
+                </m_localScale>
+                <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>91</x>
+                  <y>12</y>
+                </m_anchoredPosition>
+                <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                  <m_minX>19</m_minX>
+                  <m_minY>-60</m_minY>
+                  <m_maxX>91</m_maxX>
+                  <m_maxY>12</m_maxY>
+                </m_anchoredOffset>
+                <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>72</x>
+                  <y>72</y>
+                </m_size>
+              </m_rectTransform>
+              <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+              <m_imageData Type="BluePrint.UGC.UI.Core.CImageData">
+                <m_enable>1</m_enable>
+                <m_resFullPath>Texture/Sprite/dan_close_btn.sprite</m_resFullPath>
+                <m_color Type="BluePrint.UGC.UI.Core.Color">
+                  <r>1</r>
+                  <g>1</g>
+                  <b>1</b>
+                  <a>1</a>
+                </m_color>
+                <m_type>1</m_type>
+                <m_fillMethod>4</m_fillMethod>
+                <m_fillOrigin>0</m_fillOrigin>
+                <m_fillAmount>1</m_fillAmount>
+                <m_fillClockWise>1</m_fillClockWise>
+              </m_imageData>
+              <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                <m_enable>1</m_enable>
+                <m_textContent></m_textContent>
+                <m_fontType>1</m_fontType>
+                <m_fontStyle>0</m_fontStyle>
+                <m_fontSize>14</m_fontSize>
+                <m_lineSpace>1</m_lineSpace>
+                <m_flags>1</m_flags>
+                <m_color Type="BluePrint.UGC.UI.Core.Color">
+                  <r>1</r>
+                  <g>1</g>
+                  <b>1</b>
+                  <a>1</a>
+                </m_color>
+                <m_alignment>4</m_alignment>
+              </m_textData>
+              <m_closeBelongedFormWhenClicked>0</m_closeBelongedFormWhenClicked>
+              <m_onClickedEventHandler></m_onClickedEventHandler>
+              <m_ID>1005</m_ID>
+              <m_active>1</m_active>
+              <m_alpha>1</m_alpha>
+            </Item>
+          </m_children>
+          <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+            <m_enable>0</m_enable>
+            <m_resFullPath></m_resFullPath>
+            <m_color Type="BluePrint.UGC.UI.Core.Color">
+              <r>1</r>
+              <g>1</g>
+              <b>1</b>
+              <a>1</a>
+            </m_color>
+            <m_type>1</m_type>
+            <m_fillMethod>4</m_fillMethod>
+            <m_fillOrigin>0</m_fillOrigin>
+            <m_fillAmount>1</m_fillAmount>
+            <m_fillClockWise>1</m_fillClockWise>
+          </m_bgImageData>
+          <m_ID>1003</m_ID>
+          <m_active>1</m_active>
+          <m_alpha>1</m_alpha>
+        </Item>
+        <Item Type="BluePrint.UGC.UI.Core.CPanel">
+          <m_name>wish_left_panel</m_name>
+          <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+            <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+              <m_minX>0</m_minX>
+              <m_minY>0</m_minY>
+              <m_maxX>0</m_maxX>
+              <m_maxY>0</m_maxY>
+            </m_anchor>
+            <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>0</x>
+              <y>0</y>
+            </m_pivot>
+            <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>1</x>
+              <y>1</y>
+            </m_localScale>
+            <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>0</x>
+              <y>0</y>
+            </m_anchoredPosition>
+            <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+              <m_minX>0</m_minX>
+              <m_minY>0</m_minY>
+              <m_maxX>296.75</m_maxX>
+              <m_maxY>462.5</m_maxY>
+            </m_anchoredOffset>
+            <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>296.75</x>
+              <y>462.5</y>
+            </m_size>
+          </m_rectTransform>
+          <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+            <Item Type="BluePrint.UGC.UI.Core.CImage">
+              <m_name>wish_left_iamge</m_name>
+              <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                  <m_minX>0</m_minX>
+                  <m_minY>0</m_minY>
+                  <m_maxX>1</m_maxX>
+                  <m_maxY>1</m_maxY>
+                </m_anchor>
+                <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0.5</x>
+                  <y>0.5</y>
+                </m_pivot>
+                <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>1</x>
+                  <y>1</y>
+                </m_localScale>
+                <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0</x>
+                  <y>0</y>
+                </m_anchoredPosition>
+                <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                  <m_minX>79.18637</m_minX>
+                  <m_minY>150.3108</m_minY>
+                  <m_maxX>-73.98264</m_maxX>
+                  <m_maxY>-54.06955</m_maxY>
+                </m_anchoredOffset>
+                <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>143.581</x>
+                  <y>258.1197</y>
+                </m_size>
+              </m_rectTransform>
+              <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                <Item Type="BluePrint.UGC.UI.Core.CImage">
+                  <m_name>Image(1045)</m_name>
+                  <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                    <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                      <m_minX>0</m_minX>
+                      <m_minY>0</m_minY>
+                      <m_maxX>1</m_maxX>
+                      <m_maxY>1</m_maxY>
+                    </m_anchor>
+                    <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>0.5</x>
+                      <y>0.5</y>
+                    </m_pivot>
+                    <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>1</x>
+                      <y>1</y>
+                    </m_localScale>
+                    <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>0</x>
+                      <y>0</y>
+                    </m_anchoredPosition>
+                    <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                      <m_minX>0</m_minX>
+                      <m_minY>0</m_minY>
+                      <m_maxX>0</m_maxX>
+                      <m_maxY>0</m_maxY>
+                    </m_anchoredOffset>
+                    <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>143.581</x>
+                      <y>258.1197</y>
+                    </m_size>
+                  </m_rectTransform>
+                  <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                  <m_imageData Type="BluePrint.UGC.UI.Core.CImageData">
+                    <m_enable>1</m_enable>
+                    <m_resFullPath>Texture/Sprite/equip_pinzhi_blue.sprite</m_resFullPath>
+                    <m_color Type="BluePrint.UGC.UI.Core.Color">
+                      <r>1</r>
+                      <g>1</g>
+                      <b>1</b>
+                      <a>1</a>
+                    </m_color>
+                    <m_type>1</m_type>
+                    <m_fillMethod>4</m_fillMethod>
+                    <m_fillOrigin>0</m_fillOrigin>
+                    <m_fillAmount>1</m_fillAmount>
+                    <m_fillClockWise>1</m_fillClockWise>
+                  </m_imageData>
+                  <m_onClickedEventHandler></m_onClickedEventHandler>
+                  <m_onHoldStartEventHandler></m_onHoldStartEventHandler>
+                  <m_onHoldEventHandler></m_onHoldEventHandler>
+                  <m_onHoldEndEventHandler></m_onHoldEndEventHandler>
+                  <m_onDragStartEventHandler></m_onDragStartEventHandler>
+                  <m_onDragEventHandler></m_onDragEventHandler>
+                  <m_onDragEndEventHandler></m_onDragEndEventHandler>
+                  <m_ID>1045</m_ID>
+                  <m_active>1</m_active>
+                  <m_alpha>1</m_alpha>
+                </Item>
+              </m_children>
+              <m_imageData Type="BluePrint.UGC.UI.Core.CImageData">
+                <m_enable>1</m_enable>
+                <m_resFullPath>Texture/Sprite/direnjie.sprite</m_resFullPath>
+                <m_color Type="BluePrint.UGC.UI.Core.Color">
+                  <r>1</r>
+                  <g>1</g>
+                  <b>1</b>
+                  <a>1</a>
+                </m_color>
+                <m_type>0</m_type>
+                <m_fillMethod>4</m_fillMethod>
+                <m_fillOrigin>0</m_fillOrigin>
+                <m_fillAmount>1</m_fillAmount>
+                <m_fillClockWise>1</m_fillClockWise>
+              </m_imageData>
+              <m_onClickedEventHandler></m_onClickedEventHandler>
+              <m_onHoldStartEventHandler></m_onHoldStartEventHandler>
+              <m_onHoldEventHandler></m_onHoldEventHandler>
+              <m_onHoldEndEventHandler></m_onHoldEndEventHandler>
+              <m_onDragStartEventHandler></m_onDragStartEventHandler>
+              <m_onDragEventHandler></m_onDragEventHandler>
+              <m_onDragEndEventHandler></m_onDragEndEventHandler>
+              <m_ID>1007</m_ID>
+              <m_active>1</m_active>
+              <m_alpha>1</m_alpha>
+            </Item>
+            <Item Type="BluePrint.UGC.UI.Core.CTextLabel">
+              <m_name>TextLabel(1026)</m_name>
+              <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                  <m_minX>0.5</m_minX>
+                  <m_minY>0.5</m_minY>
+                  <m_maxX>0.5</m_maxX>
+                  <m_maxY>0.5</m_maxY>
+                </m_anchor>
+                <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0.5</x>
+                  <y>0.5</y>
+                </m_pivot>
+                <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>1</x>
+                  <y>1</y>
+                </m_localScale>
+                <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>-1.873291</x>
+                  <y>-143.1318</y>
+                </m_anchoredPosition>
+                <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                  <m_minX>-99.22779</m_minX>
+                  <m_minY>-175.0667</m_minY>
+                  <m_maxX>95.48121</m_maxX>
+                  <m_maxY>-111.1969</m_maxY>
+                </m_anchoredOffset>
+                <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>194.709</x>
+                  <y>63.8697</y>
+                </m_size>
+              </m_rectTransform>
+              <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+              <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                <m_enable>1</m_enable>
+                <m_textContent>百花圣使</m_textContent>
+                <m_fontType>1</m_fontType>
+                <m_fontStyle>0</m_fontStyle>
+                <m_fontSize>26</m_fontSize>
+                <m_lineSpace>1</m_lineSpace>
+                <m_flags>1</m_flags>
+                <m_color Type="BluePrint.UGC.UI.Core.Color">
+                  <r>1</r>
+                  <g>1</g>
+                  <b>1</b>
+                  <a>1</a>
+                </m_color>
+                <m_alignment>4</m_alignment>
+              </m_textData>
+              <m_ID>1026</m_ID>
+              <m_active>1</m_active>
+              <m_alpha>1</m_alpha>
+            </Item>
+            <Item Type="BluePrint.UGC.UI.Core.CTextLabel">
+              <m_name>TextLabel(1027)</m_name>
+              <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                  <m_minX>0.5</m_minX>
+                  <m_minY>0.5</m_minY>
+                  <m_maxX>0.5</m_maxX>
+                  <m_maxY>0.5</m_maxY>
+                </m_anchor>
+                <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0.5</x>
+                  <y>0.5</y>
+                </m_pivot>
+                <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>1</x>
+                  <y>1</y>
+                </m_localScale>
+                <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>2.513855</x>
+                  <y>-190.9117</y>
+                </m_anchoredPosition>
+                <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                  <m_minX>-124.2372</m_minX>
+                  <m_minY>-214.6419</m_minY>
+                  <m_maxX>129.2649</m_maxX>
+                  <m_maxY>-167.1814</m_maxY>
+                </m_anchoredOffset>
+                <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>253.5021</x>
+                  <y>47.46049</y>
+                </m_size>
+              </m_rectTransform>
+              <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+              <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                <m_enable>1</m_enable>
+                <m_textContent>有心人请告诉我您的愿望</m_textContent>
+                <m_fontType>1</m_fontType>
+                <m_fontStyle>0</m_fontStyle>
+                <m_fontSize>19</m_fontSize>
+                <m_lineSpace>1</m_lineSpace>
+                <m_flags>1</m_flags>
+                <m_color Type="BluePrint.UGC.UI.Core.Color">
+                  <r>0.4588235</r>
+                  <g>0.8</g>
+                  <b>0.9058824</b>
+                  <a>1</a>
+                </m_color>
+                <m_alignment>4</m_alignment>
+              </m_textData>
+              <m_ID>1027</m_ID>
+              <m_active>1</m_active>
+              <m_alpha>1</m_alpha>
+            </Item>
+          </m_children>
+          <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+            <m_enable>0</m_enable>
+            <m_resFullPath></m_resFullPath>
+            <m_color Type="BluePrint.UGC.UI.Core.Color">
+              <r>1</r>
+              <g>1</g>
+              <b>1</b>
+              <a>1</a>
+            </m_color>
+            <m_type>1</m_type>
+            <m_fillMethod>4</m_fillMethod>
+            <m_fillOrigin>0</m_fillOrigin>
+            <m_fillAmount>1</m_fillAmount>
+            <m_fillClockWise>1</m_fillClockWise>
+          </m_bgImageData>
+          <m_ID>1006</m_ID>
+          <m_active>1</m_active>
+          <m_alpha>1</m_alpha>
+        </Item>
+        <Item Type="BluePrint.UGC.UI.Core.CPanel">
+          <m_name>wish_right_panel</m_name>
+          <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+            <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+              <m_minX>1</m_minX>
+              <m_minY>0.5</m_minY>
+              <m_maxX>1</m_maxX>
+              <m_maxY>0.5</m_maxY>
+            </m_anchor>
+            <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>1</x>
+              <y>0.5</y>
+            </m_pivot>
+            <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>1</x>
+              <y>1</y>
+            </m_localScale>
+            <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>0</x>
+              <y>-35.75</y>
+            </m_anchoredPosition>
+            <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+              <m_minX>-655.7399</m_minX>
+              <m_minY>-266.5</m_minY>
+              <m_maxX>0</m_maxX>
+              <m_maxY>195</m_maxY>
+            </m_anchoredOffset>
+            <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+              <x>655.7399</x>
+              <y>461.5</y>
+            </m_size>
+          </m_rectTransform>
+          <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+            <Item Type="BluePrint.UGC.UI.Core.CPanel">
+              <m_name>wish_top_panel</m_name>
+              <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                  <m_minX>0.5</m_minX>
+                  <m_minY>1</m_minY>
+                  <m_maxX>0.5</m_maxX>
+                  <m_maxY>1</m_maxY>
+                </m_anchor>
+                <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0.5</x>
+                  <y>1</y>
+                </m_pivot>
+                <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>1</x>
+                  <y>1</y>
+                </m_localScale>
+                <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0</x>
+                  <y>0</y>
+                </m_anchoredPosition>
+                <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                  <m_minX>-311.375</m_minX>
+                  <m_minY>-115.7413</m_minY>
+                  <m_maxX>311.375</m_maxX>
+                  <m_maxY>0</m_maxY>
+                </m_anchoredOffset>
+                <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>622.75</x>
+                  <y>115.7413</y>
+                </m_size>
+              </m_rectTransform>
+              <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                <Item Type="BluePrint.UGC.UI.Core.CImage">
+                  <m_name>wish_title_panel_head_image</m_name>
+                  <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                    <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                      <m_minX>0.5</m_minX>
+                      <m_minY>0.5</m_minY>
+                      <m_maxX>0.5</m_maxX>
+                      <m_maxY>0.5</m_maxY>
+                    </m_anchor>
+                    <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>0.5</x>
+                      <y>0.5</y>
+                    </m_pivot>
+                    <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>1</x>
+                      <y>1</y>
+                    </m_localScale>
+                    <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>-241.3127</x>
+                      <y>0.9652405</y>
+                    </m_anchoredPosition>
+                    <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                      <m_minX>-291.3127</m_minX>
+                      <m_minY>-49.03476</m_minY>
+                      <m_maxX>-191.3127</m_maxX>
+                      <m_maxY>50.96524</m_maxY>
+                    </m_anchoredOffset>
+                    <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>100</x>
+                      <y>100</y>
+                    </m_size>
+                  </m_rectTransform>
+                  <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                  <m_imageData Type="BluePrint.UGC.UI.Core.CImageData">
+                    <m_enable>1</m_enable>
+                    <m_resFullPath>Texture/Sprite/direnjie.sprite</m_resFullPath>
+                    <m_color Type="BluePrint.UGC.UI.Core.Color">
+                      <r>1</r>
+                      <g>1</g>
+                      <b>1</b>
+                      <a>1</a>
+                    </m_color>
+                    <m_type>0</m_type>
+                    <m_fillMethod>4</m_fillMethod>
+                    <m_fillOrigin>0</m_fillOrigin>
+                    <m_fillAmount>1</m_fillAmount>
+                    <m_fillClockWise>1</m_fillClockWise>
+                  </m_imageData>
+                  <m_onClickedEventHandler></m_onClickedEventHandler>
+                  <m_onHoldStartEventHandler></m_onHoldStartEventHandler>
+                  <m_onHoldEventHandler></m_onHoldEventHandler>
+                  <m_onHoldEndEventHandler></m_onHoldEndEventHandler>
+                  <m_onDragStartEventHandler></m_onDragStartEventHandler>
+                  <m_onDragEventHandler></m_onDragEventHandler>
+                  <m_onDragEndEventHandler></m_onDragEndEventHandler>
+                  <m_ID>1029</m_ID>
+                  <m_active>1</m_active>
+                  <m_alpha>1</m_alpha>
+                </Item>
+                <Item Type="BluePrint.UGC.UI.Core.CPanel">
+                  <m_name>Panel(1032)</m_name>
+                  <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                    <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                      <m_minX>0.5</m_minX>
+                      <m_minY>0.5</m_minY>
+                      <m_maxX>0.5</m_maxX>
+                      <m_maxY>0.5</m_maxY>
+                    </m_anchor>
+                    <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>0.5</x>
+                      <y>0.5</y>
+                    </m_pivot>
+                    <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>1</x>
+                      <y>1</y>
+                    </m_localScale>
+                    <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>50.81995</x>
+                      <y>0</y>
+                    </m_anchoredPosition>
+                    <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                      <m_minX>-169.7399</m_minX>
+                      <m_minY>-50</m_minY>
+                      <m_maxX>271.3798</m_maxX>
+                      <m_maxY>50</m_maxY>
+                    </m_anchoredOffset>
+                    <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>441.1196</x>
+                      <y>100</y>
+                    </m_size>
+                  </m_rectTransform>
+                  <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                    <Item Type="BluePrint.UGC.UI.Core.CImage">
+                      <m_name>Image(1033)</m_name>
+                      <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                        <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                          <m_minX>0</m_minX>
+                          <m_minY>0</m_minY>
+                          <m_maxX>1</m_maxX>
+                          <m_maxY>1</m_maxY>
+                        </m_anchor>
+                        <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0.5</x>
+                          <y>0.5</y>
+                        </m_pivot>
+                        <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>1</x>
+                          <y>1</y>
+                        </m_localScale>
+                        <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0</x>
+                          <y>0</y>
+                        </m_anchoredPosition>
+                        <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                          <m_minX>0</m_minX>
+                          <m_minY>0</m_minY>
+                          <m_maxX>0</m_maxX>
+                          <m_maxY>0</m_maxY>
+                        </m_anchoredOffset>
+                        <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>441.1196</x>
+                          <y>100</y>
+                        </m_size>
+                      </m_rectTransform>
+                      <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                      <m_imageData Type="BluePrint.UGC.UI.Core.CImageData">
+                        <m_enable>1</m_enable>
+                        <m_resFullPath>Texture/Sprite/uiitem_show_background.sprite</m_resFullPath>
+                        <m_color Type="BluePrint.UGC.UI.Core.Color">
+                          <r>1</r>
+                          <g>1</g>
+                          <b>1</b>
+                          <a>0</a>
+                        </m_color>
+                        <m_type>0</m_type>
+                        <m_fillMethod>4</m_fillMethod>
+                        <m_fillOrigin>0</m_fillOrigin>
+                        <m_fillAmount>1</m_fillAmount>
+                        <m_fillClockWise>1</m_fillClockWise>
+                      </m_imageData>
+                      <m_onClickedEventHandler></m_onClickedEventHandler>
+                      <m_onHoldStartEventHandler></m_onHoldStartEventHandler>
+                      <m_onHoldEventHandler></m_onHoldEventHandler>
+                      <m_onHoldEndEventHandler></m_onHoldEndEventHandler>
+                      <m_onDragStartEventHandler></m_onDragStartEventHandler>
+                      <m_onDragEventHandler></m_onDragEventHandler>
+                      <m_onDragEndEventHandler></m_onDragEndEventHandler>
+                      <m_ID>1033</m_ID>
+                      <m_active>1</m_active>
+                      <m_alpha>0.6</m_alpha>
+                    </Item>
+                    <Item Type="BluePrint.UGC.UI.Core.CPanel">
+                      <m_name>wish_before_panel</m_name>
+                      <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                        <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                          <m_minX>0</m_minX>
+                          <m_minY>0</m_minY>
+                          <m_maxX>1</m_maxX>
+                          <m_maxY>1</m_maxY>
+                        </m_anchor>
+                        <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0.5</x>
+                          <y>0.5</y>
+                        </m_pivot>
+                        <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>1</x>
+                          <y>1</y>
+                        </m_localScale>
+                        <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0</x>
+                          <y>0</y>
+                        </m_anchoredPosition>
+                        <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                          <m_minX>0</m_minX>
+                          <m_minY>0</m_minY>
+                          <m_maxX>0</m_maxX>
+                          <m_maxY>0</m_maxY>
+                        </m_anchoredOffset>
+                        <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>441.1196</x>
+                          <y>100</y>
+                        </m_size>
+                      </m_rectTransform>
+                      <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                        <Item Type="BluePrint.UGC.UI.Core.CTextLabel">
+                          <m_name>wish_before_show_des</m_name>
+                          <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                            <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                              <m_minX>0</m_minX>
+                              <m_minY>0</m_minY>
+                              <m_maxX>1</m_maxX>
+                              <m_maxY>1</m_maxY>
+                            </m_anchor>
+                            <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>0.5</x>
+                              <y>0.5</y>
+                            </m_pivot>
+                            <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>1</x>
+                              <y>1</y>
+                            </m_localScale>
+                            <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>0</x>
+                              <y>0</y>
+                            </m_anchoredPosition>
+                            <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                              <m_minX>0</m_minX>
+                              <m_minY>49.57721</m_minY>
+                              <m_maxX>0</m_maxX>
+                              <m_maxY>6.103516E-05</m_maxY>
+                            </m_anchoredOffset>
+                            <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>441.1196</x>
+                              <y>50.42285</y>
+                            </m_size>
+                          </m_rectTransform>
+                          <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                          <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                            <m_enable>1</m_enable>
+                            <m_textContent>我将聆听你的1个愿望</m_textContent>
+                            <m_fontType>1</m_fontType>
+                            <m_fontStyle>0</m_fontStyle>
+                            <m_fontSize>22</m_fontSize>
+                            <m_lineSpace>1</m_lineSpace>
+                            <m_flags>1</m_flags>
+                            <m_color Type="BluePrint.UGC.UI.Core.Color">
+                              <r>1</r>
+                              <g>1</g>
+                              <b>1</b>
+                              <a>1</a>
+                            </m_color>
+                            <m_alignment>4</m_alignment>
+                          </m_textData>
+                          <m_ID>1031</m_ID>
+                          <m_active>1</m_active>
+                          <m_alpha>1</m_alpha>
+                        </Item>
+                        <Item Type="BluePrint.UGC.UI.Core.CTextLabel">
+                          <m_name>wish_before_show_des2</m_name>
+                          <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                            <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                              <m_minX>0.5</m_minX>
+                              <m_minY>0.5</m_minY>
+                              <m_maxX>0.5</m_maxX>
+                              <m_maxY>0.5</m_maxY>
+                            </m_anchor>
+                            <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>0.5</x>
+                              <y>0.5</y>
+                            </m_pivot>
+                            <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>1</x>
+                              <y>1</y>
+                            </m_localScale>
+                            <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>0.7151489</x>
+                              <y>-22.79825</y>
+                            </m_anchoredPosition>
+                            <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                              <m_minX>-207.7791</m_minX>
+                              <m_minY>-50</m_minY>
+                              <m_maxX>209.2094</m_maxX>
+                              <m_maxY>4.403503</m_maxY>
+                            </m_anchoredOffset>
+                            <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>416.9884</x>
+                              <y>54.4035</y>
+                            </m_size>
+                          </m_rectTransform>
+                          <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                          <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                            <m_enable>1</m_enable>
+                            <m_textContent>你获得了XXX武器</m_textContent>
+                            <m_fontType>1</m_fontType>
+                            <m_fontStyle>0</m_fontStyle>
+                            <m_fontSize>20</m_fontSize>
+                            <m_lineSpace>1</m_lineSpace>
+                            <m_flags>1</m_flags>
+                            <m_color Type="BluePrint.UGC.UI.Core.Color">
+                              <r>1</r>
+                              <g>1</g>
+                              <b>1</b>
+                              <a>1</a>
+                            </m_color>
+                            <m_alignment>3</m_alignment>
+                          </m_textData>
+                          <m_ID>1044</m_ID>
+                          <m_active>1</m_active>
+                          <m_alpha>1</m_alpha>
+                        </Item>
+                      </m_children>
+                      <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+                        <m_enable>0</m_enable>
+                        <m_resFullPath></m_resFullPath>
+                        <m_color Type="BluePrint.UGC.UI.Core.Color">
+                          <r>1</r>
+                          <g>1</g>
+                          <b>1</b>
+                          <a>1</a>
+                        </m_color>
+                        <m_type>1</m_type>
+                        <m_fillMethod>4</m_fillMethod>
+                        <m_fillOrigin>0</m_fillOrigin>
+                        <m_fillAmount>1</m_fillAmount>
+                        <m_fillClockWise>1</m_fillClockWise>
+                      </m_bgImageData>
+                      <m_ID>1034</m_ID>
+                      <m_active>1</m_active>
+                      <m_alpha>1</m_alpha>
+                    </Item>
+                    <Item Type="BluePrint.UGC.UI.Core.CPanel">
+                      <m_name>wish_result_panel</m_name>
+                      <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                        <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                          <m_minX>0</m_minX>
+                          <m_minY>0</m_minY>
+                          <m_maxX>1</m_maxX>
+                          <m_maxY>1</m_maxY>
+                        </m_anchor>
+                        <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0.5</x>
+                          <y>0.5</y>
+                        </m_pivot>
+                        <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>1</x>
+                          <y>1</y>
+                        </m_localScale>
+                        <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0</x>
+                          <y>0</y>
+                        </m_anchoredPosition>
+                        <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                          <m_minX>0</m_minX>
+                          <m_minY>0</m_minY>
+                          <m_maxX>0</m_maxX>
+                          <m_maxY>0</m_maxY>
+                        </m_anchoredOffset>
+                        <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>441.1196</x>
+                          <y>100</y>
+                        </m_size>
+                      </m_rectTransform>
+                      <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                        <Item Type="BluePrint.UGC.UI.Core.CTextLabel">
+                          <m_name>wish_result_title_label</m_name>
+                          <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                            <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                              <m_minX>0.5</m_minX>
+                              <m_minY>0.5</m_minY>
+                              <m_maxX>0.5</m_maxX>
+                              <m_maxY>0.5</m_maxY>
+                            </m_anchor>
+                            <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>0.5</x>
+                              <y>0.5</y>
+                            </m_pivot>
+                            <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>1</x>
+                              <y>1</y>
+                            </m_localScale>
+                            <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>-3.139282</x>
+                              <y>26.40204</y>
+                            </m_anchoredPosition>
+                            <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                              <m_minX>-183.6463</m_minX>
+                              <m_minY>2.804001</m_minY>
+                              <m_maxX>177.3678</m_maxX>
+                              <m_maxY>50.00008</m_maxY>
+                            </m_anchoredOffset>
+                            <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>361.0141</x>
+                              <y>47.19608</y>
+                            </m_size>
+                          </m_rectTransform>
+                          <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                          <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                            <m_enable>1</m_enable>
+                            <m_textContent>您的愿望将被满足</m_textContent>
+                            <m_fontType>1</m_fontType>
+                            <m_fontStyle>0</m_fontStyle>
+                            <m_fontSize>20</m_fontSize>
+                            <m_lineSpace>1</m_lineSpace>
+                            <m_flags>1</m_flags>
+                            <m_color Type="BluePrint.UGC.UI.Core.Color">
+                              <r>1</r>
+                              <g>1</g>
+                              <b>1</b>
+                              <a>1</a>
+                            </m_color>
+                            <m_alignment>4</m_alignment>
+                          </m_textData>
+                          <m_ID>1036</m_ID>
+                          <m_active>1</m_active>
+                          <m_alpha>1</m_alpha>
+                        </Item>
+                        <Item Type="BluePrint.UGC.UI.Core.CTextLabel">
+                          <m_name>wish_result_des_label</m_name>
+                          <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                            <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                              <m_minX>0.5</m_minX>
+                              <m_minY>0.5</m_minY>
+                              <m_maxX>0.5</m_maxX>
+                              <m_maxY>0.5</m_maxY>
+                            </m_anchor>
+                            <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>0.5</x>
+                              <y>0.5</y>
+                            </m_pivot>
+                            <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>1</x>
+                              <y>1</y>
+                            </m_localScale>
+                            <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>0.7942505</x>
+                              <y>-22.2868</y>
+                            </m_anchoredPosition>
+                            <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                              <m_minX>-185.3945</m_minX>
+                              <m_minY>-50</m_minY>
+                              <m_maxX>186.983</m_maxX>
+                              <m_maxY>5.426395</m_maxY>
+                            </m_anchoredOffset>
+                            <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>372.3776</x>
+                              <y>55.42639</y>
+                            </m_size>
+                          </m_rectTransform>
+                          <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                          <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                            <m_enable>1</m_enable>
+                            <m_textContent>您获得了代达罗斯之殇</m_textContent>
+                            <m_fontType>1</m_fontType>
+                            <m_fontStyle>0</m_fontStyle>
+                            <m_fontSize>18</m_fontSize>
+                            <m_lineSpace>1</m_lineSpace>
+                            <m_flags>1</m_flags>
+                            <m_color Type="BluePrint.UGC.UI.Core.Color">
+                              <r>1</r>
+                              <g>1</g>
+                              <b>1</b>
+                              <a>1</a>
+                            </m_color>
+                            <m_alignment>4</m_alignment>
+                          </m_textData>
+                          <m_ID>1037</m_ID>
+                          <m_active>1</m_active>
+                          <m_alpha>1</m_alpha>
+                        </Item>
+                      </m_children>
+                      <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+                        <m_enable>0</m_enable>
+                        <m_resFullPath></m_resFullPath>
+                        <m_color Type="BluePrint.UGC.UI.Core.Color">
+                          <r>1</r>
+                          <g>1</g>
+                          <b>1</b>
+                          <a>1</a>
+                        </m_color>
+                        <m_type>1</m_type>
+                        <m_fillMethod>4</m_fillMethod>
+                        <m_fillOrigin>0</m_fillOrigin>
+                        <m_fillAmount>1</m_fillAmount>
+                        <m_fillClockWise>1</m_fillClockWise>
+                      </m_bgImageData>
+                      <m_ID>1035</m_ID>
+                      <m_active>0</m_active>
+                      <m_alpha>1</m_alpha>
+                    </Item>
+                  </m_children>
+                  <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+                    <m_enable>1</m_enable>
+                    <m_resFullPath>Texture/Sprite/equip_pinzhi_blue.sprite</m_resFullPath>
+                    <m_color Type="BluePrint.UGC.UI.Core.Color">
+                      <r>1</r>
+                      <g>1</g>
+                      <b>1</b>
+                      <a>1</a>
+                    </m_color>
+                    <m_type>1</m_type>
+                    <m_fillMethod>4</m_fillMethod>
+                    <m_fillOrigin>0</m_fillOrigin>
+                    <m_fillAmount>1</m_fillAmount>
+                    <m_fillClockWise>1</m_fillClockWise>
+                  </m_bgImageData>
+                  <m_ID>1032</m_ID>
+                  <m_active>1</m_active>
+                  <m_alpha>1</m_alpha>
+                </Item>
+              </m_children>
+              <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+                <m_enable>0</m_enable>
+                <m_resFullPath></m_resFullPath>
+                <m_color Type="BluePrint.UGC.UI.Core.Color">
+                  <r>1</r>
+                  <g>1</g>
+                  <b>1</b>
+                  <a>1</a>
+                </m_color>
+                <m_type>1</m_type>
+                <m_fillMethod>4</m_fillMethod>
+                <m_fillOrigin>0</m_fillOrigin>
+                <m_fillAmount>1</m_fillAmount>
+                <m_fillClockWise>1</m_fillClockWise>
+              </m_bgImageData>
+              <m_ID>1028</m_ID>
+              <m_active>1</m_active>
+              <m_alpha>1</m_alpha>
+            </Item>
+            <Item Type="BluePrint.UGC.UI.Core.CPanel">
+              <m_name>wish_right_bottom_panel</m_name>
+              <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                  <m_minX>0.5</m_minX>
+                  <m_minY>0</m_minY>
+                  <m_maxX>0.5</m_maxX>
+                  <m_maxY>0</m_maxY>
+                </m_anchor>
+                <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0.5</x>
+                  <y>0</y>
+                </m_pivot>
+                <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>1</x>
+                  <y>1</y>
+                </m_localScale>
+                <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>0</x>
+                  <y>0</y>
+                </m_anchoredPosition>
+                <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                  <m_minX>-311.375</m_minX>
+                  <m_minY>0</m_minY>
+                  <m_maxX>311.375</m_maxX>
+                  <m_maxY>321.6431</m_maxY>
+                </m_anchoredOffset>
+                <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                  <x>622.75</x>
+                  <y>321.6431</y>
+                </m_size>
+              </m_rectTransform>
+              <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                <Item Type="BluePrint.UGC.UI.Core.CImage">
+                  <m_name>Image(1038)</m_name>
+                  <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                    <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                      <m_minX>0.5</m_minX>
+                      <m_minY>1</m_minY>
+                      <m_maxX>0.5</m_maxX>
+                      <m_maxY>1</m_maxY>
+                    </m_anchor>
+                    <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>0.5</x>
+                      <y>1</y>
+                    </m_pivot>
+                    <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>1</x>
+                      <y>1</y>
+                    </m_localScale>
+                    <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>0</x>
+                      <y>0</y>
+                    </m_anchoredPosition>
+                    <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                      <m_minX>-311.3751</m_minX>
+                      <m_minY>-43.7063</m_minY>
+                      <m_maxX>311.3751</m_maxX>
+                      <m_maxY>0</m_maxY>
+                    </m_anchoredOffset>
+                    <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>622.7501</x>
+                      <y>43.7063</y>
+                    </m_size>
+                  </m_rectTransform>
+                  <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                    <Item Type="BluePrint.UGC.UI.Core.CTextLabel">
+                      <m_name>wish_right_bottom_des_label</m_name>
+                      <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                        <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                          <m_minX>0</m_minX>
+                          <m_minY>0</m_minY>
+                          <m_maxX>1</m_maxX>
+                          <m_maxY>1</m_maxY>
+                        </m_anchor>
+                        <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0.5</x>
+                          <y>0.5</y>
+                        </m_pivot>
+                        <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>1</x>
+                          <y>1</y>
+                        </m_localScale>
+                        <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0</x>
+                          <y>0</y>
+                        </m_anchoredPosition>
+                        <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                          <m_minX>0</m_minX>
+                          <m_minY>0</m_minY>
+                          <m_maxX>0</m_maxX>
+                          <m_maxY>0</m_maxY>
+                        </m_anchoredOffset>
+                        <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>622.7502</x>
+                          <y>43.7063</y>
+                        </m_size>
+                      </m_rectTransform>
+                      <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                      <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                        <m_enable>1</m_enable>
+                        <m_textContent>选择您的心愿</m_textContent>
+                        <m_fontType>1</m_fontType>
+                        <m_fontStyle>0</m_fontStyle>
+                        <m_fontSize>22</m_fontSize>
+                        <m_lineSpace>1</m_lineSpace>
+                        <m_flags>1</m_flags>
+                        <m_color Type="BluePrint.UGC.UI.Core.Color">
+                          <r>1</r>
+                          <g>1</g>
+                          <b>1</b>
+                          <a>1</a>
+                        </m_color>
+                        <m_alignment>4</m_alignment>
+                      </m_textData>
+                      <m_ID>1019</m_ID>
+                      <m_active>1</m_active>
+                      <m_alpha>1</m_alpha>
+                    </Item>
+                  </m_children>
+                  <m_imageData Type="BluePrint.UGC.UI.Core.CImageData">
+                    <m_enable>1</m_enable>
+                    <m_resFullPath>Texture/Sprite/bag_slice_panel.sprite</m_resFullPath>
+                    <m_color Type="BluePrint.UGC.UI.Core.Color">
+                      <r>1</r>
+                      <g>1</g>
+                      <b>1</b>
+                      <a>1</a>
+                    </m_color>
+                    <m_type>0</m_type>
+                    <m_fillMethod>4</m_fillMethod>
+                    <m_fillOrigin>0</m_fillOrigin>
+                    <m_fillAmount>1</m_fillAmount>
+                    <m_fillClockWise>1</m_fillClockWise>
+                  </m_imageData>
+                  <m_onClickedEventHandler></m_onClickedEventHandler>
+                  <m_onHoldStartEventHandler></m_onHoldStartEventHandler>
+                  <m_onHoldEventHandler></m_onHoldEventHandler>
+                  <m_onHoldEndEventHandler></m_onHoldEndEventHandler>
+                  <m_onDragStartEventHandler></m_onDragStartEventHandler>
+                  <m_onDragEventHandler></m_onDragEventHandler>
+                  <m_onDragEndEventHandler></m_onDragEndEventHandler>
+                  <m_ID>1038</m_ID>
+                  <m_active>1</m_active>
+                  <m_alpha>1</m_alpha>
+                </Item>
+                <Item Type="BluePrint.UGC.UI.Core.CPanel">
+                  <m_name>wish_right_bottom_btns_panel</m_name>
+                  <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                    <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                      <m_minX>0.5</m_minX>
+                      <m_minY>0</m_minY>
+                      <m_maxX>0.5</m_maxX>
+                      <m_maxY>0</m_maxY>
+                    </m_anchor>
+                    <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>0.5</x>
+                      <y>0</y>
+                    </m_pivot>
+                    <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>1</x>
+                      <y>1</y>
+                    </m_localScale>
+                    <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>-0.9469604</x>
+                      <y>0</y>
+                    </m_anchoredPosition>
+                    <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                      <m_minX>-311.2616</m_minX>
+                      <m_minY>0</m_minY>
+                      <m_maxX>309.3677</m_maxX>
+                      <m_maxY>275.3145</m_maxY>
+                    </m_anchoredOffset>
+                    <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                      <x>620.6293</x>
+                      <y>275.3145</y>
+                    </m_size>
+                  </m_rectTransform>
+                  <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                    <Item Type="BluePrint.UGC.UI.Core.CList">
+                      <m_name>wish_choice_list</m_name>
+                      <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                        <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                          <m_minX>0.5</m_minX>
+                          <m_minY>0.5</m_minY>
+                          <m_maxX>0.5</m_maxX>
+                          <m_maxY>0.5</m_maxY>
+                        </m_anchor>
+                        <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0.5</x>
+                          <y>0.5</y>
+                        </m_pivot>
+                        <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>1</x>
+                          <y>1</y>
+                        </m_localScale>
+                        <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0</x>
+                          <y>0</y>
+                        </m_anchoredPosition>
+                        <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                          <m_minX>-291.521</m_minX>
+                          <m_minY>-100.9615</m_minY>
+                          <m_maxX>291.521</m_maxX>
+                          <m_maxY>100.9615</m_maxY>
+                        </m_anchoredOffset>
+                        <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>583.042</x>
+                          <y>201.923</y>
+                        </m_size>
+                      </m_rectTransform>
+                      <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                        <Item Type="BluePrint.UGC.UI.Core.CListElement">
+                          <m_name>wish_choice_element</m_name>
+                          <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                            <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                              <m_minX>0</m_minX>
+                              <m_minY>1</m_minY>
+                              <m_maxX>0</m_maxX>
+                              <m_maxY>1</m_maxY>
+                            </m_anchor>
+                            <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>0</x>
+                              <y>1</y>
+                            </m_pivot>
+                            <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>1</x>
+                              <y>1</y>
+                            </m_localScale>
+                            <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>0</x>
+                              <y>0</y>
+                            </m_anchoredPosition>
+                            <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                              <m_minX>0</m_minX>
+                              <m_minY>-62.95462</m_minY>
+                              <m_maxX>257.4301</m_maxX>
+                              <m_maxY>0</m_maxY>
+                            </m_anchoredOffset>
+                            <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                              <x>257.4301</x>
+                              <y>62.95462</y>
+                            </m_size>
+                          </m_rectTransform>
+                          <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                            <Item Type="BluePrint.UGC.UI.Core.CPanel">
+                              <m_name>choice_element_panel</m_name>
+                              <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                                <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                                  <m_minX>0</m_minX>
+                                  <m_minY>0</m_minY>
+                                  <m_maxX>1</m_maxX>
+                                  <m_maxY>1</m_maxY>
+                                </m_anchor>
+                                <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                                  <x>0.5</x>
+                                  <y>0.5</y>
+                                </m_pivot>
+                                <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                                  <x>1</x>
+                                  <y>1</y>
+                                </m_localScale>
+                                <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                                  <x>0</x>
+                                  <y>0</y>
+                                </m_anchoredPosition>
+                                <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                                  <m_minX>0</m_minX>
+                                  <m_minY>0</m_minY>
+                                  <m_maxX>0</m_maxX>
+                                  <m_maxY>0</m_maxY>
+                                </m_anchoredOffset>
+                                <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                                  <x>257.4301</x>
+                                  <y>62.95462</y>
+                                </m_size>
+                              </m_rectTransform>
+                              <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+                                <Item Type="BluePrint.UGC.UI.Core.CButton">
+                                  <m_name>wish_choice_btn</m_name>
+                                  <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                                    <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                                      <m_minX>0</m_minX>
+                                      <m_minY>0</m_minY>
+                                      <m_maxX>1</m_maxX>
+                                      <m_maxY>1</m_maxY>
+                                    </m_anchor>
+                                    <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                                      <x>0.5</x>
+                                      <y>0.5</y>
+                                    </m_pivot>
+                                    <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                                      <x>1</x>
+                                      <y>1</y>
+                                    </m_localScale>
+                                    <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                                      <x>0</x>
+                                      <y>0</y>
+                                    </m_anchoredPosition>
+                                    <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                                      <m_minX>0</m_minX>
+                                      <m_minY>0</m_minY>
+                                      <m_maxX>0</m_maxX>
+                                      <m_maxY>0</m_maxY>
+                                    </m_anchoredOffset>
+                                    <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                                      <x>257.4301</x>
+                                      <y>62.95462</y>
+                                    </m_size>
+                                  </m_rectTransform>
+                                  <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                                  <m_imageData Type="BluePrint.UGC.UI.Core.CImageData">
+                                    <m_enable>1</m_enable>
+                                    <m_resFullPath>UGCResource/UGCUI/Sprite/Button/Btn_blue.prefab</m_resFullPath>
+                                    <m_color Type="BluePrint.UGC.UI.Core.Color">
+                                      <r>1</r>
+                                      <g>1</g>
+                                      <b>1</b>
+                                      <a>1</a>
+                                    </m_color>
+                                    <m_type>1</m_type>
+                                    <m_fillMethod>4</m_fillMethod>
+                                    <m_fillOrigin>0</m_fillOrigin>
+                                    <m_fillAmount>1</m_fillAmount>
+                                    <m_fillClockWise>1</m_fillClockWise>
+                                  </m_imageData>
+                                  <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                                    <m_enable>1</m_enable>
+                                    <m_textContent>想要神兵</m_textContent>
+                                    <m_fontType>1</m_fontType>
+                                    <m_fontStyle>0</m_fontStyle>
+                                    <m_fontSize>22</m_fontSize>
+                                    <m_lineSpace>1</m_lineSpace>
+                                    <m_flags>1</m_flags>
+                                    <m_color Type="BluePrint.UGC.UI.Core.Color">
+                                      <r>1</r>
+                                      <g>1</g>
+                                      <b>1</b>
+                                      <a>1</a>
+                                    </m_color>
+                                    <m_alignment>4</m_alignment>
+                                  </m_textData>
+                                  <m_closeBelongedFormWhenClicked>0</m_closeBelongedFormWhenClicked>
+                                  <m_onClickedEventHandler>wish_btn_click</m_onClickedEventHandler>
+                                  <m_ID>1042</m_ID>
+                                  <m_active>1</m_active>
+                                  <m_alpha>1</m_alpha>
+                                </Item>
+                              </m_children>
+                              <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+                                <m_enable>0</m_enable>
+                                <m_resFullPath></m_resFullPath>
+                                <m_color Type="BluePrint.UGC.UI.Core.Color">
+                                  <r>1</r>
+                                  <g>1</g>
+                                  <b>1</b>
+                                  <a>1</a>
+                                </m_color>
+                                <m_type>1</m_type>
+                                <m_fillMethod>4</m_fillMethod>
+                                <m_fillOrigin>0</m_fillOrigin>
+                                <m_fillAmount>1</m_fillAmount>
+                                <m_fillClockWise>1</m_fillClockWise>
+                              </m_bgImageData>
+                              <m_ID>1041</m_ID>
+                              <m_active>1</m_active>
+                              <m_alpha>1</m_alpha>
+                            </Item>
+                          </m_children>
+                          <m_selectedBGImage></m_selectedBGImage>
+                          <m_onEnableEventHandler></m_onEnableEventHandler>
+                          <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+                            <m_enable>0</m_enable>
+                            <m_resFullPath>UGCResource/UGCUI/Sprite/Button/Btn_blue.prefab</m_resFullPath>
+                            <m_color Type="BluePrint.UGC.UI.Core.Color">
+                              <r>1</r>
+                              <g>1</g>
+                              <b>1</b>
+                              <a>1</a>
+                            </m_color>
+                            <m_type>1</m_type>
+                            <m_fillMethod>4</m_fillMethod>
+                            <m_fillOrigin>0</m_fillOrigin>
+                            <m_fillAmount>1</m_fillAmount>
+                            <m_fillClockWise>1</m_fillClockWise>
+                          </m_bgImageData>
+                          <m_ID>1040</m_ID>
+                          <m_active>1</m_active>
+                          <m_alpha>1</m_alpha>
+                        </Item>
+                      </m_children>
+                      <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+                        <m_enable>0</m_enable>
+                        <m_resFullPath></m_resFullPath>
+                        <m_color Type="BluePrint.UGC.UI.Core.Color">
+                          <r>1</r>
+                          <g>1</g>
+                          <b>1</b>
+                          <a>1</a>
+                        </m_color>
+                        <m_type>1</m_type>
+                        <m_fillMethod>4</m_fillMethod>
+                        <m_fillOrigin>0</m_fillOrigin>
+                        <m_fillAmount>1</m_fillAmount>
+                        <m_fillClockWise>1</m_fillClockWise>
+                      </m_bgImageData>
+                      <m_listType>2</m_listType>
+                      <m_elementAmount>4</m_elementAmount>
+                      <m_elementSpacing Type="BluePrint.UGC.UI.Core.Vector2">
+                        <x>60</x>
+                        <y>30</y>
+                      </m_elementSpacing>
+                      <m_onSelectChangedEventHandler></m_onSelectChangedEventHandler>
+                      <m_ID>1039</m_ID>
+                      <m_active>1</m_active>
+                      <m_alpha>1</m_alpha>
+                    </Item>
+                    <Item Type="BluePrint.UGC.UI.Core.CTextLabel">
+                      <m_name>wish_select_alert_label</m_name>
+                      <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+                        <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+                          <m_minX>0.5</m_minX>
+                          <m_minY>0.5</m_minY>
+                          <m_maxX>0.5</m_maxX>
+                          <m_maxY>0.5</m_maxY>
+                        </m_anchor>
+                        <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>0.5</x>
+                          <y>0.5</y>
+                        </m_pivot>
+                        <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>1</x>
+                          <y>1</y>
+                        </m_localScale>
+                        <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>12.06696</x>
+                          <y>0</y>
+                        </m_anchoredPosition>
+                        <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+                          <m_minX>-260.433</m_minX>
+                          <m_minY>-50</m_minY>
+                          <m_maxX>284.567</m_maxX>
+                          <m_maxY>50</m_maxY>
+                        </m_anchoredOffset>
+                        <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+                          <x>545</x>
+                          <y>100</y>
+                        </m_size>
+                      </m_rectTransform>
+                      <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+                      <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
+                        <m_enable>1</m_enable>
+                        <m_textContent>距离下一次许愿机会到来还有60秒</m_textContent>
+                        <m_fontType>1</m_fontType>
+                        <m_fontStyle>0</m_fontStyle>
+                        <m_fontSize>20</m_fontSize>
+                        <m_lineSpace>1</m_lineSpace>
+                        <m_flags>1</m_flags>
+                        <m_color Type="BluePrint.UGC.UI.Core.Color">
+                          <r>1</r>
+                          <g>1</g>
+                          <b>1</b>
+                          <a>0.6078432</a>
+                        </m_color>
+                        <m_alignment>3</m_alignment>
+                      </m_textData>
+                      <m_ID>1043</m_ID>
+                      <m_active>1</m_active>
+                      <m_alpha>1</m_alpha>
+                    </Item>
+                  </m_children>
+                  <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+                    <m_enable>0</m_enable>
+                    <m_resFullPath></m_resFullPath>
+                    <m_color Type="BluePrint.UGC.UI.Core.Color">
+                      <r>1</r>
+                      <g>1</g>
+                      <b>1</b>
+                      <a>1</a>
+                    </m_color>
+                    <m_type>1</m_type>
+                    <m_fillMethod>4</m_fillMethod>
+                    <m_fillOrigin>0</m_fillOrigin>
+                    <m_fillAmount>1</m_fillAmount>
+                    <m_fillClockWise>1</m_fillClockWise>
+                  </m_bgImageData>
+                  <m_ID>1021</m_ID>
+                  <m_active>1</m_active>
+                  <m_alpha>1</m_alpha>
+                </Item>
+              </m_children>
+              <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+                <m_enable>0</m_enable>
+                <m_resFullPath></m_resFullPath>
+                <m_color Type="BluePrint.UGC.UI.Core.Color">
+                  <r>1</r>
+                  <g>1</g>
+                  <b>1</b>
+                  <a>1</a>
+                </m_color>
+                <m_type>1</m_type>
+                <m_fillMethod>4</m_fillMethod>
+                <m_fillOrigin>0</m_fillOrigin>
+                <m_fillAmount>1</m_fillAmount>
+                <m_fillClockWise>1</m_fillClockWise>
+              </m_bgImageData>
+              <m_ID>1018</m_ID>
+              <m_active>1</m_active>
+              <m_alpha>1</m_alpha>
+            </Item>
+          </m_children>
+          <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+            <m_enable>0</m_enable>
+            <m_resFullPath></m_resFullPath>
+            <m_color Type="BluePrint.UGC.UI.Core.Color">
+              <r>1</r>
+              <g>1</g>
+              <b>1</b>
+              <a>1</a>
+            </m_color>
+            <m_type>1</m_type>
+            <m_fillMethod>4</m_fillMethod>
+            <m_fillOrigin>0</m_fillOrigin>
+            <m_fillAmount>1</m_fillAmount>
+            <m_fillClockWise>1</m_fillClockWise>
+          </m_bgImageData>
+          <m_ID>1008</m_ID>
+          <m_active>1</m_active>
+          <m_alpha>1</m_alpha>
+        </Item>
+      </m_children>
+      <m_bgImageData Type="BluePrint.UGC.UI.Core.CImageData">
+        <m_enable>1</m_enable>
+        <m_resFullPath>Texture/Sprite/dan_panel.sprite</m_resFullPath>
+        <m_color Type="BluePrint.UGC.UI.Core.Color">
+          <r>1</r>
+          <g>1</g>
+          <b>1</b>
+          <a>1</a>
+        </m_color>
+        <m_type>1</m_type>
+        <m_fillMethod>4</m_fillMethod>
+        <m_fillOrigin>0</m_fillOrigin>
+        <m_fillAmount>1</m_fillAmount>
+        <m_fillClockWise>1</m_fillClockWise>
+      </m_bgImageData>
+      <m_ID>1002</m_ID>
+      <m_active>1</m_active>
+      <m_alpha>1</m_alpha>
+    </Item>
+  </m_children>
+  <m_bindLua>UI/GameMode/QiWishView.lua</m_bindLua>
+  <m_referenceResolution Type="BluePrint.UGC.UI.Core.Vector2">
+    <x>1280</x>
+    <y>720</y>
+  </m_referenceResolution>
+  <m_flags>0</m_flags>
+  <m_priority>7</m_priority>
+  <m_onOpendEventHandler>wish_view_create</m_onOpendEventHandler>
+  <m_onClosedEventHandler></m_onClosedEventHandler>
+</Root>

@@ -1,0 +1,1263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root Schema="22.技能效果组合">
+  <Sheet Name="技能效果组合" FontColor="FFFFFFFF" FillColor="FF44546A">
+    <Columns>
+      <Column Name="效果组合ID" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果类型" Type="System.String" WidthInCharacters="8" />
+      <Column Name="死亡时不执行" Type="System.Byte" WidthInCharacters="13" />
+      <Column Name="效果图标路径" Type="System.String" WidthInCharacters="25" />
+      <Column Name="效果子类型" Type="System.String" WidthInCharacters="11" />
+      <Column Name="控制类型" Type="System.String" WidthInCharacters="8" />
+      <Column Name="显示类型" Type="System.String" WidthInCharacters="8" />
+      <Column Name="控制效果（程序不读）" Type="System.String" WidthInCharacters="8" />
+      <Column Name="名字效果更换" Type="System.String" WidthInCharacters="8" />
+      <Column Name="名字效果更换队友" Type="System.String" WidthInCharacters="8" />
+      <Column Name="名字效果更换敌人" Type="System.String" WidthInCharacters="8" />
+      <Column Name="底板颜色" Type="System.String" WidthInCharacters="8" />
+      <Column Name="局内飘字ID" Type="System.Byte" WidthInCharacters="13" />
+      <Column Name="age立即执行" Type="System.Byte" WidthInCharacters="15" />
+      <Column Name="触发几率" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="不吸引仇恨" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="统计技能槽位" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="是否是普攻伤害" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="法球效果槽位" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="触发法球伤害衰减到万分比" Type="System.UInt16" WidthInCharacters="8" />
+      <Column Name="效果是否暴击" Type="System.Byte" WidthInCharacters="13" />
+      <Column Name="造成伤害上限" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="野怪伤害上限" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="偷塔伤害上限" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="远程英雄折减" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="生效目标类型" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="首次吸血衰减万分比" Type="System.Int32" WidthInCharacters="21" />
+      <Column Name="非首次吸血衰减万分比" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="前置效果组合ID" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="需要检查前置效果组合的技能槽位Mask" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="是否保留前置效果组合" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="互斥效果类型" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="互斥效果组合ID1" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="互斥效果组合ID2" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="互斥效果组合ID3" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="互斥效果组合ID4" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="功能组ID" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="伤害衰减类型" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="后续伤害衰减系数" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="后续伤害衰减最低系数" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="沙尘暴治疗衰减万分比" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="叠加衰减万分比" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="持续时间叠加衰减CD" Type="System.Int32" WidthInCharacters="22" />
+      <Column Name="持续时间叠加衰减到万分比" Type="System.Int32" WidthInCharacters="27" />
+      <Column Name="区分类型" Type="System.Byte" WidthInCharacters="22" />
+      <Column Name="叠加规则" Type="System.String" WidthInCharacters="21" />
+      <Column Name="叠加次数上限" Type="System.Byte" WidthInCharacters="13" />
+      <Column Name="清除规则" Type="System.String" WidthInCharacters="16" />
+      <Column Name="全局生效次数上限" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="不在添加buff时记录生效次数" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="大血条显示效果" Type="System.String" WidthInCharacters="10" />
+      <Column Name="效果名称" Type="System.String" WidthInCharacters="21" />
+      <Column Name="效果描述" Type="System.String" WidthInCharacters="91" />
+      <Column Name="可以重复飘字" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="动作路径" Type="System.String" WidthInCharacters="82" TypeInfo="BluePrint.Common.ComponentModel.ResourceSelectableAttribute(Extension:.xml,TypeDescription:AGE文件)" />
+      <Column Name="持续时长" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="持续时间成长值" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="影响持续时间属性" Type="System.UInt16" WidthInCharacters="8" />
+      <Column Name="每一点额外属性值增加持续时间万分之N毫秒" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="蓄力效果持续时间" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="蓄力效果持续时间成长值" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="持续时间最大值" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="成长类型" Type="System.Byte" WidthInCharacters="12" />
+      <Column Name="动态更新规则" Type="System.Byte" WidthInCharacters="8" />
+      <Column Name="效果1类型" Type="System.String" WidthInCharacters="29" />
+      <Column Name="效果1作用周期" Type="System.UInt32" WidthInCharacters="16" />
+      <Column Name="效果1参数1" Type="System.Int32" WidthInCharacters="13" />
+      <Column Name="效果1参数2" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果1参数3" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果1参数4" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果1参数5" Type="System.Int32" WidthInCharacters="16" />
+      <Column Name="效果1参数6" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果1参数7" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果1参数8" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果1参数9" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果1参数10" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果1参数11" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果1参数12" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果1参数13" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果1参数14" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果1参数15" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果1参数16" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果1成长参数1" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果1成长参数2" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果1成长参数3" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果1成长参数4" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果1成长参数5" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果1成长参数6" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果1成长参数7" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果1成长参数8" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果1成长参数9" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果1成长参数10" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果1成长参数11" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果1成长参数12" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果1成长参数13" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果1成长参数14" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果1成长参数15" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果1成长参数16" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果2类型" Type="System.String" WidthInCharacters="18" />
+      <Column Name="效果2作用周期" Type="System.UInt32" WidthInCharacters="13" />
+      <Column Name="效果2参数1" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果2参数2" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果2参数3" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果2参数4" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果2参数5" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果2参数6" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果2参数7" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果2参数8" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果2参数9" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果2参数10" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果2参数11" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果2参数12" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果2参数13" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果2参数14" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果2参数15" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果2参数16" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果2成长参数1" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果2成长参数2" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果2成长参数3" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果2成长参数4" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果2成长参数5" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果2成长参数6" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果2成长参数7" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果2成长参数8" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果2成长参数9" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果2成长参数10" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果2成长参数11" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果2成长参数12" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果2成长参数13" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果2成长参数14" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果2成长参数15" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果2成长参数16" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果3类型" Type="System.Byte" WidthInCharacters="14" />
+      <Column Name="效果3作用周期" Type="System.UInt32" WidthInCharacters="13" />
+      <Column Name="效果3参数1" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果3参数2" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果3参数3" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果3参数4" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果3参数5" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果3参数6" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果3参数7" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果3参数8" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果3参数9" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果3参数10" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果3参数11" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果3参数12" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果3参数13" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果3参数14" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果3参数15" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果3参数16" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果3成长参数1" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果3成长参数2" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果3成长参数3" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果3成长参数4" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果3成长参数5" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果3成长参数6" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果3成长参数7" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果3成长参数8" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果3成长参数9" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果3成长参数10" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果3成长参数11" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果3成长参数12" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果3成长参数13" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果3成长参数14" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果3成长参数15" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果3成长参数16" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果4类型" Type="System.Byte" WidthInCharacters="12" />
+      <Column Name="效果4作用周期" Type="System.UInt32" WidthInCharacters="13" />
+      <Column Name="效果4参数1" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果4参数2" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果4参数3" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果4参数4" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果4参数5" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果4参数6" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果4参数7" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果4参数8" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果4参数9" Type="System.Int32" WidthInCharacters="10" />
+      <Column Name="效果4参数10" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果4参数11" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果4参数12" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果4参数13" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果4参数14" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果4参数15" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果4参数16" Type="System.Int32" WidthInCharacters="11" />
+      <Column Name="效果4成长参数1" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果4成长参数2" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果4成长参数3" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果4成长参数4" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果4成长参数5" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果4成长参数6" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果4成长参数7" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果4成长参数8" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果4成长参数9" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="效果4成长参数10" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果4成长参数11" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果4成长参数12" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果4成长参数13" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果4成长参数14" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果4成长参数15" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果4成长参数16" Type="System.Int32" WidthInCharacters="15" />
+      <Column Name="效果来源" Type="System.Byte" WidthInCharacters="12" />
+      <Column Name="是否开启UI显示" Type="System.String" WidthInCharacters="14" />
+      <Column Name="buff栏优先级" Type="System.Byte" WidthInCharacters="12" />
+      <Column Name="击杀是否继承" Type="System.Byte" WidthInCharacters="12" />
+      <Column Name="是否算作助攻" Type="System.String" WidthInCharacters="12" />
+      <Column Name="换英雄的时候是否继承" Type="System.String" WidthInCharacters="20" />
+      <Column Name="用途类型" Type="System.Byte" WidthInCharacters="12" />
+      <Column Name="击杀动作ID" Type="System.Byte" WidthInCharacters="10" />
+    </Columns>
+    <Row>
+      <Cell Name="效果组合ID">163910</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">16300</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果死亡缓存</Cell>
+      <Cell Name="效果描述">&lt;size=18&gt;&lt;color=#32cbe7&gt;秘剑胧刀&lt;/color&gt;&lt;/size&gt;&lt;size=7&gt;&lt;/size&gt;
+
+&lt;size=16&gt;下一次普通攻击将进行一次强力拔刀斩&lt;/size&gt;</Cell>
+      <Cell Name="动作路径">ability/hero_1_yidajianyi/ability_passive_1/P1E2.xml</Cell>
+      <Cell Name="持续时长">-1</Cell>
+      <Cell Name="效果1类型">改变技能效果</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">16303</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">2</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">801020</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="大血条显示效果">1</Cell>
+      <Cell Name="效果名称">鼓舞</Cell>
+      <Cell Name="效果描述">立即回复自己与附近队友30%已损失生命值，并提高附近友军的移动速度40%持续2秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_huihcun/S2E1MainAbility.xml</Cell>
+      <Cell Name="持续时长">12000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">30</Cell>
+      <Cell Name="效果2类型">回复能量值</Cell>
+      <Cell Name="效果2参数1">1</Cell>
+      <Cell Name="效果2参数2">30</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">163000</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">ability/hero_1_yidajianyi/ability_passive_1/A1E1.xml</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">0</Cell>
+      <Cell Name="效果1参数3">10000</Cell>
+      <Cell Name="效果1参数10">10000</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">1</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">163010</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/163_JuYouJing/skill/A2E1</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">0</Cell>
+      <Cell Name="效果1参数3">10000</Cell>
+      <Cell Name="效果1参数10">10000</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">1</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">163100</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/163_JuYouJing/skill/S1E1</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">150</Cell>
+      <Cell Name="效果1参数3">14000</Cell>
+      <Cell Name="效果1成长参数2">30</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">5</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">193200</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="伤害衰减类型">1</Cell>
+      <Cell Name="后续伤害衰减系数">3333</Cell>
+      <Cell Name="后续伤害衰减最低系数">6667</Cell>
+      <Cell Name="叠加规则">技能效果叠加刷新</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/193_LaFeiEr/skill/S2E1</Cell>
+      <Cell Name="成长类型">3</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">120</Cell>
+      <Cell Name="效果1参数3">4500</Cell>
+      <Cell Name="效果1成长参数2">24</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">9</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">190100</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">3500</Cell>
+      <Cell Name="非首次吸血衰减万分比">3500</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加衰减万分比">8000</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">0</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/190_ZhuGeLiang/skill/S1E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数2">500</Cell>
+      <Cell Name="效果1参数3">7000</Cell>
+      <Cell Name="效果1参数4">7000</Cell>
+      <Cell Name="效果1成长参数2">100</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">900032</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">基地免疫控制</Cell>
+      <Cell Name="效果描述">控制免疫</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/commonresource/R4E1</Cell>
+      <Cell Name="持续时长">99999999</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">152040</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">0</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/A3E1</Cell>
+      <Cell Name="成长类型">1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">10</Cell>
+      <Cell Name="效果1参数4">1000</Cell>
+      <Cell Name="效果1成长参数2">5</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">4</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">152000</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/A1E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">10</Cell>
+      <Cell Name="效果1参数3">1000</Cell>
+      <Cell Name="效果1参数4">1000</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">4</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">1520001</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="死亡时不执行">0</Cell>
+      <Cell Name="效果子类型">是</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">ability/hero_2_wangzhaojun/ability0/bullet/bullet_func.xml</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">10</Cell>
+      <Cell Name="效果1参数3">0</Cell>
+      <Cell Name="效果1参数4">3333</Cell>
+      <Cell Name="效果1参数10">3333</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">4</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">152200</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/S2E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">20</Cell>
+      <Cell Name="效果1参数3">0</Cell>
+      <Cell Name="效果1参数4">50000</Cell>
+      <Cell Name="效果1成长参数2">30</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">9</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">15229001</Cell>
+      <Cell Name="效果类型">控制效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="控制类型">硬控制</Cell>
+      <Cell Name="显示类型">冰冻</Cell>
+      <Cell Name="控制效果（程序不读）">冰冻</Cell>
+      <Cell Name="名字效果更换">freeze</Cell>
+      <Cell Name="底板颜色">ff2b2b</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/S2E9</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">15220001</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/S2E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">20</Cell>
+      <Cell Name="效果1参数3">0</Cell>
+      <Cell Name="效果1参数4">120000</Cell>
+      <Cell Name="效果1成长参数2">30</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">9</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">152100</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/S1E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">400</Cell>
+      <Cell Name="效果1参数3">0</Cell>
+      <Cell Name="效果1参数4">5000</Cell>
+      <Cell Name="效果1成长参数2">60</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">9</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">152110</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/S1E2</Cell>
+      <Cell Name="效果1类型">现形效果</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">152290</Cell>
+      <Cell Name="效果类型">控制效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="控制类型">硬控制</Cell>
+      <Cell Name="显示类型">冰冻</Cell>
+      <Cell Name="控制效果（程序不读）">冰冻</Cell>
+      <Cell Name="名字效果更换">freeze</Cell>
+      <Cell Name="底板颜色">ff2b2b</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/S2E9</Cell>
+      <Cell Name="效果1类型">增加技能印记</Cell>
+      <Cell Name="效果1参数1">15220</Cell>
+      <Cell Name="效果1参数3">1</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">152300</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">3500</Cell>
+      <Cell Name="非首次吸血衰减万分比">3500</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/U1E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">20</Cell>
+      <Cell Name="效果1参数3">0</Cell>
+      <Cell Name="效果1参数4">2200</Cell>
+      <Cell Name="效果1成长参数2">75</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">15220000</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">王昭君-普攻命中</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/S2E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">20</Cell>
+      <Cell Name="效果1参数3">0</Cell>
+      <Cell Name="效果1参数4">3333</Cell>
+      <Cell Name="效果1参数10">3333</Cell>
+      <Cell Name="效果1成长参数2">0</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">9</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">900035</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">不可选中</Cell>
+      <Cell Name="效果描述">控制免疫</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/commonresource/R4E1</Cell>
+      <Cell Name="持续时长">99999999</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">1153100</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">ability/hero_3_lanlingwang/ability_1/S1E1.xml</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">10</Cell>
+      <Cell Name="效果1参数3">5000</Cell>
+      <Cell Name="效果1成长参数2">45</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">110000</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/110_YingZheng/skill/A1E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">0</Cell>
+      <Cell Name="效果1参数3">10000</Cell>
+      <Cell Name="效果1参数10">10000</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">1521001</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/S1E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">30</Cell>
+      <Cell Name="效果1参数3">0</Cell>
+      <Cell Name="效果1参数4">4500</Cell>
+      <Cell Name="效果1成长参数2">60</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">9</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">15220003</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">王昭君-大招命中</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/152_WangZhaoJun/skill/S2E1</Cell>
+      <Cell Name="效果1类型">法术伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">20</Cell>
+      <Cell Name="效果1参数3">0</Cell>
+      <Cell Name="效果1参数4">35000</Cell>
+      <Cell Name="效果1参数10">5000</Cell>
+      <Cell Name="效果1成长参数2">0</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">9</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">131000</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果描述">李白普通攻击</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability0/A1E1.xml</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">0</Cell>
+      <Cell Name="效果1参数3">10000</Cell>
+      <Cell Name="效果1参数10">10000</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">3</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">131100</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">李白1技能伤害</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/131_LiBai/skill/S1E1</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">30</Cell>
+      <Cell Name="效果1参数3">25000</Cell>
+      <Cell Name="效果1成长参数2">50</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">6</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">1311001</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">李白1技能幻影伤害</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/131_LiBai/skill/S1E1</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">10</Cell>
+      <Cell Name="效果1参数3">7500</Cell>
+      <Cell Name="效果1成长参数2">50</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">6</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">801021</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="大血条显示效果">1</Cell>
+      <Cell Name="效果名称">剑飞震天</Cell>
+      <Cell Name="效果描述">立即回复自己与附近队友30%已损失生命值，并提高附近友军的移动速度40%持续2秒</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability3/buff.xml</Cell>
+      <Cell Name="持续时长">12000</Cell>
+      <Cell Name="效果1类型">增加攻击速度</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">8000</Cell>
+      <Cell Name="效果2类型">增加移动速度</Cell>
+      <Cell Name="效果2参数1">1</Cell>
+      <Cell Name="效果2参数2">2000</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">131010</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果描述">李白大招普通攻击</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability0/A1E1.xml</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">0</Cell>
+      <Cell Name="效果1参数3">25000</Cell>
+      <Cell Name="效果1参数10">10000</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">3</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">600120</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">11910</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果死亡缓存</Cell>
+      <Cell Name="效果名称">药王鼎</Cell>
+      <Cell Name="效果描述">自身每秒恢复最大生命值3%的血量 持续60秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">600121</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">18600</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果死亡缓存</Cell>
+      <Cell Name="效果名称">聚宝盆</Cell>
+      <Cell Name="效果描述">每秒获得50的金币 持续60秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">600122</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">18400</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">心想事成</Cell>
+      <Cell Name="效果描述">金币获取速度提高 30秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">6001220</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">18400</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">心想事成</Cell>
+      <Cell Name="效果描述">金币获取速度提高 60秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">6001221</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">18400</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">心想事成</Cell>
+      <Cell Name="效果描述">金币获取速度提高 90秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">6001222</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">18400</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">心想事成</Cell>
+      <Cell Name="效果描述">金币获取速度提高 120秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">6001223</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">14810</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">心想事成</Cell>
+      <Cell Name="效果描述">经验获取速度提高 30秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">6001224</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">14810</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">心想事成</Cell>
+      <Cell Name="效果描述">经验获取速度提高 60秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">6001225</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">14810</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">心想事成</Cell>
+      <Cell Name="效果描述">经验获取速度提高 90秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">6001226</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">14810</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">心想事成</Cell>
+      <Cell Name="效果描述">经验获取速度提高 120秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">600123</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">18710</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">狼妖内丹</Cell>
+      <Cell Name="效果描述">增加当前30%的物理攻击力和魔法攻击力 持续60秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">600124</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">17130</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">不屈战魂</Cell>
+      <Cell Name="效果描述">自身获得30%额外生命值与30%的护甲值 持续60秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">600125</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">15620</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">九龙天书</Cell>
+      <Cell Name="效果描述">自身获得20%伤害减免和20的伤害增益 持续60秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">90000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">600126</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">13130</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">神鬼辟易</Cell>
+      <Cell Name="效果描述">突破境界界限，让自身剑气汇聚达到之力，神鬼状态持续12秒</Cell>
+      <Cell Name="动作路径">ability/ability_common/ability_buff/buff.xml</Cell>
+      <Cell Name="持续时长">12000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">3000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+      <Cell Name="换英雄的时候是否继承">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">131015</Cell>
+      <Cell Name="效果类型">负面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="效果是否暴击">1</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果描述">李白二技能</Cell>
+      <Cell Name="动作路径">ability/hero_1_libai/ability0/A1E1.xml</Cell>
+      <Cell Name="效果1类型">物理伤害</Cell>
+      <Cell Name="效果1参数1">0</Cell>
+      <Cell Name="效果1参数2">0</Cell>
+      <Cell Name="效果1参数3">80000</Cell>
+      <Cell Name="效果1参数10">10000</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+      <Cell Name="击杀动作ID">3</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">2020001</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">14800</Cell>
+      <Cell Name="效果子类型">否</Cell>
+      <Cell Name="显示类型">暴君×1：每2秒回复1%生命</Cell>
+      <Cell Name="控制效果（程序不读）">暴君×1：每2秒回复1%生命</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果死亡缓存</Cell>
+      <Cell Name="效果名称">心想事成</Cell>
+      <Cell Name="效果描述">经验获取速度提高</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Monster/PVPMonster_Dragon/skill/testBuff1</Cell>
+      <Cell Name="持续时长">3000</Cell>
+      <Cell Name="效果1类型">回复生命值</Cell>
+      <Cell Name="效果1作用周期">2000</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">1</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">2020004</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果图标路径">1334</Cell>
+      <Cell Name="效果子类型">法球类型</Cell>
+      <Cell Name="显示类型">获得主宰之怒</Cell>
+      <Cell Name="控制效果（程序不读）">获得主宰之怒</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果死亡缓存</Cell>
+      <Cell Name="效果名称">妖狼内丹</Cell>
+      <Cell Name="效果描述">增加当前30%的物理攻击力和魔法攻击力 持续60秒</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Monster/PVPMonster_Dragon/skill/Buff3</Cell>
+      <Cell Name="持续时长">6000</Cell>
+      <Cell Name="效果1类型">提高攻击力</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">300</Cell>
+      <Cell Name="效果2类型">增加法术强度</Cell>
+      <Cell Name="效果2参数1">1</Cell>
+      <Cell Name="效果2参数2">300</Cell>
+      <Cell Name="是否开启UI显示">是</Cell>
+      <Cell Name="buff栏优先级">1</Cell>
+    </Row>
+  </Sheet>
+  <Sheet Name="技能效果击杀表现" FontColor="FFFFFFFF" FillColor="FF2F5597">
+    <Columns>
+      <Column Name="类型ID" Type="System.Int32" WidthInCharacters="8" />
+      <Column Name="名称" Type="System.String" WidthInCharacters="27" />
+      <Column Name="技能效果ID" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="动作类型" Type="System.Byte" WidthInCharacters="24" />
+      <Column Name="偏移角度" Type="System.Int32" WidthInCharacters="21" />
+      <Column Name="类型参数1" Type="System.Int32" WidthInCharacters="17" />
+      <Column Name="类型参数2" Type="System.Int32" WidthInCharacters="14" />
+      <Column Name="类型参数3" Type="System.Int32" WidthInCharacters="21" />
+    </Columns>
+  </Sheet>
+</Root>

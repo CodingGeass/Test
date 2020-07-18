@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <GlobalVariable>
+    <Name>G_PlayerID</Name>
+    <TypeName>System.Int32</TypeName>
+    <ExportTypeName>System.Int32</ExportTypeName>
+    <AllowRuntimeChange>1</AllowRuntimeChange>
+    <DefaultValue>0</DefaultValue>
+  </GlobalVariable>
+  <GlobalVariable>
+    <Name>G_baseunit</Name>
+    <TypeName>BluePrint.GraphLogic.SGame.ActorRoot</TypeName>
+    <ExportTypeName>BluePrint.GraphLogic.SGame.ActorRoot</ExportTypeName>
+    <AllowRuntimeChange>1</AllowRuntimeChange>
+    <DefaultValue></DefaultValue>
+  </GlobalVariable>
+</Root>
