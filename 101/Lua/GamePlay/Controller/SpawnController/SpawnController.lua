@@ -61,6 +61,7 @@ end
 
 --- 游戏开始
 function SpawnController:GameStart()
+    SpawnController:BaseStateInit()
     SpawnController:FB1_3()
     SpawnController:FB4_6()
     SpawnController:FB7_9()
@@ -199,8 +200,8 @@ function SpawnController:AttackUnitTimer()
         [0]=1000,
         [1]=1000,
         [2]=1000,
-        [3]=2000,
-        [4]=2000,
+        [3]=3500,
+        [4]=3500,
         [5]=6000,
         [6]=6000,
         [7]=8000,
@@ -251,7 +252,13 @@ function SpawnController:AttackUnitTimer()
                 sc.PlayCustomSound(MUSIC_BACKGROUND_EVENT,StringId.new("Sound/all_attack.ogg"),1)
             end
             SpawnController.nowwave=SpawnController.nowwave+1
-            sc.SetActorSystemProperty(SpawnController.base_unit,5,hp_data[SpawnController.nowwave])
+            local set_hp=hp_data[SpawnController.nowwave]
+            -- 审核版本基地血量变多
+            if IS_VERIFY_VERSION==true then 
+                set_hp=set_hp*10
+            end
+            sc.SetActorSystemProperty(SpawnController.base_unit,5,set_hp)
+            -- 
             sc.SetActorSystemProperty(SpawnController.base_unit,ActorAttribute_HP,sc.GetActorSystemProperty(SpawnController.base_unit,ActorAttribute_MaxHp))
         end
     end

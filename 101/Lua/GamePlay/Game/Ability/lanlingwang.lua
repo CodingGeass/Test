@@ -10,7 +10,7 @@ function lanlingwang_ability_huanying_attack(keys)
     local units=FindUnitsInRadio(c_pos,radio)
     if #units>0 then
         for i=1,hit_time do 
-            local target=units[math.random(1,#units)]
+            local target=units[RandomInt(1,#units)]
             sc.SetTimer(func_timenext*i,0,1,function ()
                 for i=1,2 do 
                     if target~=nil and sc.IsAlive(target)==true then

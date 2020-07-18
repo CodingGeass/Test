@@ -112,6 +112,7 @@ function QiHero:new(o,hero,pid)
     o:RoleInit()
     o:HeroPropertyInit(pid)
     o:PlayerBasePropertyInit()
+    sc.SetActorSystemProperty(hero,ActorAttribute_HP,sc.GetActorSystemProperty(hero,ActorAttribute_MaxHp))
     return o
 end
 
@@ -240,7 +241,7 @@ function QiHero:AddExp(exp,level)
 end
 
 function QiHero:RewardRandom(value)
-    return value*math.random(80,120)/100
+    return value*RandomInt(80,120)/100
 end
 
 -- 同步经验信息
@@ -267,6 +268,7 @@ end
 function QiHero:AddLevel()
     if self.exp>QiData.exp_data[self.level]["level_up_exp"] then 
         self:ForceAddLevel()
+        sc.SetActorSystemProperty(self.unit,1009,self.level)
         QiMsg("恭喜玩家到达了等级["..tostring(self.level).."]",3)
     end
 end

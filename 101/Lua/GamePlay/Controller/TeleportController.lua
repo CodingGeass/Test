@@ -3,8 +3,8 @@ if TeleportController==nil then
     TeleportController.area={}
     TeleportController.area["b_base"]={
         pos="base_position",
-        schinese="<color=#0066ff>卫天城</color>",
-        description="守卫卫天城，在此抵御敌军的进攻",
+        schinese="<color=#0066ff>长安城</color>",
+        description="守卫长安城，在此抵御敌军的进攻",
         short_des="玩家主城",
         Tier=0,
         index=99,
@@ -19,8 +19,8 @@ if TeleportController==nil then
     }
     TeleportController.area["n0_weitiansenling"]={
         pos="n0_weitiansenling",
-        schinese="<color=#ffb3b3>卫天森林</color>",
-        description="卫天城旁边的森岭，适合初级修炼者",
+        schinese="<color=#ffb3b3>长安森林</color>",
+        description="长安城旁边的森林，适合初级修炼者",
         short_des="秘境等级1",
         Tier=1,
         index=0,
@@ -29,7 +29,7 @@ if TeleportController==nil then
     TeleportController.area["n1_baihua"]={
         pos="n1_baihua",
         schinese="<color=#ffb3b3>百花谷</color>",
-        description="存在于卫天城古籍中的室外桃园",
+        description="存在于长安城古籍中的室外桃园",
         short_des="秘境等级1",
         Tier=1,
         index=1,

@@ -45,14 +45,16 @@ function SendTeleportBtnGoldBorder(aid,btnindex,isopen)
     local actorID = LuaCallCs_Battle.GetHostActorID();
     if actorID==aid then 
         local element=QiTeleportView["teleport_list"]:GetListElement(btnindex-1)
-        local icon_image=element:GetWidgetProxyByName("teleport_gold_border_image")
-        local back_image=element:GetWidgetProxyByName("teleport_back_image")
-        back_image:GetImage():SetRes("Texture/Sprite/teleport_image_btn_gold.sprite")
-        icon_image:SetActive(isopen)
-        if isopen==true then 
+        if element~=nil then 
+            local icon_image=element:GetWidgetProxyByName("teleport_gold_border_image")
+            local back_image=element:GetWidgetProxyByName("teleport_back_image")
             back_image:GetImage():SetRes("Texture/Sprite/teleport_image_btn_gold.sprite")
-        else 
-            back_image:GetImage():SetRes("Texture/Sprite/teleport_image_btn_normal.sprite")
+            icon_image:SetActive(isopen)
+            if isopen==true then 
+                back_image:GetImage():SetRes("Texture/Sprite/teleport_image_btn_gold.sprite")
+            else 
+                back_image:GetImage():SetRes("Texture/Sprite/teleport_image_btn_normal.sprite")
+            end
         end
     end
 end
@@ -83,7 +85,7 @@ end
 function teleport_solt_elementselect(keys)
     local SrcWidget = keys.SrcWidget;
     local index = SrcWidget:GetIndexInBelongedList()
-    if tabteleportcontroller.t_list[index+1] then
+    if tabteleportcontroller.t_list[index+1]~=nil then
         uicontroller:btn_click()
         QiPrint("Teleport to:"..tabteleportcontroller.t_list[index+1])
         tabteleportcontroller:teleportto(tabteleportcontroller.t_list[index+1])

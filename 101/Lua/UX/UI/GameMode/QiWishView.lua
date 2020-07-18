@@ -48,7 +48,7 @@ function wish_view_create(keys)
 end
 
 function wish_view_close(keys)
-    QiWishView["QiWishView"]:SetActive(false)
+    QiWishView["wish_main_panel"]:SetActive(false)
 end
 
 function wish_btn_click(keys)

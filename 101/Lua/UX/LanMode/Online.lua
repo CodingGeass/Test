@@ -10,6 +10,7 @@ function OnMainFormOpen(luaUIEvent)
 end
 
 function OnMainFormClose(luaUIEvent)
+	
 end
 
 --快速开始游戏

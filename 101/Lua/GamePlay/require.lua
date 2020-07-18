@@ -6,6 +6,7 @@ require "Lua/GamePlay/EntityClass/GameManagerEntity.lua"
 require "Lua/GamePlay/EntityClass/LocationEntity.lua"
 
 require "Lua/GamePlay/Controller/SpawnController/SpawnController.lua"
+require "Lua/GamePlay/Controller/SpawnController/base_state_check.lua"
 require "Lua/GamePlay/Controller/SpawnController/SPAWN_BASE.lua"
 require "Lua/GamePlay/Controller/SpawnController/SPAWN_FB_1_3.lua"
 require "Lua/GamePlay/Controller/SpawnController/SPAWN_FB_4_6.lua"

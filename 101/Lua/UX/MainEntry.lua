@@ -7,6 +7,7 @@ G_GameData = G_GameData or {}
 onlineForm = require "LanMode/Online.lua"
 G_GameData.IsOnline = false;
 require "Lua/UX/require.lua"
+IS_VERIFY_VERSION=false
 
 --第一个被呼叫的函数（不能改名字）
 function main()
@@ -29,8 +30,9 @@ function OnStartOperation(customOperation)
 			LuaCallCs_UI.CloseForm("UI/LanMode/Online.uixml")
 			LuaCallCs_UI.OpenForm("UI/LanMode/OnlineOperation.uixml");
 		end
-    else
-        --刷新自己的操作界面
+	else
+		--刷新自己的操作界面
+
     end
 end
 

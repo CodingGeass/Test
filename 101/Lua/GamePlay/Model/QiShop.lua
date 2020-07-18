@@ -74,7 +74,7 @@ end
 -- @treturn any description.
 -- @author 
 function QiShop:TryBuyItemByPrice(qihero,price_data)
-    local price_data =Split(p_str, "|")
+    local price_data =Split(price_data, "|")
     local price_value=tonumber(price_data[2])
     if price_data[1]=="k" then 
         return qihero:CostKillPoint(price_value,true)
@@ -97,6 +97,7 @@ function QiShop:ButItemByName(aid,pid,itemname)
                             v["now_stocknumber"]=v["now_stocknumber"]-1
                         end
                         QiShop:RefreshIndexData(aid,shopname,tonumber(v["sell_index"]))
+                        QiBottomAlert("购买成功",nil,aid)
                     else
 
                     end

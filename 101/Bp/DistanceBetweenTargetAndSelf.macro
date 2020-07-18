@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root Type="BluePrint.GraphLogic.Core.GraphLogicGraph" id="cbfe47b0-94a6-4e93-b049-cf9be78759a5" Static="0">
+  <Nodes>
+    <Node Type="BluePrint.Graph.Generic.MacroInputsNode">
+      <id>cc389d18-79ea-44a4-91c7-730d290b4ea8</id>
+      <nodeName>输入</nodeName>
+      <canvasRect>{X=-147,Y=153,Width=185,Height=170}</canvasRect>
+      <commentText></commentText>
+      <NodeAttrType>BluePrint.Graph.Generic.MacroInputsNodeTypeAttribute</NodeAttrType>
+      <GenericFlag>4096</GenericFlag>
+      <Slots>
+        <Slot Type="BluePrint.Graph.Core.DynamicSlot">
+          <id>f3e6bae6-7efc-498e-a101-ebc1212e712f</id>
+          <slotName>激活</slotName>
+          <slotType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</slotType>
+          <Connections>
+            <Connection>c3d3f3ba-ced9-4dd5-8331-a52758992a8f</Connection>
+          </Connections>
+          <AttrFlag>21</AttrFlag>
+          <SlotValue>BluePrint.Graph.Generic.FlowSlotPlaceHolder</SlotValue>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Core.DynamicSlot">
+          <id>e1df8711-f114-4652-8658-3a8b74acd5d9</id>
+          <slotName>ActorA</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.ActorRoot</slotType>
+          <Connections>
+            <Connection>f878483a-6c4a-49dc-9916-194478cc7afc</Connection>
+          </Connections>
+          <AttrFlag>20</AttrFlag>
+          <SlotValue></SlotValue>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Core.DynamicSlot">
+          <id>94a3e515-d953-437d-bce4-0b7c0c5373ab</id>
+          <slotName>ActorB</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.ActorRoot</slotType>
+          <Connections>
+            <Connection>04f4f0dc-0e23-49e7-92de-ed2d0e65159f</Connection>
+          </Connections>
+          <AttrFlag>20</AttrFlag>
+          <SlotValue></SlotValue>
+        </Slot>
+      </Slots>
+      <CppType>NativeMacroInputsNode</CppType>
+    </Node>
+    <Node Type="BluePrint.Graph.Generic.MacroOutputsNode">
+      <id>2368fc15-4dce-4701-973d-130d7e240411</id>
+      <nodeName>输出</nodeName>
+      <canvasRect>{X=818,Y=261.75,Width=170,Height=110}</canvasRect>
+      <commentText></commentText>
+      <NodeAttrType>BluePrint.Graph.Generic.MacroOutputsNodeTypeAttribute</NodeAttrType>
+      <GenericFlag>8192</GenericFlag>
+      <Slots>
+        <Slot Type="BluePrint.Graph.Core.DynamicSlot">
+          <id>14201854-efc5-4f5a-933b-6a5b4f6601ee</id>
+          <slotName>完成</slotName>
+          <slotType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</slotType>
+          <Connections>
+            <Connection>a2b7e985-be68-4c5b-8aa1-79cd93c643a4</Connection>
+          </Connections>
+          <AttrFlag>19</AttrFlag>
+          <SlotValue>BluePrint.Graph.Generic.FlowSlotPlaceHolder</SlotValue>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Core.DynamicSlot">
+          <id>1078a5b9-0334-4ff7-9441-4f191ebf5af7</id>
+          <slotName>距离</slotName>
+          <slotType>System.Int32</slotType>
+          <Connections>
+            <Connection>5ac278c8-bb7a-4657-a6c0-30f7074ce13b</Connection>
+          </Connections>
+          <AttrFlag>18</AttrFlag>
+          <SlotValue>0</SlotValue>
+        </Slot>
+      </Slots>
+      <CppType>NativeMacroOutputsNode</CppType>
+    </Node>
+    <Node Type="BluePrint.GraphLogic.SGame.GetActorLogicPosNode">
+      <id>9b9bc036-e38c-45bd-aedc-998696e5e8ca</id>
+      <nodeName>获取Actor的坐标朝向</nodeName>
+      <canvasRect>{X=151.5,Y=97.5,Width=230,Height=200}</canvasRect>
+      <commentText></commentText>
+      <NodeAttrType>BluePrint.Graph.Generic.FlowControlNodeTypeAttribute</NodeAttrType>
+      <GenericFlag>8</GenericFlag>
+      <Slots>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</FieldType>
+          <FieldName>Trigger</FieldName>
+          <id>fa398520-3945-4f37-8cbc-291fd95f161d</id>
+          <slotName>激活</slotName>
+          <slotType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</slotType>
+          <AttrType>BluePrint.Graph.Generic.InputFlowSlotAttribute</AttrType>
+          <AttrName>激活</AttrName>
+          <AttrFlag>3</AttrFlag>
+          <Connections>
+            <Connection>c3d3f3ba-ced9-4dd5-8331-a52758992a8f</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</FieldType>
+          <FieldName>CompleteControl</FieldName>
+          <id>337a26c9-6860-4e2c-8763-9a409140ec4b</id>
+          <slotName>完成</slotName>
+          <slotType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</slotType>
+          <AttrType>BluePrint.Graph.Generic.OutputFlowSlotAttribute</AttrType>
+          <AttrName>完成</AttrName>
+          <AttrFlag>5</AttrFlag>
+          <Connections>
+            <Connection>970eef71-f81a-4dfb-a484-8d0650ac4f72</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.ActorRoot</FieldType>
+          <FieldName>Actor</FieldName>
+          <SlotValue></SlotValue>
+          <id>a810844a-4a15-405d-a73f-b0c705164fdc</id>
+          <slotName>Actor</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.ActorRoot</slotType>
+          <AttrType>BluePrint.Graph.Generic.InputSlotAttribute</AttrType>
+          <AttrName>Actor</AttrName>
+          <AttrFlag>2</AttrFlag>
+          <Connections>
+            <Connection>f878483a-6c4a-49dc-9916-194478cc7afc</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.VInt3</FieldType>
+          <FieldName>Pos</FieldName>
+          <id>067b9ea2-e323-4f89-9f23-64225a87c819</id>
+          <slotName>逻辑位置</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.VInt3</slotType>
+          <AttrType>BluePrint.Graph.Generic.OutputSlotAttribute</AttrType>
+          <AttrName>坐标</AttrName>
+          <AttrFlag>4</AttrFlag>
+          <Connections>
+            <Connection>8ebf39e4-bb6d-4c6b-a973-d88dc18602d1</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.VInt3</FieldType>
+          <FieldName>rotation</FieldName>
+          <id>0463052b-3ffa-4a1b-924b-934bccf3a3e5</id>
+          <slotName>旋转</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.VInt3</slotType>
+          <AttrType>BluePrint.Graph.Generic.OutputSlotAttribute</AttrType>
+          <AttrName>旋转</AttrName>
+          <AttrFlag>4</AttrFlag>
+          <Connections />
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.VInt3</FieldType>
+          <FieldName>forward</FieldName>
+          <id>3271db00-b709-4f94-b93a-e885fd792111</id>
+          <slotName>朝向</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.VInt3</slotType>
+          <AttrType>BluePrint.Graph.Generic.OutputSlotAttribute</AttrType>
+          <AttrName>朝向</AttrName>
+          <AttrFlag>4</AttrFlag>
+          <Connections />
+        </Slot>
+      </Slots>
+      <CppType>GetActorLogicPosNode</CppType>
+    </Node>
+    <Node Type="BluePrint.GraphLogic.SGame.VInt3CalDistanceNode">
+      <id>b9d64cc5-e4fe-40a2-9cc7-6d2663a8f8e3</id>
+      <nodeName>计算距离</nodeName>
+      <canvasRect>{X=455,Y=204.75,Width=185,Height=110}</canvasRect>
+      <commentText></commentText>
+      <NodeAttrType>BluePrint.Graph.Generic.FunctionNodeTypeAttribute</NodeAttrType>
+      <GenericFlag>4</GenericFlag>
+      <Slots>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.VInt3</FieldType>
+          <FieldName>num1</FieldName>
+          <SlotValue>0,0,0</SlotValue>
+          <id>f13371b1-56c3-4791-9ac9-39c01e535768</id>
+          <slotName>Num1</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.VInt3</slotType>
+          <AttrType>BluePrint.Graph.Generic.InputSlotAttribute</AttrType>
+          <AttrName>Num1</AttrName>
+          <AttrFlag>2</AttrFlag>
+          <Connections>
+            <Connection>8ebf39e4-bb6d-4c6b-a973-d88dc18602d1</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.VInt3</FieldType>
+          <FieldName>num2</FieldName>
+          <SlotValue>0,0,0</SlotValue>
+          <id>25138bea-9702-4cb7-ac77-4844fe37c0ac</id>
+          <slotName>Num2</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.VInt3</slotType>
+          <AttrType>BluePrint.Graph.Generic.InputSlotAttribute</AttrType>
+          <AttrName>Num2</AttrName>
+          <AttrFlag>2</AttrFlag>
+          <Connections>
+            <Connection>f9e1b8ad-dc57-48b1-a5dc-c0c45afa2d20</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>System.Int32</FieldType>
+          <FieldName>result</FieldName>
+          <id>2639b3e3-577f-43a3-abb7-75265a4f509b</id>
+          <slotName>结果</slotName>
+          <slotType>System.Int32</slotType>
+          <AttrType>BluePrint.Graph.Generic.OutputSlotAttribute</AttrType>
+          <AttrName>结果</AttrName>
+          <AttrFlag>4</AttrFlag>
+          <Connections>
+            <Connection>5ac278c8-bb7a-4657-a6c0-30f7074ce13b</Connection>
+          </Connections>
+        </Slot>
+      </Slots>
+      <CppType>VInt3CalDistanceNode</CppType>
+    </Node>
+    <Node Type="BluePrint.GraphLogic.SGame.GetActorLogicPosNode">
+      <id>32e489c8-12c9-452e-b465-00d3c4815f6d</id>
+      <nodeName>获取Actor的坐标朝向</nodeName>
+      <canvasRect>{X=139.75,Y=337.25,Width=230,Height=200}</canvasRect>
+      <commentText></commentText>
+      <NodeAttrType>BluePrint.Graph.Generic.FlowControlNodeTypeAttribute</NodeAttrType>
+      <GenericFlag>8</GenericFlag>
+      <Slots>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</FieldType>
+          <FieldName>Trigger</FieldName>
+          <id>b8a716fc-d44a-447e-9d7b-aa839debafbb</id>
+          <slotName>激活</slotName>
+          <slotType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</slotType>
+          <AttrType>BluePrint.Graph.Generic.InputFlowSlotAttribute</AttrType>
+          <AttrName>激活</AttrName>
+          <AttrFlag>3</AttrFlag>
+          <Connections>
+            <Connection>970eef71-f81a-4dfb-a484-8d0650ac4f72</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</FieldType>
+          <FieldName>CompleteControl</FieldName>
+          <id>87b6d51a-3ed6-40d4-a2cb-e780dc1b1d71</id>
+          <slotName>完成</slotName>
+          <slotType>BluePrint.Graph.Generic.FlowSlotPlaceHolder</slotType>
+          <AttrType>BluePrint.Graph.Generic.OutputFlowSlotAttribute</AttrType>
+          <AttrName>完成</AttrName>
+          <AttrFlag>5</AttrFlag>
+          <Connections>
+            <Connection>a2b7e985-be68-4c5b-8aa1-79cd93c643a4</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.ActorRoot</FieldType>
+          <FieldName>Actor</FieldName>
+          <SlotValue></SlotValue>
+          <id>97bc1649-f7c2-4242-ae9e-73c179a99a26</id>
+          <slotName>Actor</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.ActorRoot</slotType>
+          <AttrType>BluePrint.Graph.Generic.InputSlotAttribute</AttrType>
+          <AttrName>Actor</AttrName>
+          <AttrFlag>2</AttrFlag>
+          <Connections>
+            <Connection>04f4f0dc-0e23-49e7-92de-ed2d0e65159f</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.VInt3</FieldType>
+          <FieldName>Pos</FieldName>
+          <id>b00fb182-4339-41e0-b8b1-665ec8409107</id>
+          <slotName>逻辑位置</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.VInt3</slotType>
+          <AttrType>BluePrint.Graph.Generic.OutputSlotAttribute</AttrType>
+          <AttrName>坐标</AttrName>
+          <AttrFlag>4</AttrFlag>
+          <Connections>
+            <Connection>f9e1b8ad-dc57-48b1-a5dc-c0c45afa2d20</Connection>
+          </Connections>
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.VInt3</FieldType>
+          <FieldName>rotation</FieldName>
+          <id>b49e17b2-d0ea-45a0-a5cb-d57cd8205cd4</id>
+          <slotName>旋转</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.VInt3</slotType>
+          <AttrType>BluePrint.Graph.Generic.OutputSlotAttribute</AttrType>
+          <AttrName>旋转</AttrName>
+          <AttrFlag>4</AttrFlag>
+          <Connections />
+        </Slot>
+        <Slot Type="BluePrint.Graph.Generic.GenericSlot">
+          <FieldType>BluePrint.GraphLogic.SGame.VInt3</FieldType>
+          <FieldName>forward</FieldName>
+          <id>5ddec00a-cc67-4047-8953-8122e0b10b70</id>
+          <slotName>朝向</slotName>
+          <slotType>BluePrint.GraphLogic.SGame.VInt3</slotType>
+          <AttrType>BluePrint.Graph.Generic.OutputSlotAttribute</AttrType>
+          <AttrName>朝向</AttrName>
+          <AttrFlag>4</AttrFlag>
+          <Connections />
+        </Slot>
+      </Slots>
+      <CppType>GetActorLogicPosNode</CppType>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <id>c3d3f3ba-ced9-4dd5-8331-a52758992a8f</id>
+      <StartGuid>f3e6bae6-7efc-498e-a101-ebc1212e712f</StartGuid>
+      <EndGuid>fa398520-3945-4f37-8cbc-291fd95f161d</EndGuid>
+    </Connection>
+    <Connection>
+      <id>8ebf39e4-bb6d-4c6b-a973-d88dc18602d1</id>
+      <StartGuid>067b9ea2-e323-4f89-9f23-64225a87c819</StartGuid>
+      <EndGuid>f13371b1-56c3-4791-9ac9-39c01e535768</EndGuid>
+    </Connection>
+    <Connection>
+      <id>970eef71-f81a-4dfb-a484-8d0650ac4f72</id>
+      <StartGuid>337a26c9-6860-4e2c-8763-9a409140ec4b</StartGuid>
+      <EndGuid>b8a716fc-d44a-447e-9d7b-aa839debafbb</EndGuid>
+    </Connection>
+    <Connection>
+      <id>f878483a-6c4a-49dc-9916-194478cc7afc</id>
+      <StartGuid>e1df8711-f114-4652-8658-3a8b74acd5d9</StartGuid>
+      <EndGuid>a810844a-4a15-405d-a73f-b0c705164fdc</EndGuid>
+    </Connection>
+    <Connection>
+      <id>04f4f0dc-0e23-49e7-92de-ed2d0e65159f</id>
+      <StartGuid>94a3e515-d953-437d-bce4-0b7c0c5373ab</StartGuid>
+      <EndGuid>97bc1649-f7c2-4242-ae9e-73c179a99a26</EndGuid>
+    </Connection>
+    <Connection>
+      <id>a2b7e985-be68-4c5b-8aa1-79cd93c643a4</id>
+      <StartGuid>87b6d51a-3ed6-40d4-a2cb-e780dc1b1d71</StartGuid>
+      <EndGuid>14201854-efc5-4f5a-933b-6a5b4f6601ee</EndGuid>
+    </Connection>
+    <Connection>
+      <id>f9e1b8ad-dc57-48b1-a5dc-c0c45afa2d20</id>
+      <StartGuid>b00fb182-4339-41e0-b8b1-665ec8409107</StartGuid>
+      <EndGuid>25138bea-9702-4cb7-ac77-4844fe37c0ac</EndGuid>
+    </Connection>
+    <Connection>
+      <id>5ac278c8-bb7a-4657-a6c0-30f7074ce13b</id>
+      <StartGuid>2639b3e3-577f-43a3-abb7-75265a4f509b</StartGuid>
+      <EndGuid>1078a5b9-0334-4ff7-9441-4f191ebf5af7</EndGuid>
+    </Connection>
+  </Connections>
+  <Comments />
+</Root>

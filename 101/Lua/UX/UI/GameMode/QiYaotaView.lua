@@ -24,7 +24,7 @@ function QiYaotaView:UIInit(keys)
         MagicalDmg="<color=#1aff1a>每100秒</color><color=#33ccff>法术攻击</color>自动增加",
         PhysicalDef="<color=#1aff1a>每100秒</color><color=#33ccff>护甲值</color>自动增加",
         MagicalDef="<color=#1aff1a>每100秒</color><color=#33ccff>魔法抗性</color>自动增加",
-        HpRegenRate="<color=#1aff1a>每100秒</color><color=#33ccff>血量每秒恢复值</color>自动增加",
+        HpRegenRate="<color=#1aff1a>每100秒</color><color=#33ccff>生命值每秒恢复值</color>自动增加",
     }
 end
 
@@ -83,7 +83,7 @@ function SendAreadyGetProperty(p1,p2,p3,p4,p5,aid)
             "<color=#1aff1a>每100秒</color><color=#33ccff>法术攻击</color>自动增加",
             "<color=#1aff1a>每100秒</color><color=#33ccff>护甲值</color>自动增加",
             "<color=#1aff1a>每100秒</color><color=#33ccff>魔法抗性</color>自动增加",
-            "<color=#1aff1a>每100秒</color><color=#33ccff>血量每秒恢复值</color>自动增加",
+            "<color=#1aff1a>每100秒</color><color=#33ccff>生命值每秒恢复值</color>自动增加",
         }
         for k,v in pairs(recive_data) do 
             local element_label=QiYaotaView["yaota_already_reward_list"]:GetListElement(k-1):GetWidgetProxyByName("yaota_already_reward_listelement_label")

@@ -1,15 +1,22 @@
 if QiUnit==nil then 
     QiUnit={}
 end
-function QiUnit:new(o,unit,unit_name)
+function QiUnit:new(o,unit,unit_name,team)
     o=o or {}
     o.unit=unit
     setmetatable(o,self)
     self.__index =self
     o.unit_name=unit_name
+    o.team=team
     o:InitPropertyByUnitName(unit_name)
     -- unit.QiUnit=o
     return o
+end
+
+function QiUnit:GetActorHPPercent(actor)
+    local max_hp=sc.GetActorSystemProperty(actor,ActorAttribute_MaxHp)
+    local hp=sc.GetActorSystemProperty(actor,ActorAttribute_HP)
+    return math.floor(hp/max_hp*100)
 end
 
 -- 根据怪物属性初始化单位
@@ -45,11 +52,17 @@ function QiUnit:SetProperty(actor,data)
         local attackspeed=data.attackspeed or nil
         if hp~=nil then 
             hp=math.floor(hp)
+            if self.team==DOTA_TEAM_BADGUYS and IS_VERIFY_VERSION==true  then 
+                hp=math.floor(hp*0.4 )
+            end
             sc.SetActorSystemProperty(actor,ActorAttribute_MaxHp,hp)
             sc.SetActorSystemProperty(actor,ActorAttribute_HpRegenRate,math.floor(hp*0.01))
             sc.SetActorSystemProperty(actor,ActorAttribute_HP,sc.GetActorSystemProperty(actor,ActorAttribute_MaxHp))
         end
         if attack~=nil then 
+            if self.team==DOTA_TEAM_BADGUYS and IS_VERIFY_VERSION==true then 
+                attack=math.floor(attack*0.4 )
+            end
             attack=math.floor(attack)
             sc.SetActorSystemProperty(actor,ActorAttribute_PhysicalDmg,attack)
             sc.SetActorSystemProperty(actor,ActorAttribute_MagicalDmg,attack)

@@ -2492,7 +2492,6 @@
       <Cell Name="追击耐力">750</Cell>
       <Cell Name="基础移动速度">3000</Cell>
       <Cell Name="技能1">20560</Cell>
-      <Cell Name="被动技能1">50037</Cell>
       <Cell Name="被动技能2">50040</Cell>
       <Cell Name="被动技能3">50044</Cell>
       <Cell Name="被动技能4">50046</Cell>
@@ -2532,7 +2531,6 @@
       <Cell Name="追击耐力">750</Cell>
       <Cell Name="基础移动速度">3000</Cell>
       <Cell Name="技能1">20560</Cell>
-      <Cell Name="被动技能1">50017</Cell>
       <Cell Name="被动技能2">50018</Cell>
       <Cell Name="被动技能3">50013</Cell>
       <Cell Name="脱战生命回复">0</Cell>
@@ -2571,7 +2569,6 @@
       <Cell Name="追击耐力">750</Cell>
       <Cell Name="基础移动速度">3000</Cell>
       <Cell Name="技能1">20560</Cell>
-      <Cell Name="被动技能1">50038</Cell>
       <Cell Name="被动技能2">50041</Cell>
       <Cell Name="被动技能3">50044</Cell>
       <Cell Name="脱战生命回复">0</Cell>

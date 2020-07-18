@@ -95,7 +95,7 @@ function QiXiulian:LevelDataInit()
         end
         -- 设置升级价格
         for k,v in pairs( QiXiulian.propertyList[i]) do 
-            v["p_cost"]=math.floor(QiXiulian.CoseData[i]*5*(1+i/2)*(1+k/8))
+            v["p_cost"]=math.floor(QiXiulian.CoseData[i]*5*(1+i)*(1+k/8))
         end
     end
 end
@@ -160,7 +160,7 @@ end
 --- 升级修炼项目
 function QiXiulian:UpdateXiulian()
     if self.level>=QiXiulian.maxlevel and self.thislevel_buyindex>=QiXiulian.per_level_maxupdate then 
-        QiBottomAlert("阁下修为惊人，在下已无力指导")
+        QiBottomAlert("阁下修为惊人，在下已无力指导",nil,self.aid)
         return
     end
 

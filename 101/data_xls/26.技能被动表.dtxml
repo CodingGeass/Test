@@ -110,5 +110,15 @@
       <Cell Name="被动技能条件1参数1">1</Cell>
       <Cell Name="被动技能条件2类型">被杀死</Cell>
     </Row>
+    <Row>
+      <Cell Name="被动技能ID">50037</Cell>
+      <Cell Name="被动技能名称">新红死了给红BUFF</Cell>
+      <Cell Name="被动技能描述">死了给子弹爆炸和普攻概率减速</Cell>
+      <Cell Name="被动技能动作路径">Prefab_Characters/Prefab_Hero/commonresource/R34</Cell>
+      <Cell Name="被动技能类型">时间触发</Cell>
+      <Cell Name="被动技能类型参数1">0</Cell>
+      <Cell Name="被动技能类型参数2">0</Cell>
+      <Cell Name="被动技能条件1类型">被杀死</Cell>
+    </Row>
   </Sheet>
 </Root>

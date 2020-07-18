@@ -25,7 +25,7 @@ end
 
 function GameEndPanel:InitTitlePanel()
     local starttext="游戏时间 "
-    local title_text="蜀山防守战-"..maincontroller.gamediftext
+    local title_text="荒神罪-长安挽歌 "..maincontroller.gamediftext
     local min=math.floor(consolecontroller.nowtime/60)
     local sec=consolecontroller.nowtime%60
     local wave=maincontroller.playerproperty["wave"]
@@ -159,6 +159,8 @@ end
 
 -- 返回大厅	consolecontroller.nowtime
 function retrun_start_page(keys)
+    LuaCallCs_GameFinish.CloseBattleScene()
+    LuaCallCs_UGCStateDriver.CloseUGC()
     LuaCallCs_UI.CloseForm("UI/GameRoom/GameEndPanel.uixml")
     if G_GameData.IsOnline==true then 
         LuaCallCs_UI.OpenForm("UI/OnlineMode/MainForm.uixml");

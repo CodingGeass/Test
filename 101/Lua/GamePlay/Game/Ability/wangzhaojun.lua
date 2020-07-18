@@ -83,10 +83,10 @@ function wangzhaojun_ability_1_start(keys)
             -- 环境特效
             -- local env_pos=FindRandomPoint(c_pos,radio)
             local env_particle="Prefab_Skill_Effects/Level_Effects/PVE_Rizita/RiZhiTa_Chongzhuang_swirl01C.prefab"
-            QiParticle(env_particle,caster,VInt3.new(math.random(-radio,radio), 500,math.random(-radio,radio)),VInt3.new(0,0,0),1500,false,2000,{speed=100})
+            QiParticle(env_particle,caster,VInt3.new(RandomInt(-radio,radio), 500,RandomInt(-radio,radio)),VInt3.new(0,0,0),1500,false,2000,{speed=100})
             local units=FindUnitsInRadio(c_pos,radio)
             if #units>0 then 
-                local target=units[math.random(1,#units)]
+                local target=units[RandomInt(1,#units)]
                 if target~=nil and sc.IsAlive(target)==true then
                     local target_object=sc.GetUnityObjectFromActorRoot(target)
                     sc.BuffAction(target,caster,true,true,damage_buff_id,0,0)
@@ -102,9 +102,9 @@ function wangzhaojun_ability_1_start(keys)
                 end
             else 
                 local particle1=sc.TriggerParticleStart (hit_particle_1, hit_particle_1, hit_particle_1,
-                caster, false, caster_object, VInt3.new(math.random(radio), 0,math.random(radio)), VInt3.new(0, 0,0),VInt3.new(1000, 1000,1000), true,false)
+                caster, false, caster_object, VInt3.new(RandomInt(radio), 0,RandomInt(radio)), VInt3.new(0, 0,0),VInt3.new(1000, 1000,1000), true,false)
                 local particle2=sc.TriggerParticleStart (hit_particle_2, hit_particle_2, hit_particle_2,
-                caster, false, caster_object, VInt3.new(math.random(radio), 0,math.random(radio)), VInt3.new(0, 0,0),VInt3.new(1800, 1000,1000), true,false)
+                caster, false, caster_object, VInt3.new(RandomInt(radio), 0,RandomInt(radio)), VInt3.new(0, 0,0),VInt3.new(1800, 1000,1000), true,false)
                 -- 创建特效
                 sc.SetTimer(3000, 1, 1, function ()
                     sc.TriggerParticleEnd (particle1)
@@ -151,9 +151,9 @@ function wangzhaojun_ability_2_ice_blink(keys)
         local s2=StringId.new("Prefab_Skill_Effects/Level_Effects/PVE_Rizita/RiZhiTa_ShuangZi_hurt03.prefab")
         local u_object=sc.GetUnityObjectFromActorRoot(caster)
         local particle=sc.TriggerParticleStart (s1, s1, s1,
-        caster, false, u_object, pos, VInt3.new(0, 0,0),VInt3.new(math.random(600,1000), 800,800), true,false)
+        caster, false, u_object, pos, VInt3.new(0, 0,0),VInt3.new(RandomInt(600,1000), 800,800), true,false)
         local particle2=sc.TriggerParticleStart (s2, s2, s2,
-        caster, false, u_object, pos, VInt3.new(0, 0,0),VInt3.new(math.random(600,1000), 800,800), true,false)
+        caster, false, u_object, pos, VInt3.new(0, 0,0),VInt3.new(RandomInt(600,1000), 800,800), true,false)
         sc.SetTimer(5000, 1, 1, function ()
             sc.TriggerParticleEnd (particle)
             sc.TriggerParticleEnd (particle2)
@@ -164,7 +164,7 @@ function wangzhaojun_ability_2_ice_blink(keys)
         local s1=StringId.new("Prefab_Skill_Effects/Hero_Skill_Effects/127_ZhenJi/zhenji_hurt_spell01_mid.prefab")
         local u_object=sc.GetUnityObjectFromActorRoot(caster)
         local particle=sc.TriggerParticleStart (s1, s1, s1,
-        caster, false, u_object, pos, VInt3.new(0, 0,0),VInt3.new(math.random(500,2500), 500,500), true,false)
+        caster, false, u_object, pos, VInt3.new(0, 0,0),VInt3.new(RandomInt(500,2500), 500,500), true,false)
         sc.SetTimer(600, 1, 1, function ()
             sc.TriggerParticleEnd (particle)
         end, {})
@@ -198,7 +198,7 @@ function wangzhaojun_ability_2_ice_blink(keys)
             if finaly_list[#finaly_list-i+1]~=nil then 
                 pre_attack_pos_func(caster,finaly_list[#finaly_list-i+1])
                 QiParticle("Prefab_Skill_Effects/Hero_Skill_Effects/332_MaKeBoLuo/33201/Makeboluo_attack01_spell04_b_mid.prefab",
-                caster,VInt3.new(math.random(-radio,radio), 500,math.random(-radio,radio)),VInt3.new(0,0,0),500,false,2000,{speed=100})
+                caster,VInt3.new(RandomInt(-radio,radio), 500,RandomInt(-radio,radio)),VInt3.new(0,0,0),500,false,2000,{speed=100})
             end
         end, {})
     end
@@ -258,7 +258,7 @@ function wangzhaojun_ability_3_ice_destrory(keys)
 
     for i=1,hit_total_time do 
         sc.SetTimer(hit_next_time*1000*i,1,1,function ()
-            local strike_pos_off=VInt3.new(math.random(-total_radio,total_radio), 500,math.random(-total_radio,total_radio))
+            local strike_pos_off=VInt3.new(RandomInt(-total_radio,total_radio), 500,RandomInt(-total_radio,total_radio))
             local c_pos=sc.GetActorLogicPos(caster)
             c_pos.x=c_pos.x+strike_pos_off.x
             c_pos.z=c_pos.z+strike_pos_off.z

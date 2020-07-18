@@ -83,19 +83,19 @@ function QiYaota:MakeThisFloorRreward()
         self.this_floor_reward[v]=0
     end
     local tier,pro_add=self:GetTierAndPropertyAdd()
-    local reward1=QiYaota.RewardList[math.random(1,#QiYaota.RewardList)]
-    local reward2=QiYaota.RewardList[math.random(1,#QiYaota.RewardList)]
+    local reward1=QiYaota.RewardList[RandomInt(1,#QiYaota.RewardList)]
+    local reward2=QiYaota.RewardList[RandomInt(1,#QiYaota.RewardList)]
     for k,v in pairs({reward1,reward2}) do 
         if v=="PhysicalDmg" then 
-            self.this_floor_reward["PhysicalDmg"]=self.this_floor_reward["PhysicalDmg"]+math.floor(QiData.smart_lua["player_phy_attack"][tier]*pro_add)*0.004+0.01
+            self.this_floor_reward["PhysicalDmg"]=self.this_floor_reward["PhysicalDmg"]+math.floor(QiData.smart_lua["player_phy_attack"][tier]*pro_add)*0.002+0.01
         elseif v=="MagicalDmg" then 
-            self.this_floor_reward["MagicalDmg"]=self.this_floor_reward["MagicalDmg"]+math.floor(QiData.smart_lua["player_magic_attack"][tier]*pro_add)*0.004+0.01
+            self.this_floor_reward["MagicalDmg"]=self.this_floor_reward["MagicalDmg"]+math.floor(QiData.smart_lua["player_magic_attack"][tier]*pro_add)*0.002+0.01
         elseif v=="PhysicalDef" then 
-            self.this_floor_reward["PhysicalDef"]=self.this_floor_reward["PhysicalDef"]+math.floor(QiData.smart_lua["player_armor_defence"][tier]*pro_add)*0.004+0.01
+            self.this_floor_reward["PhysicalDef"]=self.this_floor_reward["PhysicalDef"]+math.floor(QiData.smart_lua["player_armor_defence"][tier]*pro_add)*0.002+0.01
         elseif v=="MagicalDef" then 
-            self.this_floor_reward["MagicalDef"]=self.this_floor_reward["MagicalDef"]+math.floor(QiData.smart_lua["player_magic_defence"][tier]*pro_add)*0.004+0.01
+            self.this_floor_reward["MagicalDef"]=self.this_floor_reward["MagicalDef"]+math.floor(QiData.smart_lua["player_magic_defence"][tier]*pro_add)*0.002+0.01
         elseif v=="HpRegenRate" then 
-            self.this_floor_reward["HpRegenRate"]=self.this_floor_reward["HpRegenRate"]+math.floor(QiData.smart_lua["player_hp"][tier]*pro_add)*0.004*0.01+0.01
+            self.this_floor_reward["HpRegenRate"]=self.this_floor_reward["HpRegenRate"]+math.floor(QiData.smart_lua["player_hp"][tier]*pro_add)*0.002*0.01+0.01
         end
     end
     return self.this_floor_reward
@@ -276,7 +276,7 @@ function QiYaota:YaotaComplte(level,room_data)
         MagicalDmg="奖励<color=#1aff1a>每100秒</color><color=#33ccff>法术攻击</color>增加",
         PhysicalDef="奖励<color=#1aff1a>每100秒</color><color=#33ccff>护甲值</color>增加",
         MagicalDef="奖励<color=#1aff1a>每100秒</color><color=#33ccff>魔法抗性</color>增加",
-        HpRegenRate="奖励<color=#1aff1a>每100秒</color><color=#33ccff>血量每秒恢复值</color>增加",
+        HpRegenRate="奖励<color=#1aff1a>每100秒</color><color=#33ccff>生命每秒恢复值</color>增加",
     }
     -- 应用属性奖励
     for k,v in pairs(self.this_floor_reward) do 

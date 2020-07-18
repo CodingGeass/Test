@@ -110,7 +110,7 @@ end
 function QiBossChallenge:MakeAllFloorReward()
     for i=1,QiBossChallenge.levelmax do
         self.floor_reward_list[i]={
-            pname=QiBossChallenge.RewardList[math.random(1,#QiBossChallenge.RewardList)],
+            pname=QiBossChallenge.RewardList[RandomInt(1,#QiBossChallenge.RewardList)],
             pvalue=i+5,
         }
     end
@@ -188,8 +188,8 @@ function QiBossChallenge:BossComplte(level,room_data)
         MagicalDmg="<color=#b1cce7>总法术伤害增幅</color>",
         PhysicalDef="<color=#b1cce7>总护甲值增幅</color>",
         MagicalDef="<color=#b1cce7>总法术抗性增幅</color>",
-        HpRegenRate="<color=#b1cce7>总血量每秒恢复增幅</color>",
-        PhysicalLifeSteal="<color=#b1cce7>总物理吸血增幅</color>",
+        HpRegenRate="<color=#b1cce7>总生命每秒恢复增幅</color>",
+        PhysicalLifeSteal="<color=#b1cce7>总物理生命汲取增幅</color>",
         PhysicalPenetration="<color=#b1cce7>总物理穿透增幅</color>",
         MagicalPenetration="<color=#b1cce7>总魔法穿透增幅</color>",
         CriticalRate="<color=#b1cce7>总暴击率增幅</color>",

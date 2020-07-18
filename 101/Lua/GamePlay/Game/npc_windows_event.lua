@@ -57,6 +57,32 @@ function quest_func:out_9605(n_actor,u_actor)
     QiShop:PlayerSwitchShop("farmroom_killpoint_shop",0,aid)
 end
 
+-- =============== 萌新商店===========================
+function quest_func:in_9112(n_actor,u_actor)
+    QiMsg("萌新商店")
+    local aid=sc.GetActorSystemProperty(u_actor,ActorAttribute_ActorID )
+    QiShop:PlayerSwitchShop("base_normalshop",1,aid)
+end
+
+function quest_func:out_9112(n_actor,u_actor)
+    QiMsg("萌新商店")
+    local aid=sc.GetActorSystemProperty(u_actor,ActorAttribute_ActorID )
+    QiShop:PlayerSwitchShop("base_normalshop",0,aid)
+end
+
+-- =============== 遗迹商店===========================
+function quest_func:in_7120(n_actor,u_actor)
+    QiMsg("遗迹商店")
+    local aid=sc.GetActorSystemProperty(u_actor,ActorAttribute_ActorID )
+    QiShop:PlayerSwitchShop("hide_nvwa_shop",1,aid)
+end
+
+function quest_func:out_7120(n_actor,u_actor)
+    QiMsg("遗迹商店")
+    local aid=sc.GetActorSystemProperty(u_actor,ActorAttribute_ActorID )
+    QiShop:PlayerSwitchShop("hide_nvwa_shop",0,aid)
+end
+
 -- =============== 许愿人===========================
 function quest_func:in_9505(n_actor,u_actor)
     QiMsg("许愿人")

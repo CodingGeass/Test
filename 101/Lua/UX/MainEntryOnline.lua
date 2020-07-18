@@ -4,18 +4,18 @@ require "Lua/UX/require.lua"
 GameDataMgr = require"OnlineMode/G_GameDataMgr.lua"
 G_GameData = GameDataMgr.GameData
 G_GameData.IsOnline=true
-
+IS_VERIFY_VERSION=true
 --(不能改名)
 function main()
-    require("SGame/Lua/LuaPanda").start("127.0.0.1", 8820)
-	LuaCallCs_Common.Log("ainentry() online start");
+    --require("LuaPanda").start("127.0.0.1", 8820)
+    LuaCallCs_Common.Log("ainentry() online start");
     gameinit()
     -- QiPrint("mainentry() online start",3)
-    --LuaCallCs_UGCStateDriver.CreateRoom()
+    -- LuaCallCs_UGCStateDriver.CreateRoom()
     playerBattleInfoTable = {}
     G_GameData.playerInfos = playerBattleInfoTable
-    -- 默认一个玩家
     LuaCallCs_UI.OpenForm("UI/OnlineMode/MainForm.uixml")
+    -- 默认一个玩家
 end
 
 --(不能改名)当开始匹配的时候
@@ -36,20 +36,17 @@ end
 function OnStartOperation(customOperation)
     LuaCallCs_UI.CloseAllFormExceptUGC()
     GameDataMgr.OnStartOperation(customOperation)
-
-    -- if (customOperation == nil or string.len(customOperation) == 0)
-
-    -- then
-    --     --发送默认的自定义操作
-    --     GameDataMgr.OnStartOperation(customOperation)
-    --     SendDefaultCustomOperation()
-    --     LuaCallCs_Common.Log("customOperation1 lenth :"..string.len(customOperation))
-	-- 	LuaCallCs_UI.CloseForm("UI/OnlineMode/MainForm.uixml")
-	-- 	LuaCallCs_UI.OpenForm("UI/OnlineMode/OperationForm.uixml")
+    -- if (customOperation == nil or string.len(customOperation) == 0) then
+    --    --发送默认的自定义操作
+    --    GameDataMgr.OnStartOperation(customOperation)
+    --    SendDefaultCustomOperation()
+    --    LuaCallCs_Common.Log("customOperation1 lenth :"..string.len(customOperation))
+    --    LuaCallCs_UI.CloseForm("UI/OnlineMode/MainForm.uixml")
+    --    LuaCallCs_UI.OpenForm("UI/OnlineMode/OperationForm.uixml")
     -- else
-    --     LuaCallCs_Common.Log("customOperation2 lenth :"..string.len(customOperation))
-	-- 	LuaCallCs_UI.CloseForm("UI/OnlineMode/MainForm.uixml")
-	-- 	LuaCallCs_UI.OpenForm("UI/OnlineMode/OperationForm.uixml")
+    --    LuaCallCs_Common.Log("customOperation2 lenth :"..string.len(customOperation))
+    --    LuaCallCs_UI.CloseForm("UI/OnlineMode/MainForm.uixml")
+    --    LuaCallCs_UI.OpenForm("UI/OnlineMode/OperationForm.uixml")
     -- end
 end
 
@@ -59,10 +56,10 @@ function OnReceiveOperateCmd(cmd)
     --根据自定义操作命令修改操作数据
 	cmdInfo = json.decode(cmd)
     G_GameDataMgr.OnReceiveOperateCmd(cmdInfo)
+    
     -- --根据自定义操作命令修改操作数据
 	-- cmdInfo = json.decode(cmd)
 	-- --LuaCallCs_Common.Log("cmd is "..cmd)
-
     -- if (cmdInfo.cmdType == 1) then
     --     for i = 1, playerArrLenght do
     --         if G_GameData.playerInfos[i].playerID == cmdInfo.playerID
@@ -77,17 +74,16 @@ function OnReceiveOperateCmd(cmd)
     --     G_GameData.levelName = cmdInfo.levelName
     --     LuaCallCs_Common.Log("G_GameData.levelName: "..G_GameData.levelName )
     -- end
-
 end
 
 --(不能改名)单次自定义操作命令接收完，需要上传全量结果数据
 function OnOperateCmdReceiveDone()
     GameDataMgr.OnOperateCmdReceiveDone()
-
 	-- local OpData = json.encode(G_GameData)
 	-- --LuaCallCs_Common.Log("SendFullDataBuf:"..OpData)
 	-- LuaCallCs_UGCStateDriver.SendFullDataBuf(OpData)
 end
+
 --(不能改名)开始loading之后会被调用
 function OnPersistentDataInBattleIsReady()
     GameDataMgr.OnPersistentDataInBattleIsReady()
@@ -141,7 +137,7 @@ end
 
 --游戏结束（不能改名字）
 function OnGameEnd()
-	LuaCallCs_GameFinish.CloseBattleScene()
+	-- LuaCallCs_GameFinish.CloseBattleScene()
 	LuaCallCs_UI.OpenForm("UI/GameRoom/GameEndPanel.uixml");
 end
 --接收到可靠的单局战绩

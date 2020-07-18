@@ -45,6 +45,8 @@ function OnReceiveUGCCommand(playerId, JasonBuff)
             PlayerController[PlayerController["aidlist"][tonumber(zip_msg[2])]]["QiWish"]:SendWishData()
         elseif fnam=="shop_buy_item" then 
             QiShop:ButItemByName(tonumber(zip_msg[2]),PlayerController["aidlist"][tonumber(zip_msg[2])],zip_msg[3])
+        elseif fnam=="onlinegame_exit_btn" then 
+            GameController:PlayerExitGame(PlayerController["aidlist"][tonumber(zip_msg[2])])
         end
     else
         local message=cjson.decode(JasonBuff)
@@ -255,6 +257,14 @@ function GameController:gameend(aid,data)
         is_su=true
     end
     GameController:GameEnd(is_su)
+end
+
+function GameController:random(aid,data)
+    local count=tonumber(data[1])
+    QiBottomAlert("测试循环 次数"..tostring(count),nil,self.aid)
+    for i=1,count do 
+        sc.RangedRand(1, 100)
+    end
 end
 
 function GameController:resetfate(aid,data)

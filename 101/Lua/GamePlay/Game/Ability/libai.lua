@@ -3,13 +3,13 @@ function libai_normal_attack(keys)
     local caster=keys.caster
     local target=keys.target
     local c_pos,c_rotation,c_for=sc.GetActorLogicPos(caster)
-    sc.PlayActorAnimation(caster, StringId.new("Atk"..tostring(math.random(1,4))), 150, 0, false,false, false)
+    sc.PlayActorAnimation(caster, StringId.new("Atk"..tostring(RandomInt(1,4))), 150, 0, false,false, false)
     local buff_radio=5000
     local phantom_count=1
     for i=1,phantom_count do 
         -- sc.SetTimer(150*i,0,1,function ()
         --     QiParticle("Prefab_Skill_Effects/Hero_Skill_Effects/131_LiBai/LiBai_attack05_spell03.prefab",
-        --     caster,VInt3.new(math.random(-2000,2000), 500,math.random(-2000,2000)),VInt3.new(0,0,0),1000,false,2000,{speed=-1000})
+        --     caster,VInt3.new(RandomInt(-2000,2000), 500,RandomInt(-2000,2000)),VInt3.new(0,0,0),1000,false,2000,{speed=-1000})
         -- end,{})caster
     end
     if sc.ActorHasBuffCount(caster, 801021)>0 then
@@ -20,23 +20,23 @@ function libai_normal_attack(keys)
                     "Prefab_Skill_Effects/Hero_Skill_Effects/522_DongFangYao/DongFangYao_attack02_spell01.prefab",
                     "Prefab_Skill_Effects/Hero_Skill_Effects/522_DongFangYao/DongFangYao_attack02_spell02.prefab",
                 }
-                QiParticle(partilce[math.random(1,#partilce)],
+                QiParticle(partilce[RandomInt(1,#partilce)],
                     caster,VInt3.new(0, 0,1500),VInt3.new(0,0,0),1000,false,2000,{})
                 local t_pos=sc.GetActorLogicPos(caster)
                 t_pos.z=t_pos.z+1500
                 local units=FindUnitsInRadio(t_pos,buff_radio)
                 for __,i in pairs(units) do
                     sc.BuffAction(i,caster,true,true,131010,0,0)
-                    QiParticle("Prefab_Skill_Effects/Hero_Skill_Effects/522_DongFangYao/DongFangYao_hurt0"..tostring(math.random(1,3))..".prefab",
+                    QiParticle("Prefab_Skill_Effects/Hero_Skill_Effects/522_DongFangYao/DongFangYao_hurt0"..tostring(RandomInt(1,3))..".prefab",
                     i,VInt3.new(0, 300,0),VInt3.new(0,0,0),1000,false,2000,{})
                 end
             end
-            QiParticle("Prefab_Skill_Effects/Hero_Skill_Effects/522_DongFangYao/DongFangYao_attack_0"..tostring(math.random(1,4))..".prefab",
+            QiParticle("Prefab_Skill_Effects/Hero_Skill_Effects/522_DongFangYao/DongFangYao_attack_0"..tostring(RandomInt(1,4))..".prefab",
                 caster,VInt3.new(0, 0,0),VInt3.new(0,0,0),1000,false,2000,{})
         end,{})
     else 
                 sc.SetTimer(300,0,1,function ()
-            QiParticle("prefab_skill_effects/hero_skill_effects/131_libai/libai_attack_0"..tostring(math.random(1,4))..".prefab",
+            QiParticle("prefab_skill_effects/hero_skill_effects/131_libai/libai_attack_0"..tostring(RandomInt(1,4))..".prefab",
                 caster,VInt3.new(0, 0,0),VInt3.new(0,0,0),1500,false,2000,{})
         end,{})
     end
@@ -67,14 +67,14 @@ function libai_ability_1(keys)
     local units=FindUnitsInRadio(c_pos,radio)
     if #units>0 then
         for i=1,hit_time do 
-            local target=units[math.random(1,#units)]
+            local target=units[RandomInt(1,#units)]
             sc.SetTimer(func_timenext*i,0,1,function ()
                 c_pos=sc.GetActorLogicPos(caster)
                 units=FindUnitsInRadio(c_pos,radio)
                 for i=1,2 do 
                     if target~=nil and sc.IsAlive(target)==true then
                         QiParticle("Prefab_Skill_Effects/Hero_Skill_Effects/131_LiBai/LiBai_attack05_spell03.prefab",
-                        target,VInt3.new(math.random(-2000,2000), 500,math.random(-2000,2000)),VInt3.new(0,0,0),800,false,2000,{speed=500})
+                        target,VInt3.new(RandomInt(-2000,2000), 500,RandomInt(-2000,2000)),VInt3.new(0,0,0),800,false,2000,{speed=500})
                         sc.SetTimer(140,0,1,function ()
                             if target~=nil and sc.IsAlive(target)==true then
                                 sc.BuffAction(target,caster,true,true,1311001,0,0)
@@ -126,7 +126,7 @@ function libai_ability_2(keys)
     local units=FindUnitsInRadio(c_pos,radio)
     for __,i in pairs(units) do
         sc.BuffAction(i,caster,true,true,131015,0,0)
-        QiParticle("Prefab_Skill_Effects/Hero_Skill_Effects/522_DongFangYao/DongFangYao_hurt0"..tostring(math.random(1,3))..".prefab",
+        QiParticle("Prefab_Skill_Effects/Hero_Skill_Effects/522_DongFangYao/DongFangYao_hurt0"..tostring(RandomInt(1,3))..".prefab",
         i,VInt3.new(0, 300,0),VInt3.new(0,0,0),1000,false,2000,{})
     end
     -- local random_attack_name="Prefab_Skill_Effects/Hero_Skill_Effects/107_Zhaoyun/10701/ZhaoYunN_attack_01.prefab"

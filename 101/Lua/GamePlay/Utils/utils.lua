@@ -136,11 +136,6 @@ function TGCPrintTable(t, indent, done, m_t)
     end
   end
 end
---随机整数
-function RandomInt(maxint)
-	return math.floor(math.random()*maxint)
-	-- body
-end
 
 --- function summary description.
 -- function detail description.
@@ -215,10 +210,13 @@ Timer([unique_str,] entity, delay, func)
 function Timer(...)
 	local arg1,arg2,arg3,arg4 = ...
 	local entity,delay,func,unique_str
+	
 	if type(arg1) == "string" then
 		arg1,arg2,arg3 = arg2,arg3,arg4
 	else
+		
 	end
+	
 	if type(arg1) == "function" then
 		delay = 0
 		func = arg1
@@ -226,6 +224,7 @@ function Timer(...)
 		delay = arg1
 		func = arg2
 	end
+
 	local timer_delay=sc.SetTimer(delay, 0, 1 , function ()
 		func()
 	end, {})
@@ -309,4 +308,36 @@ end
 -- @author 
 function twoPointToDistance(x1,y1,x2,y2)
 	return math.abs(math.sqrt(math.pow(math.abs(y2-y1),2)+math.pow(math.abs(x2-x1),2)))
-  end
+end
+
+function RandomInt(minnumber,maxnumber)
+	if tonumber(minnumber)==0 or tonumber(maxnumber)==0 then 
+		return 0
+	end
+	-- QiPrint("minnumber: "..tostring(minnumber).."maxnumber: "..tostring(maxnumber),3)
+	-- if maxnumber==nil then 
+	-- 	if tonumber(minnumber)==0 then
+	-- 		return 0
+	-- 	end
+	-- 	return math.random(minnumber)
+	-- else 
+	-- 	return math.random(minnumber,maxnumber)
+	-- end
+	-- QiPrint("minnumber: "..tostring(minnumber).."maxnumber: "..tostring(maxnumber),3)
+	-- local r_value
+	if minnumber==nil then 
+		return sc.RangedRand(1, 100)
+	end
+	if maxnumber==nil then 
+		return sc.RangedRand(1, minnumber)
+		-- return math.random(1,minnumber)
+	-- 	r_value=sc.RangedRand(1, minnumber)
+	-- 	QiPrint("r_value"..tostring(r_value),3)
+	-- 	return math.floor(r_value)
+	else 
+		return sc.RangedRand(minnumber, maxnumber)
+	end
+	-- r_value=math.floor(sc.RangedRand(minnumber, maxnumber))
+	-- QiPrint("r_value"..tostring(r_value),3)
+	-- return r_value
+end

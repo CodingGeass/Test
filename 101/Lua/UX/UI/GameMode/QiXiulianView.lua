@@ -8,6 +8,7 @@ local public
 --- UI初始化，获得控件绑定至变量中，方便后面使用
 function QiXiulianView:UIInit(keys)
     public = keys.SrcForm;
+    QiXiulianView.roomlevel=1
     -- 主panels
     QiXiulianView["xiulian_main_panel"]=public:GetWidgetProxyByName("xiulian_main_panel");
 
@@ -50,8 +51,24 @@ function SendXiulianProperty(aid,index,record_level,p_name,p_value,p_cost)
             ExpAddPercent="经验值获得速度",
             GoldAddPercent="金币获得速度",
         }
+        local property_list={
+            [1]="white",
+            [2]="green",
+            [3]="blue",
+            [4]="purple",
+            [5]="pink",
+            [6]="orange",
+            [7]="orange",
+            [8]="orange",
+        }
+        local quality=property_list[math.floor(QiXiulianView.roomlevel/2)+1]
         local list_element=QiXiulianView["xiulian_botton_list"]:GetListElement(index-1)
+        local property_image=list_element:GetWidgetProxyByName("xiulian_element_property")
+        bagcontroller:SetImageWithQuality(property_image:GetImage(),quality,true)
         local des_label=list_element:GetWidgetProxyByName("xiulian_element_des_label")
+        local element_image=list_element:GetWidgetProxyByName("xiulian_element_image")
+        local image_path="Texture/Sprite/ui_xiulian_progress_element_"..tostring(index)..".sprite"
+        element_image:GetImage():SetRes(image_path)
         local price_label=list_element:GetWidgetProxyByName("xiulian_element_price_label")
         des_label:GetText():SetContent("<color=#33ccff>".."金币:"..tostring(schinese_table[p_name]).."</color>".."+"..tostring(p_value))
         price_label:GetText():SetContent(tostring(p_cost))
@@ -72,6 +89,7 @@ end
 function SendXiulianData(aid,level,thislevel,level_data)
     local self_aid=LuaCallCs_Battle.GetHostActorID()
     if tonumber(aid)==self_aid then
+        QiXiulianView.roomlevel=level
         QiXiulianView["xiulian_bottom_level_label"]:GetText():SetContent("您当前的<color=#33ccff>修炼等级</color>为[<color=#ffff00>"..tostring(level).."</color>]")
     end
 end

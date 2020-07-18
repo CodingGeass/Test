@@ -1247,6 +1247,68 @@
       <Cell Name="是否开启UI显示">是</Cell>
       <Cell Name="buff栏优先级">1</Cell>
     </Row>
+    <Row>
+      <Cell Name="效果组合ID">195298</Cell>
+      <Cell Name="效果类型">控制效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="底板颜色">ff2b2b</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果描述">钩子晕眩</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/195_BaiLiXuanCe/skill/S2E98</Cell>
+      <Cell Name="是否开启UI显示">否</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">146290</Cell>
+      <Cell Name="效果类型">控制效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="控制类型">硬控制</Cell>
+      <Cell Name="显示类型">晕眩</Cell>
+      <Cell Name="控制效果（程序不读）">晕眩</Cell>
+      <Cell Name="名字效果更换">stun</Cell>
+      <Cell Name="底板颜色">ff2b2b</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">5000</Cell>
+      <Cell Name="非首次吸血衰减万分比">5000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加刷新</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/146_HongFu/skill/S2E9</Cell>
+      <Cell Name="效果1类型">减少移动速度</Cell>
+      <Cell Name="效果1参数1">1</Cell>
+      <Cell Name="效果1参数2">5000</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
+    <Row>
+      <Cell Name="效果组合ID">902309</Cell>
+      <Cell Name="效果类型">正面效果</Cell>
+      <Cell Name="效果子类型">无</Cell>
+      <Cell Name="法球效果槽位">-1</Cell>
+      <Cell Name="触发法球伤害衰减到万分比">10000</Cell>
+      <Cell Name="首次吸血衰减万分比">10000</Cell>
+      <Cell Name="互斥效果类型">-1</Cell>
+      <Cell Name="叠加规则">技能效果叠加替换</Cell>
+      <Cell Name="叠加次数上限">1</Cell>
+      <Cell Name="清除规则">技能效果默认清除</Cell>
+      <Cell Name="效果名称">BUFF怪</Cell>
+      <Cell Name="效果描述">全新红石像之力：
+远程英雄挂上子弹爆炸的被动</Cell>
+      <Cell Name="动作路径">Prefab_Characters/Prefab_Hero/commonresource/SceneBUFF68</Cell>
+      <Cell Name="持续时长">80000</Cell>
+      <Cell Name="效果1类型">挂上被动</Cell>
+      <Cell Name="效果1参数1">50047</Cell>
+      <Cell Name="击杀是否继承">是</Cell>
+      <Cell Name="是否算作助攻">是</Cell>
+    </Row>
   </Sheet>
   <Sheet Name="技能效果击杀表现" FontColor="FFFFFFFF" FillColor="FF2F5597">
     <Columns>

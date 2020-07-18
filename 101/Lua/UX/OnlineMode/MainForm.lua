@@ -6,14 +6,21 @@ local MainForm = {}
 function OnMainFormOpen(luaUIEvent)
 	l_self_form = luaUIEvent.SrcForm;
 	--创建局外聊天黑盒
-	LuaCallCs_InnerSystem.CreateInnerLobbyChatForm()
+	-- LuaCallCs_InnerSystem.CreateInnerLobbyChatForm()
+	if IS_VERIFY_VERSION==true then
+		l_self_form:GetWidgetProxyByName("match_ui_panel"):SetActive(false)
+	else
+    end
+end
+
+function start_quick_match()
+	LuaCallCs_UGCStateDriver.StartSingleMatchingWithPlayerNum(1,1)
 end
 
 function OnMainFormClose(luaUIEvent)
 	--销毁局外聊天黑盒
-	LuaCallCs_InnerSystem.DestoryInnerLobbyChatForm()
+	-- LuaCallCs_InnerSystem.DestoryInnerLobbyChatForm()
 end
-
 
 --单人匹配
 function OnQuicklyMatchOnePlayer(luaUIEvent)
@@ -27,6 +34,17 @@ function OnQuicklyMatchTwoPlayer(luaUIEvent)
 	LuaCallCs_UGCStateDriver.StartSingleMatchingWithPlayerNum(2,1)
 end
 
+--两人匹配
+function OnQuicklyMatch3Player(luaUIEvent)
+	--发送匹配申请
+	LuaCallCs_UGCStateDriver.StartSingleMatchingWithPlayerNum(3,1)
+end
+
+--两人匹配
+function OnQuicklyMatch4Player(luaUIEvent)
+	--发送匹配申请
+	LuaCallCs_UGCStateDriver.StartSingleMatchingWithPlayerNum(4,1)
+end
 --当开始匹配的时候
 function MainForm.OnStartMatching()
 	--显示顶部匹配时间UI黑盒

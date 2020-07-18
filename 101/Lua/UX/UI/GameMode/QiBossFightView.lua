@@ -21,7 +21,6 @@ function QiBossFightView:UIInit(keys)
     QiBossFightView["boss_fight_middle_center_reward_lebel"]=public:GetWidgetProxyByName("boss_fight_middle_center_reward_lebel");
     
     QiBossFightView["boss_drop_info_text_panel"]=public:GetWidgetProxyByName("boss_drop_info_text_panel");
-    
     QiBossFightView["boss_drop_item_title_label"]=public:GetWidgetProxyByName("boss_drop_item_title_label");
     QiBossFightView["item_image"]=public:GetWidgetProxyByName("item_image");
     QiBossFightView["item_background_image"]=public:GetWidgetProxyByName("item_background_image");
@@ -62,8 +61,8 @@ function SendBossChallengeData(aid,level,reward_json,pname,pvalue)
        MagicalDmg="总<color=#33ccff>法术伤害</color>增幅",
        PhysicalDef="总<color=#33ccff>护甲值</color>增幅",
        MagicalDef="总<color=#33ccff>法术抗性</color>增幅",
-       HpRegenRate="总<color=#33ccff>血量每秒恢复</color>增幅",
-       PhysicalLifeSteal="总<color=#33ccff>物理吸血</color>增幅",
+       HpRegenRate="总<color=#33ccff>生命值每秒恢复</color>增幅",
+       PhysicalLifeSteal="总<color=#33ccff>物理生命值汲取</color>增幅",
        PhysicalPenetration="总<color=#33ccff>物理穿透</color>增幅",
        MagicalPenetration="总<color=#33ccff>魔法穿透</color>增幅",
        CriticalRate="总<color=#33ccff>暴击率</color>增幅",
@@ -86,7 +85,7 @@ function SendBossChallengeData(aid,level,reward_json,pname,pvalue)
 
     local reward_list_table={
         [1]="item_ring_bossfight_o1",
-        [2]="tiem_hat_o2",
+        [2]="item_hat_o2",
         [3]="item_clothes_o3",
         [4]="item_ring_o3",
         [5]="item_clothes_o5",
@@ -120,8 +119,8 @@ function SendBossChallengeData(aid,level,reward_json,pname,pvalue)
             local m_itemTitle=item_data.m_itemTitle
             if m_itemTitle then 
                 QiBossFightView["boss_drop_item_title_label"]:GetText():SetContent(m_itemTitle)
+                bagcontroller:SetImageWithQuality(QiBossFightView["item_background_image"]:GetImage(),m_quality,true)
                 bagcontroller:SetImageWithQuality(QiBossFightView["boss_drop_item_title_label"]:GetText(),m_quality,false)
-
                 QiBossFightView["item_image"]:GetImage():SetRes(m_equipIconPath)
                 local main_data,ass_data=bagcontroller:GetMainAndAssProperty(item_name)
                 for i=1,2 do 
@@ -136,7 +135,6 @@ function SendBossChallengeData(aid,level,reward_json,pname,pvalue)
                         local property_value=main_data[i][2]
                         local property_name_schinese=bagcontroller["localized"][property_name] or property_name
                         local label_text=property_name_schinese.." + "..tostring(property_value)
-                        
                     end
                 end
                 -- 设置副属性
@@ -163,6 +161,7 @@ function SendBossChallengeData(aid,level,reward_json,pname,pvalue)
         QiPrint("icon"..tostring(icon),3)
         QiBossFightView["boss_fight_middle_left_text"]:GetText():SetContent("难度:"..tostring(level))
         QiBossFightView["boss_fight_choose_head_image"]:GetImage():SetRes(icon)
+        
         local set_num=0
         for k,v in pairs(reward_list) do 
             local label=QiBossFightView["boss_fight_reward_list"]:GetListElement(set_num):GetWidgetProxyByName("boss_fight_reward_list_label")
@@ -171,10 +170,10 @@ function SendBossChallengeData(aid,level,reward_json,pname,pvalue)
         end
     end
 end
--- -- 发送
+
+-- 发送
 -- function SendPlayerReward(aid)
 -- end
-
 function bossfight_view_create(keys)
     QiBossFightView:UIInit(keys)
 end

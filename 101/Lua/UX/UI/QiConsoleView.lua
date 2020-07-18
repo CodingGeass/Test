@@ -7,19 +7,22 @@ end
 function QiConsoleView:UIInit(keys)
     QiPrint("QiConsoleView:UIInit()",3)
     public = keys.SrcForm;
+    QiConsoleView.lasttext=""
     QiConsoleView["ConsoleList"]=public:GetWidgetProxyByName("ConsoleList");
       -- 中间提示窗口
     QiConsoleView["MainAlertPanel"]=public:GetWidgetProxyByName("MainAlertPanel");
     QiConsoleView["main_alert_backgounrd_image"]=public:GetWidgetProxyByName("main_alert_backgounrd_image");
     QiConsoleView["main_alert_text_label"]=public:GetWidgetProxyByName("main_alert_text_label");
     QiConsoleView["main_alert_ass_label"]=public:GetWidgetProxyByName("main_alert_ass_label");
-    
+
     QiConsoleView["ui_back_image"]=public:GetWidgetProxyByName("ui_back_image");
     QiConsoleView["ui_mouse_image"]=public:GetWidgetProxyByName("ui_mouse_image");
     QiConsoleView["quest_alert_panel"]=public:GetWidgetProxyByName("quest_alert_panel");
     QiConsoleView["alert_text_label"]=public:GetWidgetProxyByName("alert_text_label");
     QiConsoleView["alert_text_panel"]=public:GetWidgetProxyByName("alert_text_panel");
     QiConsoleView["alerttween"]={}
+    LuaCallCs_Tween.WidgetAlpha(QiConsoleView["MainAlertPanel"], 0.75,0.5):SetEase(TweenType.easeInQuad):SetLoopPingPong()
+    -- QiConsoleView.mainalerttween={}
     SetMouseAlertPos(false,120,620,LuaCallCs_Battle.GetHostActorID())
 end
 
@@ -58,10 +61,19 @@ end
 function QiConsoleView:SetAlertShowInfo(isshow,main_text,ass_text)
     QiConsoleView["MainAlertPanel"]:SetActive(isshow)
     if isshow==true then 
+        -- if QiConsoleView.lasttext~=main_text..ass_text then 
+        --     QiConsoleView.lasttext=main_text..ass_text
+        --     for k,v in pairs(QiConsoleView.mainalerttween) do 
+        --         v:Cancel()
+        --         QiConsoleView.mainalerttween={}
+        --         QiConsoleView.mainalerttween[#QiConsoleView.mainalerttween+1]=LuaCallCs_Tween.WidgetAlpha(QiConsoleView["MainAlertPanel"], 1,0.1):SetEase(TweenType.easeInQuad)
+        --         QiConsoleView.mainalerttween[#QiConsoleView.mainalerttween+1]=LuaCallCs_Tween.WidgetAlpha(QiConsoleView["MainAlertPanel"], 0,2):SetEase(TweenType.easeInQuad):SetDelay(0.11)
+        --     end
+        -- end
+
         QiConsoleView["main_alert_text_label"]:GetText():SetContent(main_text)
         QiConsoleView["main_alert_ass_label"]:GetText():SetContent(ass_text)
     end
-
 end
 
 --刷新UI

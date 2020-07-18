@@ -931,7 +931,7 @@ _sub:
     - '{"n":"ID","at":{"V":[0,"105"]}}'
     - '{"n":"followTheGround","at":{"V":[0,"False"]}}'
     - '{"n":"transformLocked","at":{"V":[0,"False"]}}'
-    - '{"n":"selected","at":{"V":[0,"True"]}}'
+    - '{"n":"selected","at":{"V":[0,"False"]}}'
     - '{"n":"gizmoType","at":{"V":[0,"1"]}}'
   - Comp: ''
     _at:
@@ -1937,7 +1937,7 @@ _sub:
     _sub:
     - '{"n":"GO","at":{"Ref":[1,-412880497]}}'
     - '{"n":"parent","at":{"Ref":[1,1906095845]}}'
-    - '{"n":"LP","v":"mDoAAAAAAAAw/v7/"}'
+    - '{"n":"LP","v":"6Ib//wAAAAAorP7/"}'
     - '{"n":"lr","v":"AAAAAAAAAAAAAAAAQEIPAA=="}'
     - '{"n":"S","v":"6AMAAOgDAADoAwAA"}'
   - Comp: ''
@@ -4488,6 +4488,59 @@ _sub:
     - '{"n":"isLevelLuaLogic","at":{"V":[0,"False"]}}'
   - GO: ''
     _at:
+      fileId: '[2,-366780156]'
+      Type: '[0,UnityEngine.GameObject]'
+      VID: '[2,74]'
+      server: '[0,1]'
+      path: '[0,Design/[7]女娲秘境/spawn_pos_yijishop]'
+    _sub:
+    - '{"n":"n","at":{"V":[0,"spawn_pos_yijishop"]}}'
+    - '{"n":"A","at":{"V":[1,1]}}'
+    - '{"n":"tag","at":{"V":[0,"Untagged"]}}'
+    - '{"n":"layer","at":{"V":[0,"0"]}}'
+    - '{"n":"Cop","sub":[{"n":"item","at":{"Ref":[1,-335478331]}},{"n":"item","at":{"Ref":[1,-1965446929]}},{"n":"item","at":{"Ref":[1,1229869343]}},{"n":"item","at":{"Ref":[1,-1287762266]}}]}'
+  - Comp: ''
+    _at:
+      fileId: '[2,-335478331]'
+      Type: '[0,UnityEngine.Transform]'
+      server: '[0,1]'
+    _sub:
+    - '{"n":"GO","at":{"Ref":[1,-366780156]}}'
+    - '{"n":"parent","at":{"Ref":[1,-1369239104]}}'
+    - '{"n":"LP","v":"8+QAAAAAAAAg1/7/"}'
+    - '{"n":"lr","v":"AAAAAAAAAAAAAAAAQEIPAA=="}'
+    - '{"n":"S","v":"6AMAAOgDAADoAwAA"}'
+  - Comp: ''
+    _at:
+      fileId: '[2,-1965446929]'
+      Type: '[0,UGC.VirtualIDComponent]'
+    _sub:
+    - '{"n":"GO","at":{"Ref":[1,-366780156]}}'
+    - '{"n":"enabled","at":{"V":[0,"True"]}}'
+    - '{"n":"ID","at":{"V":[0,"105"]}}'
+    - '{"n":"followTheGround","at":{"V":[0,"True"]}}'
+    - '{"n":"transformLocked","at":{"V":[0,"False"]}}'
+    - '{"n":"selected","at":{"V":[0,"False"]}}'
+    - '{"n":"gizmoType","at":{"V":[0,"1"]}}'
+  - Comp: ''
+    _at:
+      fileId: '[2,1229869343]'
+      Type: '[0,Assets.Scripts.GameLogic.UGCSpawner]'
+    _sub:
+    - '{"n":"GO","at":{"Ref":[1,-366780156]}}'
+    - '{"n":"enabled","at":{"V":[0,"True"]}}'
+  - Comp: ''
+    _at:
+      server: '[0,1]'
+      fileId: '[2,-1287762266]'
+      Type: '[0,Assets.Scripts.GameLogic.LuaBinder]'
+    _sub:
+    - '{"n":"GO","at":{"Ref":[1,-366780156]}}'
+    - '{"n":"enabled","at":{"V":[0,"True"]}}'
+    - '{"n":"m_luaObjects","sub":[{"n":"it","at":{"Type":[0,"Assets.Scripts.GameLogic.LuaObjectWrapper"]},"sub":[{"n":"LuaObjectName","at":{"V":[0,"Lua/GamePlay/EntityClass/LocationEntity.lua"]}},{"n":"BindVariable","sub":[{"n":"it","at":{"Type":[0,"Assets.Scripts.GameLogic.Variable"]},"sub":[{"n":"IntValue","at":{"V":[0,"0"]}},{"n":"BoolValue","at":{"V":[0,"False"]}},{"n":"StringValue","at":{"V":[0,"spawn_pos_yijishop"]}},{"n":"VInt3Value","at":{"Type":[0,"VInt3"]},"sub":[{"n":"x","at":{"V":[0,"0"]}},{"n":"y","at":{"V":[0,"0"]}},{"n":"z","at":{"V":[0,"0"]}}]},{"n":"Name","at":{"V":[0,"entityname"]}},{"n":"Sync2Charp","at":{"V":[0,"False"]}},{"n":"Type","at":{"V":[0,"2"]}},{"n":"AssetType","at":{"V":[0,"0"]}},{"n":"arrayInfo","at":{"V":[0,"0"]}}]}]}]}]}'
+    - '{"n":"isLevelLuaLogic","at":{"V":[0,"False"]}}'
+  - GO: ''
+    _at:
       fileId: '[2,-781489762]'
       Type: '[0,UnityEngine.GameObject]'
     _sub:
@@ -4522,7 +4575,7 @@ _sub:
     _at:
       fileId: '[2,-913301623]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,74]'
+      VID: '[2,75]'
       server: '[0,1]'
       path: '[0,Design/[8]千年雪山/n8_xueshan]'
     _sub:
@@ -4575,7 +4628,7 @@ _sub:
     _at:
       fileId: '[2,-1704085292]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,75]'
+      VID: '[2,76]'
       server: '[0,1]'
       path: '[0,Design/[8]千年雪山/spawn_pos_xueyao_1]'
     _sub:
@@ -4628,7 +4681,7 @@ _sub:
     _at:
       fileId: '[2,-926601318]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,76]'
+      VID: '[2,77]'
       server: '[0,1]'
       path: '[0,Design/[8]千年雪山/spawn_pos_xueyao_2]'
     _sub:
@@ -4681,7 +4734,7 @@ _sub:
     _at:
       fileId: '[2,372708890]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,77]'
+      VID: '[2,78]'
       server: '[0,1]'
       path: '[0,Design/[8]千年雪山/spawn_pos_xuanbing_1]'
     _sub:
@@ -4766,7 +4819,7 @@ _sub:
     _at:
       fileId: '[2,1936353434]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,78]'
+      VID: '[2,79]'
       server: '[0,1]'
       path: '[0,Design/unit_fb_9_yechai/n9_jile]'
     _sub:
@@ -4819,7 +4872,7 @@ _sub:
     _at:
       fileId: '[2,-1863185162]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,79]'
+      VID: '[2,80]'
       server: '[0,1]'
       path: '[0,Design/unit_fb_9_yechai/spawn_pos_luocha_2]'
     _sub:
@@ -4872,7 +4925,7 @@ _sub:
     _at:
       fileId: '[2,1556391200]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,80]'
+      VID: '[2,81]'
       server: '[0,1]'
       path: '[0,Design/unit_fb_9_yechai/spawn_pos_luocha_1]'
     _sub:
@@ -4925,7 +4978,7 @@ _sub:
     _at:
       fileId: '[2,583149524]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,81]'
+      VID: '[2,82]'
       server: '[0,1]'
       path: '[0,Design/unit_fb_9_yechai/spawn_pos_luocha_3]'
     _sub:
@@ -4978,7 +5031,7 @@ _sub:
     _at:
       fileId: '[2,355480058]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,82]'
+      VID: '[2,83]'
       server: '[0,1]'
       path: '[0,Design/unit_fb_9_yechai/spawn_pos_xiuluo_1]'
     _sub:
@@ -5031,7 +5084,7 @@ _sub:
     _at:
       fileId: '[2,1198955013]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,83]'
+      VID: '[2,84]'
       server: '[0,1]'
       path: '[0,Design/unit_fb_9_yechai/spawn_pos_yechai_1]'
     _sub:
@@ -5116,7 +5169,7 @@ _sub:
     _at:
       fileId: '[2,550229829]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,84]'
+      VID: '[2,85]'
       server: '[0,1]'
       path: '[0,Design/[10]炎焰山/n10_zhulu]'
     _sub:
@@ -5169,7 +5222,7 @@ _sub:
     _at:
       fileId: '[2,-1931391791]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,85]'
+      VID: '[2,86]'
       server: '[0,1]'
       path: '[0,Design/[10]炎焰山/spawn_pos_shihuo_1]'
     _sub:
@@ -5222,7 +5275,7 @@ _sub:
     _at:
       fileId: '[2,1603488266]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,86]'
+      VID: '[2,87]'
       server: '[0,1]'
       path: '[0,Design/[10]炎焰山/spawn_pos_shihuo_2]'
     _sub:
@@ -5275,7 +5328,7 @@ _sub:
     _at:
       fileId: '[2,1975002769]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,87]'
+      VID: '[2,88]'
       server: '[0,1]'
       path: '[0,Design/[10]炎焰山/spawn_pos_shihuo_3]'
     _sub:
@@ -5328,7 +5381,7 @@ _sub:
     _at:
       fileId: '[2,-1045115883]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,88]'
+      VID: '[2,89]'
       server: '[0,1]'
       path: '[0,Design/[10]炎焰山/spawn_pos_rongshan_1]'
     _sub:
@@ -5381,7 +5434,7 @@ _sub:
     _at:
       fileId: '[2,1632375483]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,89]'
+      VID: '[2,90]'
       server: '[0,1]'
       path: '[0,Design/[10]炎焰山/spawn_pos_junwang_1]'
     _sub:
@@ -5466,7 +5519,7 @@ _sub:
     _at:
       fileId: '[2,750902918]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,90]'
+      VID: '[2,91]'
       server: '[0,1]'
       path: '[0,Design/[11]蜀山剑冢/n11_shushan]'
     _sub:
@@ -5519,7 +5572,7 @@ _sub:
     _at:
       fileId: '[2,-1145005147]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,91]'
+      VID: '[2,92]'
       server: '[0,1]'
       path: '[0,Design/[11]蜀山剑冢/spawn_pos_canglang_1]'
     _sub:
@@ -5572,7 +5625,7 @@ _sub:
     _at:
       fileId: '[2,-1977594157]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,92]'
+      VID: '[2,93]'
       server: '[0,1]'
       path: '[0,Design/[11]蜀山剑冢/spawn_pos_shikong_1]'
     _sub:
@@ -5625,7 +5678,7 @@ _sub:
     _at:
       fileId: '[2,1205741553]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,93]'
+      VID: '[2,94]'
       server: '[0,1]'
       path: '[0,Design/[11]蜀山剑冢/spawn_pos_yinze_1]'
     _sub:
@@ -5678,7 +5731,7 @@ _sub:
     _at:
       fileId: '[2,488126319]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,94]'
+      VID: '[2,95]'
       server: '[0,1]'
       path: '[0,Design/[11]蜀山剑冢/spawn_pos_huanying_1]'
     _sub:
@@ -5763,7 +5816,7 @@ _sub:
     _at:
       fileId: '[2,-2140881685]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,95]'
+      VID: '[2,96]'
       server: '[0,1]'
       path: '[0,Design/[12]幽界之井/n12_youjie]'
     _sub:
@@ -5971,7 +6024,7 @@ _sub:
     _at:
       fileId: '[2,216940518]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,96]'
+      VID: '[2,97]'
       server: '[0,1]'
       path: '[0,Design/功能房间/s1_yaota_pos_1]'
     _sub:
@@ -6024,7 +6077,7 @@ _sub:
     _at:
       fileId: '[2,1964250812]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,97]'
+      VID: '[2,98]'
       server: '[0,1]'
       path: '[0,Design/功能房间/s1_yaota_pos_2]'
     _sub:
@@ -6077,7 +6130,7 @@ _sub:
     _at:
       fileId: '[2,427538232]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,98]'
+      VID: '[2,99]'
       server: '[0,1]'
       path: '[0,Design/功能房间/s1_boss_pos_1]'
     _sub:
@@ -6130,7 +6183,7 @@ _sub:
     _at:
       fileId: '[2,957299094]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,99]'
+      VID: '[2,100]'
       server: '[0,1]'
       path: '[0,Design/功能房间/s1_boss_pos_2]'
     _sub:
@@ -6247,7 +6300,7 @@ _sub:
     _at:
       fileId: '[2,1924087619]'
       Type: '[0,UnityEngine.GameObject]'
-      VID: '[2,100]'
+      VID: '[2,101]'
       server: '[0,1]'
       path: '[0,Design/形状/形状 0]'
     _sub:

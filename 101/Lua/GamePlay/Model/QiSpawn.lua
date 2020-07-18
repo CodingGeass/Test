@@ -37,8 +37,13 @@ function SpawnUnit(unit_name,pos,data,ai)
     end
     local actor = sc.SpawnActor(unityObject, spawnPos, direction, cfgId, actorType,
      camp, isinvincible, can_move,skin)
+     if IS_VERIFY_VERSION==true then 
+        for i=1,11 do 
+            sc.DelSkill(actor,i)
+        end
+     end
     -- SpawnController.UnitListByActorId
-    QiUnit:new({},actor,unit_name)
+    QiUnit:new({},actor,unit_name,camp)
     --设置刷新的英雄单位禁止复活
     if actorType==0 then 
         sc.DisableActorRevive(actor,true)
@@ -136,9 +141,9 @@ end
 
 --刷新下一波进攻怪物
 function SpawnNextWaveAttackUnit(wave_number)
-    QiMsg("[警告]魔军部队正在进攻卫天城，请道友立刻回援！！！")
-    QiMsg("[警告]魔军部队正在进攻卫天城，请道友立刻回援！！！")
-    QiMsg("[警告]魔军部队正在进攻卫天城，请道友立刻回援！！！")
+    QiMsg("[警告]魔军部队正在进攻长安城，请道友立刻回援！！！")
+    QiMsg("[警告]魔军部队正在进攻长安城，请道友立刻回援！！！")
+    QiMsg("[警告]魔军部队正在进攻长安城，请道友立刻回援！！！")
     local spwan_wave_list=QiData.unit_attack_property[wave_number]
     local music_state=1
     --根据信息刷新怪物

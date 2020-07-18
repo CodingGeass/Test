@@ -24,13 +24,20 @@ function AttackInfoView:UIInit(keys)
     AttackInfoView["LevelLabel"]=public:GetWidgetProxyByName("LevelLabel");
     AttackInfoView["LevelPerExpNumber"]=public:GetWidgetProxyByName("LevelPerExpNumber");
     AttackInfoView["LevelBarList"]=public:GetWidgetProxyByName("LevelBarList");
-    
+    AttackInfoView["mainpane_bg_image"]=public:GetWidgetProxyByName("mainpane_bg_image");
     AttackInfoView["fight_power_number_label"]=public:GetWidgetProxyByName("fight_power_number_label");
     AttackInfoView["teleport_gold_border_image"]=public:GetWidgetProxyByName("teleport_gold_border_image");
     AttackInfoView["bag_gold_border_image"]=public:GetWidgetProxyByName("bag_gold_border_image");
     AttackInfoView["test_image"]=public:GetWidgetProxyByName("test_image");
+    AttackInfoView["exit_btn_panel"]=public:GetWidgetProxyByName("exit_btn_panel");
 
-    
+    if IS_VERIFY_VERSION==true then 
+        AttackInfoView["exit_btn_panel"]:SetActive(true)
+        AttackInfoView["console_inputfield"]:SetActive(false)
+    else
+        AttackInfoView["exit_btn_panel"]:SetActive(false)
+        AttackInfoView["console_inputfield"]:SetActive(true)
+    end
     -- 亮度遮罩
     AttackInfoView.gold_boder_list={
         [1]=AttackInfoView["teleport_gold_border_image"],
@@ -41,6 +48,15 @@ function AttackInfoView:UIInit(keys)
         LuaCallCs_Tween.WidgetAlpha(v, 0,0.7):SetLoopPingPong()
         v:SetActive(false)
     end
+end
+
+--- 退出游戏
+function onlinegame_exit_btn(keys)
+    QiPrint("onlinegame_exit_btn")
+    local aid = LuaCallCs_Battle.GetHostActorID();
+    local message = {[1]="onlinegame_exit_btn",[2]=aid}
+    passp =  massage_zip(message)
+    LuaCallCs_UGCStateDriver.SendCustomizeFrameCmd(passp);
 end
 
 -- 设置按钮金色状态
@@ -80,7 +96,7 @@ function UXSetFightPower(aid,fightpower)
 end
 --接受进攻信息
 function SetAttackInfo(row,remain_time,table)
-    QiPrint("SetAttackInfo",3)
+    -- QiPrint("SetAttackInfo",3)
     -- local row=table.row
     -- local remain_time=table.remain_time
     if remain_time<0 then remain_time=0  end
@@ -237,7 +253,7 @@ function AttackInfoView:RefreshExpBar(level,now_exp,max_exp,add_exp)
     local slice_value=(exp_percent%10)/10
     -- 设置等级
     AttackInfoView["LevelPerExpNumber"]:GetText():SetContent(tostring("+"..tostring(add_exp)))
-    AttackInfoView["LevelLabel"]:GetText():SetContent(tostring("Lv"..tostring(level)))
+    AttackInfoView["LevelLabel"]:GetText():SetContent(tostring("等级"..tostring(level)))
     for k,v in pairs(AttackInfoView.ExpTweenHandls) do 
         if v then 
             v:Cancel()

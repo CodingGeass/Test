@@ -3,8 +3,8 @@ if tabteleportcontroller==nil then
     tabteleportcontroller.area={}
     tabteleportcontroller.area["b_base"]={
         pos="base_position",
-        schinese="<color=#00ffff>卫天城</color>",
-        description="守卫卫天城，在此抵御敌军的进攻",
+        schinese="<color=#00ffff>长安城</color>",
+        description="守卫长安城，在此抵御敌军的进攻",
         short_des="玩家主城",
         Tier=0,
         index=99,
@@ -19,8 +19,8 @@ if tabteleportcontroller==nil then
     }
     tabteleportcontroller.area["n0_weitiansenling"]={
         pos="n0_weitiansenling",
-        schinese="<color=#ffb3b3>卫天森林</color>",
-        description="卫天城旁边的森岭，适合初级修炼者",
+        schinese="<color=#ffb3b3>长安森林</color>",
+        description="长安城旁边的森林，适合初级修炼者",
         short_des="秘境等级1",
         Tier=1,
         index=0,
@@ -28,7 +28,7 @@ if tabteleportcontroller==nil then
     tabteleportcontroller.area["n1_baihua"]={
         pos="n1_baihua",
         schinese="<color=#ffb3b3>百花谷</color>",
-        description="存在于卫天城古籍中的室外桃园",
+        description="存在于长安城古籍中的室外桃园",
         short_des="秘境等级1",
         Tier=1,
         index=1,
@@ -49,7 +49,6 @@ if tabteleportcontroller==nil then
         Tier=3,
         index=3,
     }
-    
     tabteleportcontroller.area["n4_feihuang"]={
         pos="n4_feihuang",
         schinese="<color=#ff8080>飞蝗河谷</color>",
@@ -58,7 +57,6 @@ if tabteleportcontroller==nil then
         Tier=4,
         index=4,
     }
-    
     tabteleportcontroller.area["n5_lingtai"]={
         pos="n5_lingtai",
         schinese="<color=#ff6666>灵台</color>",
@@ -67,7 +65,6 @@ if tabteleportcontroller==nil then
         Tier=5,
         index=5,
     }
-    
     tabteleportcontroller.area["n6_kunlun"]={
         pos="n6_kunlun",
         schinese="<color=#ff6666>昆仑后山</color>",
@@ -76,7 +73,6 @@ if tabteleportcontroller==nil then
         Tier=6,
         index=6,
     }
-    
     tabteleportcontroller.area["n7_nvwa"]={
         pos="n7_nvwa",
         schinese="<color=#ff4d4d>女娲秘境</color>",
@@ -85,7 +81,6 @@ if tabteleportcontroller==nil then
         Tier=7,
         index=7,
     }
-    
     tabteleportcontroller.area["n8_xueshan"]={
         pos="n8_xueshan",
         schinese="<color=#ff4d4d>千年雪山</color>",
@@ -94,7 +89,6 @@ if tabteleportcontroller==nil then
         Tier=8,
         index=8,
     }
-    
     tabteleportcontroller.area["n9_jile"]={
         pos="n9_jile",
         schinese="<color=#ff3333>极乐净土</color>",
@@ -103,7 +97,6 @@ if tabteleportcontroller==nil then
         Tier=9,
         index=9,
     }
-    
     tabteleportcontroller.area["n10_zhulu"]={
         pos="n10_zhulu",
         schinese="<color=#ff3333>炎焰山</color>",
@@ -112,7 +105,6 @@ if tabteleportcontroller==nil then
         Tier=10,
         index=10,
     }
-    
     tabteleportcontroller.area["n11_shushan"]={
         pos="n11_shushan",
         schinese="<color=#ff1a1a>蜀山剑冢</color>",
@@ -143,7 +135,6 @@ if tabteleportcontroller==nil then
         Tier=12,
         index=102,
     }
-
     tabteleportcontroller.t_list={
         [1]="b_base",
         [2]="b_liangong",

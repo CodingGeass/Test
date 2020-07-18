@@ -1,6 +1,6 @@
 if alertcontroller==nil then 
     alertcontroller={}
-    alertcontroller.stay_time=6
+    alertcontroller.stay_time=4
     alertcontroller.msgnum=8
     alertcontroller.nowtime=0
     alertcontroller.msglist={}
@@ -19,7 +19,9 @@ function alertcontroller:bottomalert(msg,time)
     for i=1,alertcontroller.msgnum do 
         if alertcontroller.msglist[i] and alertcontroller.msglist[i]["msg"]==nil then 
             alertcontroller.msglist[i]["msg"]=msg
+            alertcontroller.msglist[i]["first"]=true
             alertcontroller.msglist[i]["remain_time"]=alertcontroller.stay_time
+            alertcontroller:CheckMsg(i,false)
             QiAlertGuildAlert:RefreshUI()
             return alertcontroller.msglist[i],i
         end
@@ -48,7 +50,7 @@ function AlertSecondFunc()
 end
 
 --检查一条消息
-function alertcontroller:CheckMsg(i)
+function alertcontroller:CheckMsg(i,ustime)
     -- QiPrint("check msg"..tostring(i))
     if alertcontroller.msglist[i] and alertcontroller.msglist[i]["msg"]~=nil then
         --删除显示时间到了的 信息
@@ -58,8 +60,11 @@ function alertcontroller:CheckMsg(i)
             alertcontroller:MsgFrom(i)
             alertcontroller:CheckMsg(i)
         else 
+            if ustime==false then 
+            else 
             -- QiPrint(alertcontroller.msglist[i]["msg"]..":remain_time"..tostring(alertcontroller.msglist[i]["remain_time"]))
-            alertcontroller.msglist[i]["remain_time"]=alertcontroller.msglist[i]["remain_time"]-1
+             alertcontroller.msglist[i]["remain_time"]=alertcontroller.msglist[i]["remain_time"]-1
+            end
         end
     end
 end

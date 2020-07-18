@@ -16,9 +16,9 @@ G_GameDataMgr.PersistentData = AllPlayerPersistentData
 
 
 function G_GameDataMgr.OnStartOperation(customOperation)
-    if (customOperation == nil or string.len(customOperation) == 0)
-    then
+    if (customOperation == nil or string.len(customOperation) == 0)  then
         --发送默认数据到服务器中
+        QiPrint("SendDefaultCustomOperation")
             SendDefaultCustomOperation()
             LuaCallCs_UI.CloseForm("UI/OnlineMode/MainForm.uixml")
             LuaCallCs_UI.OpenForm("UI/GameRoom/GameStartPanel.uixml");
@@ -73,13 +73,17 @@ function SendDefaultCustomOperation()
     end
     --初始化地图数据
     GameData.levelName = "ugc_hzs_224"
+    
 	--对数据序列化为json格式
-	operatData = json.encode(GameData)
+    operatData = json.encode(GameData)
+    
 	--发送数据到服务器
-	LuaCallCs_UGCStateDriver.SendFullDataBuf(operatData)
+    LuaCallCs_UGCStateDriver.SendFullDataBuf(operatData)
+   
 end
 
 function G_GameDataMgr.OnReceiveOperateCmd(cmdInfo)
+  
     --LuaCallCs_Common.Log("G_GameDataMgr.OnReceiveOperateCmd")
     --切换英雄
     if cmdInfo.cmdType == 1 then
@@ -89,6 +93,7 @@ function G_GameDataMgr.OnReceiveOperateCmd(cmdInfo)
                 GameData.playerInfos[i].SelectedHero = cmdInfo.heroID
                 GameData.playerInfos[i].confirmed = cmdInfo.confirmed
                 GameData.playerInfos[i].skinID=QiData:GetSkinIdByConfigID(cmdInfo.selectHeroID)
+                
             end
         end
     --发送刷新UI事件
@@ -103,6 +108,7 @@ function G_GameDataMgr.OnReceiveOperateCmd(cmdInfo)
                 GameData.playerInfos[i].SelectedHero = cmdInfo.heroID
                 GameData.playerInfos[i].confirmed = cmdInfo.confirmed
                 GameData.playerInfos[i].skinID=QiData:GetSkinIdByConfigID(cmdInfo.selectHeroID)
+               
             end
         end
     -- G_EventLoop:DispatchEvent("Confirmed")
@@ -117,55 +123,54 @@ function G_GameDataMgr.OnOperateCmdReceiveDone()
 end
 
 
---当数据发生变化时(自动调用)
-function OnFixedFormatDataChanged()
-    --获取用户自身的数据
-    local fixedData = LuaCallCs_PersistentData.GetFixedFormatData()
-    --local DTable = json.decode(fixedData) 
-    --获取匹配分数(内置固定数据,用来决定玩家之间的匹配优先级)
-    local score = fixedData.MatchScore
-end
+-- --当数据发生变化时(自动调用)
+-- function OnFixedFormatDataChanged()
+--     --获取用户自身的数据
+--     local fixedData = LuaCallCs_PersistentData.GetFixedFormatData()
+--     local DTable = json.decode(fixedData) 
+--     --获取匹配分数(内置固定数据,用来决定玩家之间的匹配优先级)
+--     local score = fixedData.MatchScore
+-- end
 
 
---当数据发生变化时(自动调用)
-function OnCustomizeIntAllDataChanged()
-    --获取用户自身的数据 
-   local customIntArr = LuaCallCs_PersistentData.GetCustomizeDataIntArr()
-   local v = customIntArr[200]
-end
+-- --当数据发生变化时(自动调用)
+-- function OnCustomizeIntAllDataChanged()
+--     --获取用户自身的数据 
+--    local customIntArr = LuaCallCs_PersistentData.GetCustomizeDataIntArr()
+--    local v = customIntArr[200]
+-- end
 
---当数据发生变化时(自动调用)
-function OnCustomizeStringAllDataChanged()
-    --获取用户自身自定义数据
-    local StringArr = LuaCallCs_PersistentData.GetCustomizeDataStringArr()
-    local s = StringArr[5]
-end
-
-
---上传单局战绩, 自动保存到战绩历史记录里面(服务器会自动比对,下发可靠数据)
-function UploadGameReport(PlayerID)
-    return AllPlayerPersistentData[PlayerID].ReportData
-end
-
---上传Saas的指标数据(自动调用)
-function UploadSaasString(PlayerID)
-    --只需要上传单局的数据, 指标数据会根据在后台配置的规则自动累加
-	local SaasString = json.encode(AllPlayerPersistentData[PlayerID].SaasData)
-    return SaasString
-end
+-- --当数据发生变化时(自动调用)
+-- function OnCustomizeStringAllDataChanged()
+--     --获取用户自身自定义数据
+--     local StringArr = LuaCallCs_PersistentData.GetCustomizeDataStringArr()
+--     local s = StringArr[5]
+-- end
 
 
-function UploadFixedFormatData(playerID)
-    return AllPlayerPersistentData[playerID].FixedFormatData
-end
+-- --上传单局战绩, 自动保存到战绩历史记录里面(服务器会自动比对,下发可靠数据)
+-- function UploadGameReport(PlayerID)
+--     return AllPlayerPersistentData[PlayerID].ReportData
+-- end
 
-function UploadCustomizeIntArr(playerID)
-    return AllPlayerPersistentData[playerID].CustomizeDataIntArr
-end
+-- --上传Saas的指标数据(自动调用)
+-- function UploadSaasString(PlayerID)
+--     --只需要上传单局的数据, 指标数据会根据在后台配置的规则自动累加
+-- 	local SaasString = json.encode(AllPlayerPersistentData[PlayerID].SaasData)
+--     return SaasString
+-- end
 
-function UploadCustomizeStringArr(playerID)
-    return AllPlayerPersistentData[playerID].CustomizeDataStringArr
-end
 
+-- function UploadFixedFormatData(playerID)
+--     return AllPlayerPersistentData[playerID].FixedFormatData
+-- end
+
+-- function UploadCustomizeIntArr(playerID)
+--     return AllPlayerPersistentData[playerID].CustomizeDataIntArr
+-- end
+
+-- function UploadCustomizeStringArr(playerID)
+--     return AllPlayerPersistentData[playerID].CustomizeDataStringArr
+-- end
 
 return G_GameDataMgr

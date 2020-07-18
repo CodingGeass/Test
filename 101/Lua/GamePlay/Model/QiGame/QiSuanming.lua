@@ -39,7 +39,7 @@ function QiSuanming:DataInit()
         func=function (role)
             for i=1,3 do 
                 if role.level<3 then 
-                    role:AddLevel()
+                    role:ForceAddLevel()
                 end
             end
         end,
@@ -281,7 +281,7 @@ function QiSuanming:PlayerChooseFate()
             [SM_QUALITY_PINK]="pink",
             [SM_QUALITY_ORANGE]="orange",
         }
-        local rollnumber=math.random(self.roll_startnumber,self.roll_endnumber)
+        local rollnumber=RandomInt(self.roll_startnumber,self.roll_endnumber)
         local choose_level=SM_QUALITY_GREEN -- 选中随机池
         for i=SM_QUALITY_GREEN,SM_QUALITY_ORANGE do 
             if rollnumber<=changse_data[i] then 
@@ -292,7 +292,7 @@ function QiSuanming:PlayerChooseFate()
         QiPrint("fate rollnumber["..tostring(rollnumber).."] choose_level ["..tostring(choose_level).."]",3)
         choose_level=choose_level
         -- 应用选择数据
-        self.choosedata=QiSuanming[choose_level][math.random(1,#QiSuanming[choose_level])]
+        self.choosedata=QiSuanming[choose_level][RandomInt(1,#QiSuanming[choose_level])]
         self.choosedata["func"](PlayerController[self.pid]["QiHero"])
         self.choosedata["quality"]=quality_data[choose_level]
         self:SendSuanmingData()

@@ -3,6 +3,13 @@ BAG_ITEM_TYPE_MATERIALS=2 --材料类型
 BAG_ITEM_TYPE_QUEST=3 --任务
 BAG_ITEM_CONSUMABLES=4 --消耗品
 
+BAG_SOLT_TYPE_WEAPON=1--武器
+BAG_SOLT_TYPE_FABAO=2-- 法宝
+BAG_SOLT_TYPE_CLOTHES=3 --衣服
+BAG_SOLT_TYPE_PANT=4 --裤子
+BAG_SOLT_TYPE_SHOE=5 --鞋子
+BAG_SOLT_TYPE_OTHER=6 --首饰
+
 if QiBag==nil then 
     QiBag={}
     QiBag.bag={}
@@ -167,11 +174,13 @@ function QiBag:AddItemByName(itemname,num)
     end
     local e_title=item_data["m_itemTitle"]
     local msg_str="您获得了["..e_title.."]".."X"..tostring(num)
+
     --是否可堆叠
     local stackable=true
     if m_itemtype>0 then 
         stackable=false 
     end
+    
     --如果可以堆叠先遍历一遍堆叠设置
     if stackable==true then 
         --遍历背包里内容
@@ -186,6 +195,7 @@ function QiBag:AddItemByName(itemname,num)
             end
         end
     end
+    
     --遍历背包
     for index,solt_data in pairs(self.bag) do
         --这个格子是空的
@@ -202,7 +212,6 @@ function QiBag:AddItemByName(itemname,num)
     --- 背包满了
     return false
 end
-
 
 function QiBag:SetBag(solt_index,itemname,number)
     local eventName = StringId.new("SetBag")

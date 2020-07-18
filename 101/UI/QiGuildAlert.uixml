@@ -32,6 +32,65 @@
     </m_size>
   </m_rectTransform>
   <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]">
+    <Item Type="BluePrint.UGC.UI.Core.CImage">
+      <m_name>blood_image</m_name>
+      <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
+        <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
+          <m_minX>0</m_minX>
+          <m_minY>0</m_minY>
+          <m_maxX>1</m_maxX>
+          <m_maxY>1</m_maxY>
+        </m_anchor>
+        <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
+          <x>0.5</x>
+          <y>0.5</y>
+        </m_pivot>
+        <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
+          <x>1</x>
+          <y>1</y>
+        </m_localScale>
+        <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
+          <x>0</x>
+          <y>0</y>
+        </m_anchoredPosition>
+        <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
+          <m_minX>0</m_minX>
+          <m_minY>0</m_minY>
+          <m_maxX>0</m_maxX>
+          <m_maxY>0</m_maxY>
+        </m_anchoredOffset>
+        <m_size Type="BluePrint.UGC.UI.Core.Vector2">
+          <x>1280</x>
+          <y>720</y>
+        </m_size>
+      </m_rectTransform>
+      <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
+      <m_imageData Type="BluePrint.UGC.UI.Core.CImageData">
+        <m_enable>1</m_enable>
+        <m_resFullPath>Texture/Sprite/attack_border_bg.sprite</m_resFullPath>
+        <m_color Type="BluePrint.UGC.UI.Core.Color">
+          <r>1</r>
+          <g>1</g>
+          <b>1</b>
+          <a>1</a>
+        </m_color>
+        <m_type>0</m_type>
+        <m_fillMethod>4</m_fillMethod>
+        <m_fillOrigin>0</m_fillOrigin>
+        <m_fillAmount>1</m_fillAmount>
+        <m_fillClockWise>1</m_fillClockWise>
+      </m_imageData>
+      <m_onClickedEventHandler></m_onClickedEventHandler>
+      <m_onHoldStartEventHandler></m_onHoldStartEventHandler>
+      <m_onHoldEventHandler></m_onHoldEventHandler>
+      <m_onHoldEndEventHandler></m_onHoldEndEventHandler>
+      <m_onDragStartEventHandler></m_onDragStartEventHandler>
+      <m_onDragEventHandler></m_onDragEventHandler>
+      <m_onDragEndEventHandler></m_onDragEndEventHandler>
+      <m_ID>1020</m_ID>
+      <m_active>1</m_active>
+      <m_alpha>1</m_alpha>
+    </Item>
     <Item Type="BluePrint.UGC.UI.Core.CPanel">
       <m_name>guild_alert_man_panel</m_name>
       <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
@@ -969,65 +1028,6 @@
       <m_active>1</m_active>
       <m_alpha>1</m_alpha>
     </Item>
-    <Item Type="BluePrint.UGC.UI.Core.CImage">
-      <m_name>blood_image</m_name>
-      <m_rectTransform Type="BluePrint.UGC.UI.Core.RectTransform">
-        <m_anchor Type="BluePrint.UGC.UI.Core.Anchor">
-          <m_minX>0</m_minX>
-          <m_minY>0</m_minY>
-          <m_maxX>1</m_maxX>
-          <m_maxY>1</m_maxY>
-        </m_anchor>
-        <m_pivot Type="BluePrint.UGC.UI.Core.Vector2">
-          <x>0.5</x>
-          <y>0.5</y>
-        </m_pivot>
-        <m_localScale Type="BluePrint.UGC.UI.Core.Vector2">
-          <x>1</x>
-          <y>1</y>
-        </m_localScale>
-        <m_anchoredPosition Type="BluePrint.UGC.UI.Core.Vector2">
-          <x>0</x>
-          <y>0</y>
-        </m_anchoredPosition>
-        <m_anchoredOffset Type="BluePrint.UGC.UI.Core.AnchoredOffset">
-          <m_minX>0</m_minX>
-          <m_minY>0</m_minY>
-          <m_maxX>0</m_maxX>
-          <m_maxY>0</m_maxY>
-        </m_anchoredOffset>
-        <m_size Type="BluePrint.UGC.UI.Core.Vector2">
-          <x>1280</x>
-          <y>720</y>
-        </m_size>
-      </m_rectTransform>
-      <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
-      <m_imageData Type="BluePrint.UGC.UI.Core.CImageData">
-        <m_enable>1</m_enable>
-        <m_resFullPath></m_resFullPath>
-        <m_color Type="BluePrint.UGC.UI.Core.Color">
-          <r>1</r>
-          <g>0.5019608</g>
-          <b>0</b>
-          <a>1</a>
-        </m_color>
-        <m_type>0</m_type>
-        <m_fillMethod>4</m_fillMethod>
-        <m_fillOrigin>0</m_fillOrigin>
-        <m_fillAmount>1</m_fillAmount>
-        <m_fillClockWise>1</m_fillClockWise>
-      </m_imageData>
-      <m_onClickedEventHandler></m_onClickedEventHandler>
-      <m_onHoldStartEventHandler></m_onHoldStartEventHandler>
-      <m_onHoldEventHandler></m_onHoldEventHandler>
-      <m_onHoldEndEventHandler></m_onHoldEndEventHandler>
-      <m_onDragStartEventHandler></m_onDragStartEventHandler>
-      <m_onDragEventHandler></m_onDragEventHandler>
-      <m_onDragEndEventHandler></m_onDragEndEventHandler>
-      <m_ID>1020</m_ID>
-      <m_active>0</m_active>
-      <m_alpha>1</m_alpha>
-    </Item>
   </m_children>
   <m_bindLua>UI/QiAlertGuildAlert.lua</m_bindLua>
   <m_referenceResolution Type="BluePrint.UGC.UI.Core.Vector2">
@@ -1035,7 +1035,7 @@
     <y>720</y>
   </m_referenceResolution>
   <m_flags>2</m_flags>
-  <m_priority>8</m_priority>
+  <m_priority>6</m_priority>
   <m_onOpendEventHandler>qi_alert_ui_init</m_onOpendEventHandler>
   <m_onClosedEventHandler></m_onClosedEventHandler>
 </Root>

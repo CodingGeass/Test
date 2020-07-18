@@ -1076,6 +1076,103 @@
       <Cell Name="是否检测反作弊">Y</Cell>
       <Cell Name="技能效果标签1">魔法伤害效果</Cell>
     </Row>
+    <Row>
+      <Cell Name="技能ID">19520</Cell>
+      <Cell Name="技能名称">梦魇钩锁</Cell>
+      <Cell Name="技能槽位">2</Cell>
+      <Cell Name="技能标签">控制</Cell>
+      <Cell Name="技能描述">玄策舞动钩镰，蓄力后将钩镰向指定方向甩出，对路径上的敌人造成短暂眩晕并造成[195200p1q2+195200p1g2*sl-195200p1g2]&lt;color=#f18d00&gt;(+[195200p1q9*k1e/10000])&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；钩镰将捆绑在收回过程中命中的第一个目标，同时对捆绑目标施加狩猎效果；如果捆绑住目标后再次释放该技能，玄策会将目标甩向身后并失去狩猎效果；蓄力越久，钩镰飞行距离越远，蓄力最多持续4秒；蓄力时，自身将增加30%移动速度；取消蓄力会减少梦魇钩锁50%的冷却时间；玄策和狩猎目标作战时将增加[8+2*sl]%伤害并减少[18+2*sl]%该目标对自己的伤害；狩猎目标死亡，将立刻返还梦魇钩锁80%的冷却时间</Cell>
+      <Cell Name="管理界面技能描述">玄策舞动钩镰，蓄力后将钩镰向指定方向甩出，对路径上的敌人造成短暂眩晕并造成[195200p1q2+195200p1g2*sl-195200p1g2]&lt;color=#f18d00&gt;(+[195200p1q9/100]%额外物理加成)&lt;/color&gt;点&lt;color=#ca3939&gt;物理伤害&lt;/color&gt;；钩镰将捆绑在收回过程中命中的第一个目标，同时对捆绑目标施加狩猎效果；如果捆绑住目标后再次释放该技能，玄策会将目标甩向身后并失去狩猎效果；蓄力越久，钩镰飞行距离越远，蓄力最多持续4秒；蓄力时，自身将增加30%移动速度；取消蓄力会减少梦魇钩锁50%的冷却时间；玄策和狩猎目标作战时将增加[8+2*sl]%伤害并减少[18+2*sl]%该目标对自己的伤害；狩猎目标死亡，将立刻返还梦魇钩锁80%的冷却时间</Cell>
+      <Cell Name="简化版技能描述">蓄力释放钩镰，蓄力期间提升30%移速，随后将钩镰向指定方向扔出，对路径目标造成物理伤害，钩镰将捆绑并标记回收过程中触碰到的第一个目标；对捆绑住的目标可以再次释放该技能将目标摔向身后并失去标记效果；和被标记目标作战会增加对该目标的伤害并减少该目标对自己的伤害；标记目标死亡会返还该技能80%的冷却时间。</Cell>
+      <Cell Name="图标路径">19520</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">195200p1q2</Cell>
+      <Cell Name="描述属性1成长值">195200p1g2</Cell>
+      <Cell Name="描述属性2类型">冷却时间</Cell>
+      <Cell Name="描述属性2基础值">1000</Cell>
+      <Cell Name="描述属性2成长值">-40</Cell>
+      <Cell Name="描述属性3类型">伤害加成</Cell>
+      <Cell Name="描述属性3数值类型">1</Cell>
+      <Cell Name="描述属性3基础值">1000</Cell>
+      <Cell Name="描述属性3成长值">200</Cell>
+      <Cell Name="描述属性4类型">伤害减免</Cell>
+      <Cell Name="描述属性4数值类型">1</Cell>
+      <Cell Name="描述属性4基础值">2000</Cell>
+      <Cell Name="描述属性4成长值">200</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_1_bailixuance01</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_1_bailixuance01_red</Cell>
+      <Cell Name="技能作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_1_bailixuance02</Cell>
+      <Cell Name="技能警示作用路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Arrow_1_bailixuance02_red</Cell>
+      <Cell Name="冷却时间">10000</Cell>
+      <Cell Name="age立即执行">1</Cell>
+      <Cell Name="冷却时间成长">-400</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="消耗">70</Cell>
+      <Cell Name="消耗成长">5</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">血量最低敌人</Cell>
+      <Cell Name="动作路径">ability/ability_attackunit/qianlizhuihun/S2.xml</Cell>
+      <Cell Name="范围自指定类型">指定朝向</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">7500</Cell>
+      <Cell Name="指示器范围">7500</Cell>
+      <Cell Name="最大攻击距离">7500</Cell>
+      <Cell Name="二级攻击距离">7500</Cell>
+      <Cell Name="最大寻敌距离">10000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="是否检测反作弊">Y</Cell>
+      <Cell Name="技能效果标签1">物理伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="蓄力效果ID">195290</Cell>
+      <Cell Name="蓄力结束效果ID">195291</Cell>
+      <Cell Name="蓄力时间上限">1000</Cell>
+      <Cell Name="蓄力解除时间">3500</Cell>
+      <Cell Name="蓄力取消CD万分比">5000</Cell>
+    </Row>
+    <Row>
+      <Cell Name="技能ID">14620</Cell>
+      <Cell Name="技能名称">炙热剑芒</Cell>
+      <Cell Name="技能槽位">2</Cell>
+      <Cell Name="技能标签">控制</Cell>
+      <Cell Name="技能描述">露娜将剑插入大地，以炙热剑芒牵引附近的敌人靠近自己造成[146200p1q2+146200p1g2*sl-146200p1g2]&lt;color=#7FFFD4&gt;(+[146200p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;并眩晕0.5秒，同时获得可抵免[146250p1q2+146250p1g2*sl-146250p1g2]&lt;color=#7FFFD4&gt;(+[146250p1q4*k2/10000])&lt;/color&gt;点伤害的护盾并减少其50%移动速度，持续2秒；同时会标记被牵引的敌人</Cell>
+      <Cell Name="技能描述(该列战斗祖策划填写，公式列将由填写值计算出技能描述)">露娜将剑插入大地，以炙热剑芒牵引附近敌人靠近自己并眩晕他们，造成&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;，获得可抵挡[146250p1q2+146250p1g2*sl-146250p1g2]&lt;color=#7FFFD4&gt;(+[146250p1q4*k2/10000])&lt;/color&gt;点伤害的护盾并标记敌人（无法标记机关)，造成持续2秒50%的减速</Cell>
+      <Cell Name="技能描述（公式计算）">露娜将剑插入大地，以炙热剑芒牵引附近敌人靠近自己并眩晕他们，造成[146200p1q2+146200p1g2*sl-146200p1g2]&lt;color=#7FFFD4&gt;(+[146200p1q4*k2/10000])&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;，获得可抵挡[146250p1q2+146250p1g2*sl-146250p1g2]&lt;color=#7FFFD4&gt;(+[146250p1q4*k2/10000])&lt;/color&gt;点伤害的护盾并标记敌人（无法标记机关)，造成持续2秒50%的减速</Cell>
+      <Cell Name="管理界面技能描述">露娜将剑插入大地，以炙热剑芒牵引附近的敌人靠近自己造成[146200p1q2+146200p1g2*sl-146200p1g2]&lt;color=#7FFFD4&gt;(+[146200p1q4/100]%法术加成)&lt;/color&gt;点&lt;color=#8e91fd&gt;法术伤害&lt;/color&gt;并眩晕0.5秒，同时获得可抵免[146250p1q2+146250p1g2*sl-146250p1g2]&lt;color=#7FFFD4&gt;(+[146250p1q4/100]%法术加成)&lt;/color&gt;点伤害的护盾并减少其50%移动速度，持续2秒；同时会标记被牵引的敌人</Cell>
+      <Cell Name="简化版技能描述">将剑插入大地，以炙热剑芒标记并牵引附近的敌人靠近自己造成法术伤害并眩晕0.5秒，同时获得护盾并减少其50%移动速度，持续2秒</Cell>
+      <Cell Name="图标路径">14620</Cell>
+      <Cell Name="描述属性1类型">基础伤害</Cell>
+      <Cell Name="描述属性1基础值">146200p1q2</Cell>
+      <Cell Name="描述属性1成长值">146200p1g2</Cell>
+      <Cell Name="描述属性2类型">护盾抵免</Cell>
+      <Cell Name="描述属性2基础值">146250p1q2</Cell>
+      <Cell Name="描述属性2成长值">146250p1g2</Cell>
+      <Cell Name="技能指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto</Cell>
+      <Cell Name="技能警示指示器路径">Prefab_Skill_Effects/tongyong_effects/Indicator/Auto_red</Cell>
+      <Cell Name="冷却时间">8000</Cell>
+      <Cell Name="消耗类型">0</Cell>
+      <Cell Name="消耗数值类型">0</Cell>
+      <Cell Name="消耗">50</Cell>
+      <Cell Name="消耗成长">5</Cell>
+      <Cell Name="技能目标过滤">4</Cell>
+      <Cell Name="技能释放规则">任意施放</Cell>
+      <Cell Name="技能筛选规则">自身释放</Cell>
+      <Cell Name="动作路径">ability/ability_attackunit/weitianjianshen.xml</Cell>
+      <Cell Name="范围自指定类型">指定目标</Cell>
+      <Cell Name="目标包含自身">N</Cell>
+      <Cell Name="目标包含敌方">Y</Cell>
+      <Cell Name="固有指示器范围">4000</Cell>
+      <Cell Name="指示器范围">4000</Cell>
+      <Cell Name="最大攻击距离">4000</Cell>
+      <Cell Name="二级攻击距离">4000</Cell>
+      <Cell Name="最大寻敌距离">4000</Cell>
+      <Cell Name="技能战力类型">2</Cell>
+      <Cell Name="技能效果标签1">魔法伤害效果</Cell>
+      <Cell Name="技能效果标签2">控制伤害效果</Cell>
+      <Cell Name="是否晕眩技能">1</Cell>
+    </Row>
   </Sheet>
   <Sheet Name="技能解锁" FontColor="FFFFFFFF" FillColor="FF44546A">
     <Columns>

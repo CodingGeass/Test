@@ -5,7 +5,7 @@ function main()
     print("game player main")
     -- if IS_IN_TOOLMODE==true then 
     if IS_VERIFY_VERSION==false then 
-        require("LuaPanda").start("127.0.0.1", 8818)
+        -- require("LuaPanda").start("127.0.0.1", 8818)
     end
     -- end
     GameController:Init()
@@ -39,19 +39,19 @@ end
 -- @tparam  type orignalAtker 原始攻击者 (塔杀死目标的话， 原始攻击者就是塔. 逻辑攻击者就是玩家)
 -- @tparam  type logicAtker 逻辑攻击者
 -- @tparam  type bImmediateRevive 是否为立即复活 (复活甲会传True)
--- @author 
+-- @author
 function ActorDead(src,atker,orignalAtker,logicAtker,bImmediateRevive)
     Event:ActorDead(src,atker,orignalAtker,logicAtker,bImmediateRevive)
     local attacker_aid=sc.GetActorSystemProperty(atker,ActorAttribute_ActorID)
     -- 是玩家击杀的
     -- if PlayerController["aidlist"][attacker_aid] then 
-    --     if math.random(100)>98 then
-    --         local item_data=QiData.item_data_list[math.random(1, #QiData.item_data_list)]
+    --     if RandomInt(100)>98 then
+    --         local item_data=QiData.item_data_list[RandomInt(1, #QiData.item_data_list)]
     --         local item_name=item_data["item_name"]
     --         local item_type=item_data["m_itemtype"]
     --         local m_tier=item_data["m_tier"] or 1
-    --         if math.random(m_tier)<=1 then
-    --             if item_type>2 then 
+    --         if RandomInt(m_tier)<=1 then
+    --             if item_type>2 then
     --                 PlayerController:GetBag(PlayerController["aidlist"][attacker_aid]):AddItemByName(item_name,1)
     --             end
     --         end
@@ -65,10 +65,9 @@ end
 -- @tparam  type target 目标
 -- @tparam  type slot 技能槽位
 -- @tparam  type skill_Id 技能ID
--- @author 
+-- @author
 function UseSkill(src,target,slot,skill_Id)
     Event:UseSkill(src,target,slot,skill_Id)
-
 end
 
 

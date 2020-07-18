@@ -6,7 +6,7 @@ if maincontroller==nil then
     maincontroller.hid=nil
     maincontroller.AlertShowList={}
     maincontroller.gamedif=1
-    maincontroller.gamediftext="asd"
+    maincontroller.gamediftext=""
     QiPrint("maincontroller init")
 end
 
@@ -15,7 +15,6 @@ end
 function maincontroller:init()
     maincontroller.playerdatalist={}
     maincontroller.playerproperty={}
-
     maincontroller.iswin=false
     QiData:Init()
     consolecontroller:init()
@@ -166,15 +165,16 @@ function maincontroller:OnFightPrepare()
     LuaCallCs_UI.EnableUnitInBuiltinBattleUIForm(enBattleUIForLua.BattleMain, "Center/MapPanel", false);
     LuaCallCs_UI.EnableUnitInBuiltinBattleUIForm(enBattleUIForLua.BattleMain, "Center/Panel_Equip", false);
     LuaCallCs_UI.EnableUnitInBuiltinBattleUIForm(enBattleUIForLua.BattleMain, "Center/CustomRoomPanel", false);
-
 end
 
 function maincontroller:OnFightStart()
     --先关闭所有
-    --先关闭所有
     LuaCallCs_FightUI.EnableUI(0, false)
     -- LuaCallCs_FightUI.EnableUI(1, true)
-    LuaCallCs_FightUI.EnableUI(1, true)
+    if IS_VERIFY_VERSION==true then 
+    else 
+        LuaCallCs_FightUI.EnableUI(1, true)
+    end
     LuaCallCs_FightUI.EnableUI(4, true)
 end
 function RefreshUI(aid,type)

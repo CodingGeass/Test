@@ -20,7 +20,7 @@ function QiWish:Init()
 end
 
 function QiWish:GetItemLevel()
-    local roll=math.random(1,100)
+    local roll=RandomInt(1,100)
     local level_data={
         [1]=40,
         [2]=70,
@@ -71,7 +71,7 @@ function QiWish:GetRewardItemName(r_type,r_level)
     if  DropItemController.unitdroplist_fenlei[r_type]~=nil and DropItemController.unitdroplist_fenlei[r_type][r_level]~=nil then 
         local r_list=DropItemController.unitdroplist_fenlei[r_type][r_level]
         if #r_list>=1 then 
-            return r_list[math.random(1,#r_list)]
+            return r_list[RandomInt(1,#r_list)]
         else 
             return nil 
         end
@@ -111,7 +111,7 @@ function QiWish:WishDataInit()
         for k,v in pairs(data_list) do 
             random_list[#random_list+1]=k
         end
-        local choose_property=random_list[math.random(1,#random_list)]
+        local choose_property=random_list[RandomInt(1,#random_list)]
         local add_value=data_list[choose_property][p_level]*reward_level
         local p_hero=PlayerController[m_wish.pid]["QiHero"]
         p_hero.base_property[choose_property]=p_hero.base_property[choose_property]+add_value
@@ -332,12 +332,12 @@ function QiWish:WishDataInit()
                 func=function (m_wish)
                     local p_hero=PlayerController[m_wish.pid]["QiHero"]
                     local add_value=p_hero.exp
-                    if add_value>QiData.exp_data[p_hero.level]["level_up_exp"]*0.5 then 
-                        p_hero:ForceAddLevel()
-                        p_hero:AddExp(1,p_hero.level)
-                    else
+                    -- if add_value>QiData.exp_data[p_hero.level]["level_up_exp"]*0.5 then 
+                    --     p_hero:ForceAddLevel()
+                    --     -- p_hero:AddExp(1,p_hero.level)
+                    -- else
                         p_hero:AddExp(add_value,p_hero.level)
-                    end
+                    -- end
                     m_wish.wish_title="当前等级经验值翻倍"
                     m_wish.wish_des="经验值增加了["..tostring(add_value).."]"
                 end,
@@ -376,7 +376,6 @@ function QiWish:AskWishBtnClick(index)
         --作用
         self:WishRewardChoose(index)
         self.wish_duration=WISH_NEXT_DURATION
-
     end
     self:SendWishData()
 end

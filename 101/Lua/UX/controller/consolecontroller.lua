@@ -77,7 +77,6 @@ end
 -- function detail description.
 -- @author 
 function ConsoleSecondFunc()
-
     --UI界面主动刷新
     if QiBagView.funcindex==2 then 
         QiBagView:RefreshProperty()
@@ -89,7 +88,6 @@ function ConsoleSecondFunc()
     if  QiWishView["wish_main_panel"]:IsActived()==true and QiWishView["wish_select_alert_label"]:IsActived()==true then 
         QiWishView:AskWishData()
     end
-
     for i=1,consolecontroller.msgnum do
         -- QiPrint("i:"..tostring(i).."   msg:"..tostring(consolecontroller.msglist[i]["msg"]))
         consolecontroller:CheckMsg(i)
@@ -98,7 +96,7 @@ function ConsoleSecondFunc()
     if consolecontroller.nowtime%10==0 then 
         consolecontroller:QiMsg("游戏进行中 当前游戏时间["..tostring(consolecontroller.nowtime)..tostring("]"),type)
     end
-    QiPrint("ConsoleSecondFunc")
+    -- QiPrint("ConsoleSecondFunc")
     -- PrintTable(consolecontroller.msglist)
     --UI刷新
     QiConsoleView:RefreshUI()
@@ -157,7 +155,6 @@ function consolecontroller:CMDParse(s_text)
     message[3]=cmdname
     passp =  massage_zip(message)
     LuaCallCs_UGCStateDriver.SendCustomizeFrameCmd(passp);
-
 end
 
 function consolecontroller:test(arg)

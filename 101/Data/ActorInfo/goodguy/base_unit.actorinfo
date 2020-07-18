@@ -132,5 +132,5 @@
   </ActSounds>
   <callMonsterConfigID>0</callMonsterConfigID>
   <hudHeight>3000</hudHeight>
-  <HudType>6</HudType>
+  <HudType>8</HudType>
 </Root>

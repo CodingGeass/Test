@@ -70,7 +70,7 @@ end
 -- 根据掉落物ID产生一个掉落
 function DropItemController:CreateDropByDropID(dropid,pos)
     if DropItemController.unitdroplist[dropid] then
-        local drop_name=DropItemController.unitdroplist[dropid][math.random(1, #DropItemController.unitdroplist[dropid])]
+        local drop_name=DropItemController.unitdroplist[dropid][RandomInt(1, #DropItemController.unitdroplist[dropid])]
         DropItemController:CreateDrop(drop_name,pos)
     end
 end

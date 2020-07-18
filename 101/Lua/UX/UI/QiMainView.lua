@@ -10,6 +10,7 @@ if QiMainView==nil then
         QiMainView.smart_item_tween_handle[i]={}
     end
     QiMainView.WeaponGrowTween={}
+    QiMainView.initdone=false
 end
 local public
 
@@ -26,19 +27,18 @@ function QiMainView:UIInit(keys)
     QiMainView["text_pick_item"]=public:GetWidgetProxyByName("text_pick_item");
     QiMainView["pick_item_label"]=public:GetWidgetProxyByName("pick_item_label");
     QiMainView["grow_weapon_number_label"]=public:GetWidgetProxyByName("grow_weapon_number_label");
-
-
+   
     for i=1,6 do 
         local animation_weight_handle=QiMainView["Baglist"]:GetListElement(i-1):GetWidgetProxyByName("image_border_gold")
         QiMainView.smart_item_tween_handle[i][#QiMainView.smart_item_tween_handle[i]+1]=LuaCallCs_Tween.WidgetAlpha(animation_weight_handle, 0, 1):SetDelay(0.11):SetEase(TweenType.easeInOutQuart)
     end
     LuaCallCs_Tween.WidgetAlpha(QiMainView["grow_weapon_number_label"], 0, 1):SetEase(TweenType.easeInOutQuart)
+    QiMainView.initdone=true
 end
 
 
 function WeaponGrow(aid,number)
     local actorID = LuaCallCs_Battle.GetHostActorID();
-   
     if actorID==aid then
         for k,v in pairs(QiMainView.WeaponGrowTween) do 
             v:Cancel()
@@ -62,7 +62,7 @@ function QiMainView:RefreshSmartBag()
     local p_info=playerequipcontroller
     for i = 1, 6 do
         QiMainView:HighLightSolt(i)
-        if playerequipcontroller[actorID][i]~=nil then 
+        if playerequipcontroller[actorID]~=nil and     QiMainView.initdone==true        then 
             QiMainView.smartitemlist[i]=playerequipcontroller[actorID][i]
             if(playerequipcontroller[actorID][i] ~= nil) then  --有装备
                 local item_data=QiData.item_data[playerequipcontroller[actorID][i]]

@@ -5,7 +5,7 @@ if QiShopView==nil then
     QiShopView["lastborderimage"]=nil
     QiShopView["clicktween"]={}
     QiShopView["selectitemname"]=nil
-
+    QiShopView["stocknumber"]={}
 end
 local public
 
@@ -50,6 +50,8 @@ function SendShopIndexData(aid,shopname,index,now_stocknumber,stock_reamaintime,
         local list_element=QiShopView["shop_item_list"]:GetListElement(index-1)
         local stock_number=list_element:GetWidgetProxyByName("item_stock_number")
         local item_sell_black_borderimage=list_element:GetWidgetProxyByName("item_sell_black_borderimage")
+        QiShopView["stocknumber"][index]=now_stocknumber
+        -- if QiShopView["selectitemname"]==
         if now_stocknumber==0 then 
             item_sell_black_borderimage:SetActive(true)
             stock_number:SetActive(false)
@@ -86,6 +88,7 @@ function QiShopView:InitShopFromName(shop_name)
         QiShopView["lastborderimage"]:SetActive(false)
         QiShopView["lastborderimage"]=nil
     end
+    QiShopView["stocknumber"]={}
     QiShopView["item_show_panel"]:SetActive(false)
     QiShopView["selectitemname"]=nil
     local shop_title,shop_data=qishop:GetShopInfo(shop_name)
@@ -100,7 +103,7 @@ function QiShopView:InitShopFromName(shop_name)
             local item_name=shop_item_data["sell_item_name"]
             local price_data=shop_item_data["sell_price"]
             local price_str=qishop:FormatPriceString(price_data)
-            list_element:GetWidgetProxyByName("item_price_label"):GetText():SetContent(tostring(price_str).."G")
+            list_element:GetWidgetProxyByName("item_price_label"):GetText():SetContent(tostring(price_str))
             local item_data=QiData.item_data[item_name]
             local m_equipDesc=item_data["m_equipDesc"] or ""
             local m_quality=item_data["m_quality"]
@@ -134,10 +137,14 @@ function shop_item_click(keys)
     QiShopView["lastborderimage"]=border_image
     local shop_title,shop_data=qishop:GetShopInfo(QiShopView["shopname"])
     local shop_item_data=shop_data[index+1]
+    if QiShopView["stocknumber"][index+1]>0 or QiShopView["stocknumber"][index+1]==-1 then
+        QiShopView["shop_buy_btn_click"]:SetActive(true)
+    else 
+        QiShopView["shop_buy_btn_click"]:SetActive(false)
+    end
     local item_name=shop_item_data["sell_item_name"]
     QiPrint("shopitemclick"..tostring(item_name))
     QiShopView:ShowItemInfo(shop_item_data,item_name)
-    
 end
 
 --- 显示物品的信息
@@ -147,7 +154,6 @@ end
 -- @author item_data
 function QiShopView:ShowItemInfo(shop_item_data,item_name)
     QiShopView["selectitemname"]=item_name
-    
     local aid = LuaCallCs_Battle.GetHostActorID();
     local item_data=QiData.item_data[item_name]
 
@@ -165,7 +171,6 @@ function QiShopView:ShowItemInfo(shop_item_data,item_name)
         -- 物品图标
         bagcontroller:SetImageWithQuality(QiShopView["ItemShowPropertyImage"]:GetImage(),m_quality,true)
         QiShopView["show_item_image"]:GetImage():SetRes(m_equipIconPath)
-        
         local main_data,ass_data=bagcontroller:GetMainAndAssProperty(item_name)
         -- 设置主属性
         -- TGCPrintTable(main_data)

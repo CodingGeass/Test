@@ -59,6 +59,7 @@ function PlayerController:SwtichHero(pid,cfg,skin)
 
     -- PlayerController:InitPlayerInfo(ugc_pid,pid)
 end
+
 --- function summary description.
 -- function detail description.
 -- @tparam  type self description
@@ -72,6 +73,7 @@ function PlayerController:GetAllPlayerActor()
     end
     return player_list
 end
+
 --- function summary description.
 -- function detail description.
 -- @tparam  type self description
@@ -85,6 +87,7 @@ function PlayerController:GetAllPlayerAearIndex()
     end
     return area_list
 end
+
 --- 获得一个代码中通用的PID，默认第一个玩家是0
 function PlayerController:GetPlayerPID()
     local p_num=PlayerController.nowplayer
@@ -121,7 +124,6 @@ function PlayerController:PlayerInit(playerid)
 end
 
 function PlayerController:InitPlayerInfo(playerid,pid)
-
     PlayerController[playerid]=pid
     PlayerController[pid]["ugcpid"]=playerid
     PlayerController[pid]["actor"]= sc.GetControlActorByPlayerID(playerid)
@@ -161,7 +163,23 @@ function PlayerController:InitQiModel(playerid,pid)
     PlayerController[pid]["QiXiulian"]=QiXiulian:new(PlayerController[pid]["QiXiulian"],PlayerController[pid]["actor"],pid)
     PlayerController[pid]["QiSuanming"]=QiSuanming:new(PlayerController[pid]["QiSuanming"],PlayerController[pid]["actor"],pid)
     PlayerController[pid]["QiWish"]=QiWish:new(PlayerController[pid]["QiWish"],PlayerController[pid]["actor"],pid)
+end
 
+function PlayerController:GetNearPlayer(actor)
+    local now_pos=sc.GetActorLogicPos(actor)
+    local near_player=nil
+    local max_distance=999999
+    for i=0,GAME_MAX_PLAYER-1 do 
+        if PlayerController[i]["actor"]~=nil then 
+            local t_pos=sc.GetActorLogicPos(PlayerController[i]["actor"])
+            local target_dis= twoPointToDistance(now_pos.x,now_pos.z,t_pos.x,t_pos.z)
+            if target_dis<max_distance then 
+                max_distance=target_dis
+                near_player=PlayerController[i]["actor"]
+            end
+        end
+    end
+    return near_player,max_distance
 end
 
 --- 获得背包
@@ -183,7 +201,10 @@ end
 function PlayerController:GetQiQuest(pid)
     return PlayerController[pid]["QiQuest"]
 end
+
+--- 
 function PlayerController:SkillInit(pid)
+    
     
 end
 

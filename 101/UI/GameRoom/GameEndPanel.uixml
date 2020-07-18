@@ -449,7 +449,7 @@
                   <m_children Type="System.Collections.Generic.List`1[[BluePrint.UGC.UI.Core.CBaseUnit, BluePrint.UGC.UI, Version=1.52.5.6, Culture=neutral, PublicKeyToken=null]]" />
                   <m_textData Type="BluePrint.UGC.UI.Core.CTextData">
                     <m_enable>1</m_enable>
-                    <m_textContent>蜀山防守战-普通难度</m_textContent>
+                    <m_textContent>荒神罪-长安挽歌 普通难度</m_textContent>
                     <m_fontType>1</m_fontType>
                     <m_fontStyle>0</m_fontStyle>
                     <m_fontSize>22</m_fontSize>
@@ -2020,7 +2020,7 @@
                                               <m_maxY>0.4562073</m_maxY>
                                             </m_anchoredOffset>
                                             <m_size Type="BluePrint.UGC.UI.Core.Vector2">
-                                              <x>46.67241</x>
+                                              <x>46.67239</x>
                                               <y>44.62933</y>
                                             </m_size>
                                           </m_rectTransform>
@@ -2191,7 +2191,7 @@
                                               <m_maxY>0</m_maxY>
                                             </m_anchoredOffset>
                                             <m_size Type="BluePrint.UGC.UI.Core.Vector2">
-                                              <x>46.67242</x>
+                                              <x>46.67239</x>
                                               <y>44.62933</y>
                                             </m_size>
                                           </m_rectTransform>
@@ -2250,7 +2250,7 @@
                                               <m_maxY>0</m_maxY>
                                             </m_anchoredOffset>
                                             <m_size Type="BluePrint.UGC.UI.Core.Vector2">
-                                              <x>46.67242</x>
+                                              <x>46.67239</x>
                                               <y>44.62933</y>
                                             </m_size>
                                           </m_rectTransform>
@@ -2362,7 +2362,7 @@
                                               <m_maxY>0</m_maxY>
                                             </m_anchoredOffset>
                                             <m_size Type="BluePrint.UGC.UI.Core.Vector2">
-                                              <x>46.67242</x>
+                                              <x>46.67239</x>
                                               <y>44.62933</y>
                                             </m_size>
                                           </m_rectTransform>
@@ -2421,7 +2421,7 @@
                                               <m_maxY>0</m_maxY>
                                             </m_anchoredOffset>
                                             <m_size Type="BluePrint.UGC.UI.Core.Vector2">
-                                              <x>46.67242</x>
+                                              <x>46.67239</x>
                                               <y>44.62933</y>
                                             </m_size>
                                           </m_rectTransform>
@@ -2533,7 +2533,7 @@
                                               <m_maxY>0</m_maxY>
                                             </m_anchoredOffset>
                                             <m_size Type="BluePrint.UGC.UI.Core.Vector2">
-                                              <x>46.67242</x>
+                                              <x>46.67239</x>
                                               <y>44.62933</y>
                                             </m_size>
                                           </m_rectTransform>
@@ -2592,7 +2592,7 @@
                                               <m_maxY>0</m_maxY>
                                             </m_anchoredOffset>
                                             <m_size Type="BluePrint.UGC.UI.Core.Vector2">
-                                              <x>46.67242</x>
+                                              <x>46.67239</x>
                                               <y>44.62933</y>
                                             </m_size>
                                           </m_rectTransform>
@@ -3722,7 +3722,7 @@
     <y>720</y>
   </m_referenceResolution>
   <m_flags>0</m_flags>
-  <m_priority>0</m_priority>
+  <m_priority>9</m_priority>
   <m_onOpendEventHandler>OnGameEndPanelCreate</m_onOpendEventHandler>
   <m_onClosedEventHandler></m_onClosedEventHandler>
 </Root>

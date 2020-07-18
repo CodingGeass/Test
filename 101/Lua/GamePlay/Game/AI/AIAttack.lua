@@ -85,6 +85,12 @@ end
 function AIAttack:AggressiveThink()
   local now_pos=sc.GetActorLogicPos(self.unit)
   local target_dis= twoPointToDistance(now_pos.x,now_pos.z,self.spawnPos.x,self.spawnPos.z)
+  local near_player,max_distance= PlayerController:GetNearPlayer(self.unit)
+  -- 切换目标
+  if near_player~=nil and max_distance<4000 and near_player~=self.aggroTarget then 
+    QiPrint("swtich target",3)
+    self.aggroTarget=near_player
+  end
   if  target_dis> self.leashRange then
     if self.aggroTarget~=nil or sc.IsAlive(self.aggroTarget)==true then
         local t_pos=sc.GetActorLogicPos(self.aggroTarget)
@@ -112,7 +118,6 @@ function AIAttack:AggressiveThink()
     --跳转到待机状态
     return
   end
-
   for i=-1,4 do 
     if sc.IsSkillSlotValid(self.unit,i)==true then 
       sc.RealMovePosition(self.unit,sc.GetActorLogicPos(self.aggroTarget))

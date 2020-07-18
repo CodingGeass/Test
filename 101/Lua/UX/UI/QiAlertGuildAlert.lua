@@ -6,6 +6,7 @@ end
 function QiAlertGuildAlert:Init(keys)
     QiPrint("qi_alert_ui_init")
     public = keys.SrcForm;
+    QiAlertGuildAlert.msg_alert_tween={}
     --主panel
     QiAlertGuildAlert["alert_mid_bottom_list"]=public:GetWidgetProxyByName("alert_mid_bottom_list");
     
@@ -20,11 +21,11 @@ function QiAlertGuildAlert:Init(keys)
    
     QiAlertGuildAlert["victor_image"]:SetActive(false)
     QiAlertGuildAlert["lose_image"]:SetActive(false)
+    QiAlertGuildAlert.attackpanel_tween=LuaCallCs_Tween.WidgetAlpha(QiAlertGuildAlert["attack_panel"], 0,2):SetLoopPingPong():SetEase(TweenType.easeInOutQuart)
     QiAlertGuildAlert.alert_image_tween={LuaCallCs_Tween.WidgetAlpha(QiAlertGuildAlert["blood_image"], 0,0.1)}
 end
 
 -- 红色屏幕闪一下
-
 function ShowBloodAlert()
     for k,v in pairs( QiAlertGuildAlert.alert_image_tween) do
         v:Cancel()
@@ -51,7 +52,18 @@ end
 function SetAttackUnitNumInfoPanel(unit_num)
     if unit_num==0 then
         QiAlertGuildAlert["attack_panel"]:SetActive(false)
+        AttackInfoView["row"]:GetText():SetColor(BluePrint.UGC.UI.Core.Color(1, 1, 1, 1));
+        AttackInfoView["mainpane_bg_image"]:GetImage():SetColor(BluePrint.UGC.UI.Core.Color(1, 1, 1, 1));
+
+        
     elseif unit_num>0 then 
+        -- if  QiAlertGuildAlert.attackpanel_tween~=nil then 
+        --     QiAlertGuildAlert.attackpanel_tween:Cancel()
+        -- end
+        -- QiAlertGuildAlert.attackpanel_tween=nil
+        -- QiAlertGuildAlert.attackpanel_tween=LuaCallCs_Tween.WidgetAlpha(QiAlertGuildAlert["attack_panel"],0,2):SetLoopPingPong():SetEase(TweenType.easeInOutQuart)
+        AttackInfoView["row"]:GetText():SetColor(BluePrint.UGC.UI.Core.Color(1, 0, 0, 1));
+        AttackInfoView["mainpane_bg_image"]:GetImage():SetColor(BluePrint.UGC.UI.Core.Color(1, 0, 0, 1));
         QiAlertGuildAlert["attack_panel"]:SetActive(true)
         QiAlertGuildAlert["attack_text_label"]:GetText():SetContent("请速度<color=#ffff00>回城支援</color>！敌军数量[<color=#cc0000>"..tostring(unit_num)..tostring("</color>]"))
     end
@@ -63,6 +75,9 @@ end
 
 --刷新UI
 function QiAlertGuildAlert:RefreshUI()
+    for k,v in pairs(QiAlertGuildAlert.msg_alert_tween) do 
+        v:Cancel()
+    end
     -- QiPrint("RefreshUI")
     if QiAlertGuildAlert["alert_mid_bottom_list"]==nil then 
         return 
@@ -72,7 +87,18 @@ function QiAlertGuildAlert:RefreshUI()
         if alertcontroller.msglist[i]["msg"]==nil then 
             -- label:GetText():SetContent("")
             QiAlertGuildAlert["alert_mid_bottom_list"]:GetListElement(i-1):SetActive(false)
-        else 
+        else
+            local element=QiAlertGuildAlert["alert_mid_bottom_list"]:GetListElement(i-1)
+            if alertcontroller.msglist[i]["first"]==true then
+                alertcontroller.msglist[i]["first"]=false
+                element:SetAlpha(1)
+                QiAlertGuildAlert.msg_alert_tween[#QiAlertGuildAlert.msg_alert_tween+1]=LuaCallCs_Tween.WidgetAlpha(element, 0.8, 1):SetEase(TweenType.easeInOutBounce)
+            else
+                element:SetAlpha(0.8)
+                if alertcontroller.msglist[i]["remain_time"]<=1 then 
+                    QiAlertGuildAlert.msg_alert_tween[#QiAlertGuildAlert.msg_alert_tween+1]=LuaCallCs_Tween.WidgetAlpha(element, 0, 1):SetEase(TweenType.easeInOutBounce)
+                end
+            end
             QiAlertGuildAlert["alert_mid_bottom_list"]:GetListElement(i-1):SetActive(true)
             label:GetText():SetContent(alertcontroller.msglist[i]["msg"])
         end

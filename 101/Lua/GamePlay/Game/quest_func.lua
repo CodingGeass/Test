@@ -29,7 +29,7 @@ function quest_func:event_Q00002(quest)
 end
 
 function quest_func:event_Q00003(quest)
-    quest:SetGuildInfo(true,130,580,"传送至卫天城交任务")
+    quest:SetGuildInfo(true,130,580,"传送至长安城交任务")
     local timer
     local pid=quest.pid
     local check_func=function ()
@@ -44,7 +44,7 @@ function quest_func:event_Q00003(quest)
 end
 
 function quest_func:event_Q00004(quest)
-    quest:SetGuildInfo(true,130,580,"传送到卫天森林开启冒险")
+    quest:SetGuildInfo(true,130,580,"传送到长安森林开启冒险")
     quest:SetQuestHightLgiht(false)
     local timer
     local pid=quest.pid
@@ -58,7 +58,7 @@ function quest_func:event_Q00004(quest)
 end
 
 function quest_func:event_Q00005(quest)
-    quest:SetGuildInfo(false,130,580,"传送到卫天森林开启冒险")
+    quest:SetGuildInfo(false,130,580,"传送到长安森林开启冒险")
     quest:SetQuestHightLgiht(false)
 end
 

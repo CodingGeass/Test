@@ -1,9 +1,8 @@
-
 -- 管理不同职业的专署武器成长
 function QiHero:RoleInit()
     self.roledata=QiHero.herolist[self.cfgid]
     if self.roledata==nil then 
-        QiPrint("错误没有角色数据信息", 5)
+        QiPrint("错误没有角色数据信息", 5) 
         self.weapontype="sword"
     else 
         self.weapontype=self.roledata["weapon_type"]
@@ -24,22 +23,29 @@ function QiHero:GrowWeaponInit()
     self.grow_weaponlist={}
     self.grow_fabaolist={}
     self.remain_killnum={}
+    local fabao_name_list={
+        [1]="tian",
+        [2]="mo",
+    }
+    -- 当局天魔2选1
+    local this_round_fabaoname=fabao_name_list[RandomInt(1,#fabao_name_list)]
     local weapon_name="item_main_"..self.weapontype.."_"
     for i=1,13 do 
         self.grow_weaponlist[i]=weapon_name..tostring(i)
         if i<=8 then 
             self.grow_fabaolist[i]="item_ass_base_normal_"..tostring(i)
         else 
-            self.grow_fabaolist[i]="item_ass_base_tian_"..tostring(i)
+            self.grow_fabaolist[i]="item_ass_base_"..this_round_fabaoname.."_"..tostring(i)
         end
         self.remain_killnum[i]=i*100
     end
 end
+
 --- 成长武器获得击杀
 function QiHero:GrowWeaponKill(add_value)
     local now_level=self.level
     -- 武器等级小于实际等级
-    if self.weapon_level<now_level then 
+    if self.weapon_level<=now_level then 
         if self.remain_killnum[self.weapon_level] then 
             -- 获得击杀数
             if self.remain_killnum[self.weapon_level] then 

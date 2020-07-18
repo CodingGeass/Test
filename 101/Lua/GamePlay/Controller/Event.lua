@@ -58,7 +58,10 @@ function Event:ActorDead(victim,attacker,orignalAtker,logicAtker,bImmediateReviv
         end
     end
     -- 基地炸了
-    if victim_cfgid==9146  then 
+    if IS_VERIFY_VERSION==true and victim_cfgid==1155 then 
+        GameController:GameEnd(true)
+    end
+    if victim_cfgid==9146    then 
         GameController:GameEnd(false)
     end
     -- 撸死了最终BOSS
@@ -94,7 +97,7 @@ function Event:ActorDead(victim,attacker,orignalAtker,logicAtker,bImmediateReviv
                     local drop_row_info=Split(drop_data_row,"|")
                     local drop_num=tonumber(drop_row_info[1])
                     local drop_changce=tonumber(drop_row_info[2])
-                    if drop_changce~=nil and drop_changce>=math.random(100) then 
+                    if drop_changce~=nil and drop_changce>=RandomInt(100) then 
                         DropItemController:CreateDropByDropID(drop_num,victim_pos)
                     end
                 end

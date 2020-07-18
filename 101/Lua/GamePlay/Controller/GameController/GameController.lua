@@ -93,7 +93,11 @@ function RefreshUI(aid,type)
 end
 
 --游戏结束wd
-function GameController:GameEnd(isSu)
+function GameController:GameEnd(isSu,force)
+    local dealy_time=5000
+    if force==true then 
+        dealy_time=500
+    end
     --全部传送回城
     -- for k,v in pairs(PlayerController["aidlist"]) do 
     --     TeleportController:TeleportTo(v,"b_base")
@@ -147,22 +151,24 @@ function GameController:GameEnd(isSu)
             sc.CallUILuaFunction({ PlayerController[i]["ugcpid"]} , eventName)
         end
     end
-    sc.SetTimer(5000,0,1,function ()
+    sc.SetTimer(dealy_time,0,1,function ()
         for i=0,GAME_MAX_PLAYER-1 do 
             if PlayerController[i]["ugcpid"]~=-1 then 
                 -- for k,v in pairs(PlayerController[i]["QiHero"].nowproperty) do 
                 --     sc.CallUILuaFunction({PlayerController[i]["actorid"],k,v} , StringId.new("player_property"))
                 -- end
-                -- local eventName = StringId.new("SendPlayerQuitGameInfo")
-                -- sc.CallUILuaFunction({ PlayerController[i]["ugcpid"]} , eventName)
             end
+            sc.CallUILuaFunction({i}, StringId.new("SendPlayerQuitGameInfo"))
         end
         sc.CallUILuaFunction({ isSu} , StringId.new("QiGameFinish"))
         sc.CallUILuaFunction({} , StringId.new("OnGameEnd"))
     end,{})
 end
 
-
+function GameController:PlayerExitGame(pid)
+    QiPrint("GameController:PlayerExitGame(pid)",3)
+    GameController:GameEnd(false,true)
+end
 
 function MainAlert(aid,m_text,a_text,time)
     local eventName = StringId.new("MainAlert")
